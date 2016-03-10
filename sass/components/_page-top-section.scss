@@ -1,55 +1,40 @@
 .b-top-section {
-    background-color: $black;
-    color: $white-80;
-    padding-top: 70px;
-    padding-bottom: 30px;
+  background-color: $black;
+  color: $white-80;
+  padding-top: 70px;
+  padding-bottom: 30px;
 
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 100;
-        font-size: 30px;
-        margin-top: 0;
-    }
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 0;
+  }
 
-    h3 {
-        text-align: center;
-        margin-bottom: 30px;
-        text-transform: none;
-        font-size: 22px;
-        font-weight: 100;
-    }
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: none;
+    font-size: 22px;
+    font-weight: 100;
+  }
 
-
-
-    &.m-orange  { background-color: $orange; }
-    &.m-purple  { background-color: $purple; }
-    &.m-blue    { background-color: $blue;   }
-    &.m-teal    { background-color: $teal;   }
-
-
-
-
+  &.m-orange {
+    background-color: $orange;
+  }
+  &.m-purple {
+    background-color: $purple;
+  }
+  &.m-blue {
+    background-color: $blue;
+  }
+  &.m-teal {
+    background-color: $teal;
+  }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // .b-single-landing {
 //     background-color: $blue;

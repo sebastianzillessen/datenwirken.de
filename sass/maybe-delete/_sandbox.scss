@@ -1,21 +1,18 @@
 .sandbox {
-    min-height: 800px;
-    padding-top: 100px;
+  min-height: 800px;
+  padding-top: 100px;
 
-    .wrap {
-        @include wrap;
-    }
+  .wrap {
+    @include wrap;
+  }
 
-    .question { background-color: $black;}
-    p  { color: white; }  
+  .question {
+    background-color: $black;
+  }
+  p {
+    color: white;
+  }
 }
-
-
-
-
-
-
-
 
 /* Header */
 // .large-header {
@@ -38,16 +35,6 @@
 //     .e-question {
 //     }
 // }
-
-
-
-
-
-
-
-
-
-
 
 // .wrapper {
 //     height: 700px;
@@ -82,7 +69,7 @@
 //     &.m-production > div:nth-child(2),
 //     &.m-production > div:last-child,
 //     &.m-production > div:nth-child(3) { background-color: $white-50; }
-    
+
 // }
 
 

@@ -1,31 +1,30 @@
 
-
 .b-single-related-content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
+  > h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
-    > h2 {
-        font-size: 20px;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 40px;
+  .e-wrap {
+    @include wrap;
+  }
+
+  .e-article {
+    padding: 10px;
+    border-bottom: 1px solid $gray-10;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-05;
     }
-
-    .e-wrap {
-        @include wrap;
-    }
-
-    .e-article {
-        padding: 10px;
-        border-bottom: 1px solid $gray-10;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $gray-05;
-        }
-    }
+  }
 }
+
 //     .e-article-type {
 //         font-size: 18px;
 //         text-transform: uppercase;

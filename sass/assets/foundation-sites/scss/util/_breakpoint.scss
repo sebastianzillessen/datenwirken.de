@@ -11,11 +11,11 @@
 /// A list of named breakpoints. You can use these with the `breakpoint()` mixin to quickly create media queries.
 /// @type Map
 $breakpoints: (
-  small: 0,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+        small: 0,
+        medium: 640px,
+        large: 1024px,
+        xlarge: 1200px,
+        xxlarge: 1440px,
 ) !default;
 
 /// All of the names in this list will be output as classes in your CSS, like `.small-12`, `.medium-6`, and so on. Each value in this list must also be in the `$breakpoints` map.
@@ -40,8 +40,7 @@ $breakpoint-classes: (small medium large) !default;
   // Orientation media queries have a unique syntax
   @if $bp == 'landscape' or $bp == 'portrait' {
     @return '(orientation: #{$bp})';
-  }
-  @else if $bp == 'retina' {
+  } @else if $bp == 'retina' {
     @return '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)';
   }
 
@@ -53,16 +52,14 @@ $breakpoint-classes: (small medium large) !default;
 
         @if $next-bp == null {
           $bp-max: null;
-        }
-        @else {
+        } @else {
           $bp-max: $next-bp;
         }
       }
 
       $bp: map-get($breakpoints, $bp);
       $named: true;
-    }
-    @else {
+    } @else {
       $bp: 0;
     }
   }
@@ -83,21 +80,19 @@ $breakpoint-classes: (small medium large) !default;
         @if $bp-max != null {
           $str: $str + ' and (max-width: #{$bp-max})';
         }
-      }
-      @else {
+      } @else {
         @warn 'Only named media queries can have an `only` range.';
       }
     }
 
-    // `down` ranges use the format `(max-width: n)`
+      // `down` ranges use the format `(max-width: n)`
     @else if $dir == 'down' {
       $max: 0;
 
       // For named breakpoints, subtract the breakpoint value by one "pixel", or 1/16em.
       @if $named {
         $max: $bp-max;
-      }
-      @else {
+      } @else {
         $max: $bp;
       }
 
@@ -107,7 +102,7 @@ $breakpoint-classes: (small medium large) !default;
       }
     }
 
-    // `up` ranges use the format `(min-width: n)`
+      // `up` ranges use the format `(min-width: n)`
     @else if $bp > 0em {
       $str: $str + '(min-width: #{$bp})';
     }
@@ -133,7 +128,7 @@ $breakpoint-classes: (small medium large) !default;
     @content;
   }
 
-  // Otherwise, wrap the content in a media query
+    // Otherwise, wrap the content in a media query
   @else {
     @media screen and #{$str} {
       @content;
@@ -184,7 +179,7 @@ $breakpoint-classes: (small medium large) !default;
   @if $i > length($map) {
     @return null;
   }
-  // Otherwise, return the value
+    // Otherwise, return the value
   @else {
     @return nth($values, $i);
   }
@@ -202,12 +197,12 @@ $breakpoint-classes: (small medium large) !default;
   @if not map-has-key($breakpoints, $value) {
     @return null;
   }
-  // Check if the breakpoint name exists in the local config map
+    // Check if the breakpoint name exists in the local config map
   @else if map-has-key($map, $value) {
     // If it does, just return the value
     @return map-get($map, $value);
   }
-  // Otherwise, find the next lowest breakpoint and return that value
+    // Otherwise, find the next lowest breakpoint and return that value
   @else {
     $anchor: null;
     $found: false;

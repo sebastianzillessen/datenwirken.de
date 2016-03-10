@@ -7,18 +7,18 @@
 ////
 
 $-zf-flex-justify: (
-  'left': flex-start,
-  'right': flex-end,
-  'center': center,
-  'justify': space-between,
-  'spaced': space-around,
+        'left': flex-start,
+        'right': flex-end,
+        'center': center,
+        'justify': space-between,
+        'spaced': space-around,
 );
 
 $-zf-flex-align: (
-  'top': flex-start,
-  'bottom': flex-end,
-  'middle': center,
-  'stretch': stretch,
+        'top': flex-start,
+        'bottom': flex-end,
+        'middle': center,
+        'stretch': stretch,
 );
 
 /// Creates a container for a flex grid row.
@@ -46,8 +46,7 @@ $-zf-flex-align: (
       margin-left: 0;
       margin-right: 0;
     }
-  }
-  @else {
+  } @else {
     max-width: $width;
     margin-left: auto;
     margin-right: auto;
@@ -75,8 +74,7 @@ $-zf-flex-align: (
 
   @if $columns == shrink {
     $flex: 0 0 auto;
-  }
-  @else if $columns != null {
+  } @else if $columns != null {
     $flex: 0 0 grid-column($columns);
   }
 
@@ -93,11 +91,10 @@ $-zf-flex-align: (
 ) {
   @if $gutter != null {
     $gutter: rem-calc($gutter) / 2;
-  }
-  @else {
+  } @else {
     @each $breakpoint, $gutter in $grid-column-responsive-gutter {
       $padding: rem-calc($gutter) / 2;
-      
+
       @include breakpoint($breakpoint) {
         padding-left: $padding;
         padding-right: $padding;
@@ -129,8 +126,7 @@ $-zf-flex-align: (
   @if $x {
     @if map-has-key($-zf-flex-justify, $x) {
       $x: map-get($-zf-flex-justify, $x);
-    }
-    @else {
+    } @else {
       @warn 'flex-grid-row-align(): #{$x} is not a valid value for horizontal alignment. Use left, right, center, justify, or spaced.'
     }
   }
@@ -138,8 +134,7 @@ $-zf-flex-align: (
   @if $y {
     @if map-has-key($-zf-flex-align, $y) {
       $y: map-get($-zf-flex-align, $y);
-    }
-    @else {
+    } @else {
       @warn 'flex-grid-row-align(): #{$y} is not a valid value for vertical alignment. Use top, bottom, middle, or stretch.'
     }
   }
@@ -155,8 +150,7 @@ $-zf-flex-align: (
   @if $y {
     @if map-has-key($-zf-flex-align, $y) {
       $y: map-get($-zf-flex-align, $y);
-    }
-    @else {
+    } @else {
       @warn 'flex-grid-column-align(): #{$y} is not a valid value for alignment. Use top, bottom, middle, or stretch.'
     }
   }
@@ -181,7 +175,9 @@ $-zf-flex-align: (
     }
 
     &.collapse {
-      > .column { @include grid-col-collapse; }
+      > .column {
+        @include grid-col-collapse;
+      }
     }
   }
 
@@ -237,17 +233,20 @@ $-zf-flex-align: (
 
     // Responsive collapsing
     .#{$-zf-size}-collapse {
-      > .column { @include grid-col-collapse; }
+      > .column {
+        @include grid-col-collapse;
+      }
     }
 
     .#{$-zf-size}-uncollapse {
       @if $grid-column-gutter {
         $gutter: $grid-column-gutter;
-      }
-      @else {
+      } @else {
         $gutter: -zf-get-bp-val($grid-column-responsive-gutter, $-zf-size);
       }
-      > .column { @include grid-col-uncollapse($gutter); }
+      > .column {
+        @include grid-col-uncollapse($gutter);
+      }
     }
   }
 

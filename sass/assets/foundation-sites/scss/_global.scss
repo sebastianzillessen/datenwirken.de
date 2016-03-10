@@ -105,11 +105,11 @@ $global-right: if($global-text-direction == rtl, left, right);
 
 // Internal map used to iterate through colors, to generate CSS classes with less code
 $foundation-colors: (
-  primary: $primary-color,
-  secondary: $secondary-color,
-  success: $success-color,
-  alert: $alert-color,
-  warning: $warning-color,
+        primary: $primary-color,
+        secondary: $secondary-color,
+        success: $success-color,
+        alert: $alert-color,
+        warning: $warning-color,
 ) !default;
 
 @mixin foundation-global-styles {

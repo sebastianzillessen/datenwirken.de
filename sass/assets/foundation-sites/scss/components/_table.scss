@@ -10,7 +10,7 @@
 
 /// Defualt color for table background.
 /// @type Color
-$table-background: $white  !default;
+$table-background: $white !default;
 
 /// Defualt scale for darkening the striped table rows and the table border.
 /// @type Number
@@ -110,7 +110,7 @@ $show-header-for-stacked: false !default;
           }
         }
 
-        // If stripe is set to odd, darken the odd rows.
+          // If stripe is set to odd, darken the odd rows.
         @else if $stripe == odd {
           &:nth-child(odd) {
             background-color: $table-striped-background;
@@ -142,14 +142,14 @@ $show-header-for-stacked: false !default;
     }
 
     //Darkens the even striped table rows.
-    @if($table-stripe == even) {
+    @if ($table-stripe == even) {
       &:nth-of-type(even):hover {
         background-color: $table-row-stripe-hover;
       }
     }
 
-    //Darkens the odd striped table rows.
-    @elseif($table-stripe == odd) {
+      //Darkens the odd striped table rows.
+    @else if ($table-stripe == odd) {
       &:nth-of-type(odd):hover {
         background-color: $table-row-stripe-hover;
       }
@@ -170,8 +170,7 @@ $show-header-for-stacked: false !default;
         display: none;
       }
     }
-  }
-  @else {
+  } @else {
     thead {
       display: none;
     }

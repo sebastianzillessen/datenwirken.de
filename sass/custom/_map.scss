@@ -57,12 +57,11 @@
     }
 
     &.selected {
-      fill: rgb(193,216,221);
+      fill: rgb(193, 216, 221);
     }
   }
 
 }
-
 
 .map-caption {
   @include breakpoint($desktop) {

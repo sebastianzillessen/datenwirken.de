@@ -67,13 +67,11 @@ $menu-expand-max: 6 !default;
     > li {
       display: table-cell;
     }
-  }
-  @else if $dir == vertical {
+  } @else if $dir == vertical {
     > li {
       display: block;
     }
-  }
-  @else {
+  } @else {
     @warn 'The direction used for menu-direction() must be horizontal or vertical.';
   }
 }
@@ -117,8 +115,7 @@ $menu-expand-max: 6 !default;
         margin-#{$global-right}: $menu-icon-spacing;
       }
     }
-  }
-  @else if $position == top {
+  } @else if $position == top {
     > li > a {
       text-align: center;
 

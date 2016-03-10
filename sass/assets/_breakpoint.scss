@@ -2,20 +2,16 @@
 // Default Variables
 //////////////////////////////
 $Breakpoint-Settings: (
-  'default media': all,
-  'default feature': min-width,
-  'default pair': width,
-
-  'force all media type': false,
-  'to ems': false,
-  'transform resolutions': true,
-
-  'no queries': false,
-  'no query fallbacks': false,
-
-  'base font size': 16px,
-
-  'legacy syntax': false
+        'default media': all,
+        'default feature': min-width,
+        'default pair': width,
+        'force all media type': false,
+        'to ems': false,
+        'transform resolutions': true,
+        'no queries': false,
+        'no query fallbacks': false,
+        'base font size': 16px,
+        'legacy syntax': false
 );
 
 $breakpoint: () !default;
@@ -74,13 +70,11 @@ $breakpoint: () !default;
 
     @if ($type == 'bool') {
       $print: true;
-    }
-    @else if ($type == 'string') {
+    } @else if ($type == 'string') {
       @if $query-fallback == breakpoint-get('no query fallbacks') {
         $print: true;
       }
-    }
-    @else if ($type == 'list') {
+    } @else if ($type == 'list') {
       @each $wrapper in breakpoint-get('no query fallbacks') {
         @if $query-fallback == $wrapper {
           $print: true;
@@ -96,8 +90,7 @@ $breakpoint: () !default;
         #{$query-fallback} & {
           @content;
         }
-      }
-      @else {
+      } @else {
         @content;
       }
     }
@@ -105,7 +98,6 @@ $breakpoint: () !default;
 
   @include private-breakpoint-reset-contexts();
 }
-
 
 @mixin mq($query, $no-query: false) {
   @include breakpoint($query, $no-query) {

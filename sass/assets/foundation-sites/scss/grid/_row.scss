@@ -22,9 +22,10 @@
   $grid-column-count: $columns !global;
 
   @if $root {
-    @at-root { @content; }
-  }
-  @else {
+    @at-root {
+      @content;
+    }
+  } @else {
     @content;
   }
 
@@ -58,8 +59,7 @@
       margin-left: 0;
       margin-right: 0;
     }
-  }
-  @else {
+  } @else {
     max-width: $width;
     margin-left: auto;
     margin-right: auto;
@@ -84,8 +84,7 @@
     $margin: rem-calc($gutter) / 2 * -1;
     margin-left: $margin;
     margin-right: $margin;
-  }
-  @else {
+  } @else {
     @each $breakpoint, $value in $grid-column-responsive-gutter {
       $margin: rem-calc($value) / 2 * -1;
       @include breakpoint($breakpoint) {

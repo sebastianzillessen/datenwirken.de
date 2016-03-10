@@ -20,9 +20,14 @@
 .menu-group {
   @include clearfix;
 
-  ul:first-child { float: left; }
-  ul:last-child  { float: right; }
+  ul:first-child {
+    float: left;
+  }
+  ul:last-child {
+    float: right;
+  }
 }
+
 .sticky-mag {
   background-color: white;
   &.stuck-mag {

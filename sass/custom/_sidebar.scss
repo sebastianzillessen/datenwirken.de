@@ -1,40 +1,50 @@
 ul.b-sidebar {
-    position: absolute;
-    right: 0;
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  z-index: 2;
 
-    li {
-        padding: 10px;
-        color: $white;
-        width: 45px;
-        height: 45px;
-        &.facebook    { background-color: $facebook-blue; }
-        &.linkedin    { background-color: $linkedin-blue; }
-        &.google-plus { background-color: $google-plus-red; }
-        &.twitter     { background-color: $twitter-blue; }
-        &.email       { background-color: $gray-20-solid; }
-        @include breakpoint($desktop) {
-            display: block;
-        }
-        @include breakpoint($mobile-only) {
-            display: inline-block;
-        }
+  li {
+    padding: 10px;
+    color: $white;
+    width: 45px;
+    height: 45px;
+    &.facebook {
+      background-color: $facebook-blue;
     }
-
+    &.linkedin {
+      background-color: $linkedin-blue;
+    }
+    &.google-plus {
+      background-color: $google-plus-red;
+    }
+    &.twitter {
+      background-color: $twitter-blue;
+    }
+    &.email {
+      background-color: $gray-20-solid;
+    }
     @include breakpoint($desktop) {
-        margin-right: 30px;
+      display: block;
     }
     @include breakpoint($mobile-only) {
-        margin: 0;
+      display: inline-block;
     }
+  }
 
-    &.js-scroll-fixed {
-        margin-top: 80px;
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
+  @include breakpoint($desktop) {
+    margin-right: 30px;
+  }
+  @include breakpoint($mobile-only) {
+    margin: 0;
+  }
+
+  &.js-scroll-fixed {
+    margin-top: 80px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
 }

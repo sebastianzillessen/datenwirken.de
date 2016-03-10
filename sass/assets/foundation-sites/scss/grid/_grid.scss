@@ -22,8 +22,8 @@ $grid-column-gutter: null !default;
 /// @type Map
 /// @since 6.1.0
 $grid-column-responsive-gutter: (
-  small: 20px,
-  medium: 30px,
+        small: 20px,
+        medium: 30px,
 ) !default;
 
 /// If `true`, the last column in a row will align to the opposite edge of the row.

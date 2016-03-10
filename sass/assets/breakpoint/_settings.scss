@@ -4,8 +4,7 @@
 @function breakpoint-has($setting) {
   @if map-has-key($breakpoint, $setting) {
     @return true;
-  }
-  @else {
+  } @else {
     @return false;
   }
 }
@@ -16,8 +15,7 @@
 @function breakpoint-get($setting) {
   @if breakpoint-has($setting) {
     @return map-get($breakpoint, $setting);
-  }
-  @else {
+  } @else {
     @return map-get($Breakpoint-Settings, $setting);
   }
 }
@@ -44,6 +42,7 @@
 @mixin bkpt-change($setting, $value) {
   @include breakpoint-change($setting, $value);
 }
+
 @mixin bkpt-set($setting, $value) {
   @include breakpoint-change($setting, $value);
 }

@@ -6,8 +6,7 @@
   @if (breakpoint-string-value($first) == true) {
     $feature: $first;
     $value: $second;
-  }
-  @else {
+  } @else {
     $feature: $second;
     $value: $first;
   }

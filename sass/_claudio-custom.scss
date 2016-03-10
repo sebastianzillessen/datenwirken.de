@@ -5,219 +5,240 @@
 }
 
 .m-citizens {
-    @extend .m-orange;
+  @extend .m-orange;
 }
 
 .m-government {
-    @extend .m-blue;
+  @extend .m-blue;
 }
 
 .m-economic {
-    @extend .m-yellow;
+  @extend .m-yellow;
 }
 
 .m-public {
-    @extend .m-fuschia;
+  @extend .m-fuschia;
 }
 
 .m-hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #about-page,
 #case-study-page,
 #open-data-impact-homepage {
-    .b-footer {
-        .e-partner-logo {
-            & > img {
-                @include breakpoint($desktop) { width: 40%; }
-                @include breakpoint($mobile-only) { width: 80%;}
-            }
+  .b-footer {
+    .e-partner-logo {
+      & > img {
+        @include breakpoint($desktop) {
+          width: 40%;
         }
+        @include breakpoint($mobile-only) {
+          width: 80%;
+        }
+      }
     }
+  }
 }
 
 #case-study-page,
 #open-data-impact-homepage {
-    .b-top-section {
-        height: 75vh;
-        position: relative;
-        background: url('../img/banners/sm/home.jpg') no-repeat center center;
-        background-size: cover;
+  .b-top-section {
+    height: 75vh;
+    position: relative;
+    background: url('../img/banners/sm/home.jpg') no-repeat center center;
+    background-size: cover;
 
-        .e-shade {
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-image: linear-gradient($gray-10, $gray-80);
-        }
+    .e-shade {
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient($gray-10, $gray-80);
     }
+  }
 
-    .e-titles {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        padding: 20px;
+  .e-titles {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
 
-        h3 span {
-            text-transform: uppercase;
-            font-size: 16px;
-            margin: 0;
-            width: auto;
-            padding: 5px 8px;
-            background-color: $purple;
-            font-weight: 400;
-        }
+    h3 span {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin: 0;
+      width: auto;
+      padding: 5px 8px;
+      background-color: $purple;
+      font-weight: 400;
     }
+  }
 
-    .b-page-section {
-        .e-bold {
-            font-weight: 600;
-        }
-        .e-box {
-            padding: 30px;
-            background-color: $od-blue-05;
-        }
-        .e-box-title { font-style: italic; }
+  .b-page-section {
+    .e-bold {
+      font-weight: 600;
     }
+    .e-box {
+      padding: 30px;
+      background-color: $od-blue-05;
+    }
+    .e-box-title {
+      font-style: italic;
+    }
+  }
 }
-
 
 #download-button,
 #explore-button {
-    bottom: -27px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+  bottom: -27px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 
-    a { box-shadow: 0 0 5px $gray-20; }
-    .material-icons {
-        font-size: 24px;
-        line-height: 24px;
-    }
+  a {
+    box-shadow: 0 0 5px $gray-20;
+  }
+  .material-icons {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 #open-data-impact-homepage {
-    .b-top-section {
-        .e-main-title {
-            @include breakpoint($desktop) {
-                font-size: 60px;
-                font-weight: 100;
-            }
-            @include breakpoint($mobile-only) {
-                font-size: 2.6rem;
-                font-weight: 400;
-            }
-        }
-        .e-tagline {
-            @include breakpoint($desktop) {
-                font-size: 30px;
-                font-weight: 100;
-            }
-            @include breakpoint($mobile-only) {
-                font-size: 1.25rem;
-                font-weight: 400;
-            }
-        }
+  .b-top-section {
+    .e-main-title {
+      @include breakpoint($desktop) {
+        font-size: 60px;
+        font-weight: 100;
+      }
+      @include breakpoint($mobile-only) {
+        font-size: 2.6rem;
+        font-weight: 400;
+      }
     }
-
-    .b-page-section {
-        &.m-impact-section {
-            h2 {
-                @include breakpoint($desktop) { font-size: 60px; }
-                @include breakpoint($mobile-only) { font-size: 45px;}
-            }
-        }
+    .e-tagline {
+      @include breakpoint($desktop) {
+        font-size: 30px;
+        font-weight: 100;
+      }
+      @include breakpoint($mobile-only) {
+        font-size: 1.25rem;
+        font-weight: 400;
+      }
     }
+  }
 
-    .grid {
-        .e-card {
-            @include breakpoint($desktop) {
-                width: auto;
-                text-align: start;
-            }
-            @include breakpoint($mobile-only) {
-                width: 100%;
-                text-align: center;
-            }
-            .e-card-inner {
-                text-align: left;
-                @include breakpoint($desktop) {
-                    margin: 15px;
-                }
-                @include breakpoint($mobile-only) {
-                    margin: 15px 0;
-                }
-            }
+  .b-page-section {
+    &.m-impact-section {
+      h2 {
+        @include breakpoint($desktop) {
+          font-size: 60px;
         }
+        @include breakpoint($mobile-only) {
+          font-size: 45px;
+        }
+      }
     }
+  }
 
+  .grid {
+    .e-card {
+      @include breakpoint($desktop) {
+        width: auto;
+        text-align: start;
+      }
+      @include breakpoint($mobile-only) {
+        width: 100%;
+        text-align: center;
+      }
+      .e-card-inner {
+        text-align: left;
+        @include breakpoint($desktop) {
+          margin: 15px;
+        }
+        @include breakpoint($mobile-only) {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
 
 }
 
 #case-study-page {
-    .b-top-section {
-        text-align: center;
-        margin-bottom: 60px;
+  .b-top-section {
+    text-align: center;
+    margin-bottom: 60px;
 
-        .e-titles {
-            padding: 30px;
-            .e-main-title {
-                @include breakpoint($desktop) {
-                    font-size: 60px;
-                    font-weight: 100;
-                }
-                @include breakpoint($mobile-only) {
-                    font-size: 5vh;
-                    font-weight: 300;
-                }
-            }
-            .e-tagline {
-                @include breakpoint($desktop) { font-size: 30px; }
-                @include breakpoint($mobile-only) { font-size: 1.1rem; }
-            }
-
-            h4 {
-                @include breakpoint($desktop) { font-size: 1.125rem; }
-                @include breakpoint($mobile-only) { font-size: 0.85rem; }
-            }
+    .e-titles {
+      padding: 30px;
+      .e-main-title {
+        @include breakpoint($desktop) {
+          font-size: 60px;
+          font-weight: 100;
         }
+        @include breakpoint($mobile-only) {
+          font-size: 5vh;
+          font-weight: 300;
+        }
+      }
+      .e-tagline {
+        @include breakpoint($desktop) {
+          font-size: 30px;
+        }
+        @include breakpoint($mobile-only) {
+          font-size: 1.1rem;
+        }
+      }
+
+      h4 {
+        @include breakpoint($desktop) {
+          font-size: 1.125rem;
+        }
+        @include breakpoint($mobile-only) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  .e-tags {
+    overflow: hidden;
+    float: left;
+    width: 40%;
+
+    p {
+      margin: 0;
     }
 
-    .e-tags {
-        overflow: hidden;
-        float: left;
-        width: 40%;
-
-        p { margin: 0; }
-
-        .e-left {
-            float: left;
-            width: 30%;
-            text-align: right;
-            padding: 10px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .e-right {
-            float: right;
-            width: 70%;
-            text-align: left;
-            padding: 10px;
-        }
+    .e-left {
+      float: left;
+      width: 30%;
+      text-align: right;
+      padding: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
     }
 
-
-    .e-read-times {
-        float: right;
-        width: 60%;
-        text-align: right;
-        p { margin: 0; }
+    .e-right {
+      float: right;
+      width: 70%;
+      text-align: left;
+      padding: 10px;
     }
+  }
+
+  .e-read-times {
+    float: right;
+    width: 60%;
+    text-align: right;
+    p {
+      margin: 0;
+    }
+  }
 }
 
 // This is the custom CSS for the about page.
@@ -225,114 +246,129 @@
 // and will also be applied with a high specificity, over the component base styles.
 
 #about-page {
-    .b-top-section {
-        padding-top: 130px;
-        @include breakpoint($desktop) { height: 300px; }
-        @include breakpoint($mobile-only) { height: 65vh; }
+  .b-top-section {
+    padding-top: 130px;
+    @include breakpoint($desktop) {
+      height: 300px;
+    }
+    @include breakpoint($mobile-only) {
+      height: 65vh;
+    }
+  }
+
+  .b-page-section {
+    padding-top: 50px;
+
+    a {
+      color: $od-blue;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    .b-page-section {
-        padding-top: 50px;
-
-        a {
-            color: $od-blue;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        h3 {
-            font-size: 18px;
-            color: $gray-60;
-            @include breakpoint($desktop) { text-align: right; }
-            @include breakpoint($mobile-only) { text-align: left; }
-        }
-
-        h4 {
-            font-size: 16px;
-            color: $gray-60;
-            font-weight: 600;
-        }
-
+    h3 {
+      font-size: 18px;
+      color: $gray-60;
+      @include breakpoint($desktop) {
+        text-align: right;
+      }
+      @include breakpoint($mobile-only) {
+        text-align: left;
+      }
     }
 
-    .slick-track {
-        @include breakpoint($desktop) { height: auto; }
-        @include breakpoint($mobile-only) { height: 100vh; }
-
-        .b-quote-slide {
-            height: 100%;
-        }
+    h4 {
+      font-size: 16px;
+      color: $gray-60;
+      font-weight: 600;
     }
 
-    .b-form textarea {
-        min-height: 240px;
+  }
+
+  .slick-track {
+    @include breakpoint($desktop) {
+      height: auto;
     }
+    @include breakpoint($mobile-only) {
+      height: 100vh;
+    }
+
+    .b-quote-slide {
+      height: 100%;
+    }
+  }
+
+  .b-form textarea {
+    min-height: 240px;
+  }
 }
-
 
 .b-footer .e-content {
 
-    h4 {
-        @include breakpoint($mobile-only) { text-align: center; }
+  h4 {
+    @include breakpoint($mobile-only) {
+      text-align: center;
+    }
+  }
+
+  .e-partner-logo {
+    text-align: center;
+  }
+  .e-partner-logo > img {
+
+    @include breakpoint($mobile-only) {
+      width: 80%;
+      max-height: 300px;
     }
 
-    .e-partner-logo {
-        text-align: center;
-    }
-    .e-partner-logo > img {
-
-        @include breakpoint($mobile-only) {
-            width: 80%;
-            max-height: 300px;
-        }
-
-        width: 40%;
-    }
+    width: 40%;
+  }
 }
 
 .b-copyright {
-    .e-partner-logo {
-        text-align: center;
-    }
-    .e-partner-logo > img {
-        width: 50%;
-        max-height: 200px;
-    }
+  .e-partner-logo {
+    text-align: center;
+  }
+  .e-partner-logo > img {
+    width: 50%;
+    max-height: 200px;
+  }
 
-    .e-cc-badge {
-        @include breakpoint($desktop) { margin: 5px 25px 0 0; }
-        @include breakpoint($mobile-only) { margin: 30px 0; }
+  .e-cc-badge {
+    @include breakpoint($desktop) {
+      margin: 5px 25px 0 0;
     }
+    @include breakpoint($mobile-only) {
+      margin: 30px 0;
+    }
+  }
 }
 
 .b-copyright {
-    position: relative;
-    .e-partner-logo {
-        > img {
-            max-width: 400px;
-            padding: 10px 0;
-            // max-height: 60px;
-            opacity: .5;
-            @include transition;
-            &:hover {
-                opacity: 1;
-                @include transition;
-            }
-        }
-        @include breakpoint($desktop) {
-            position: absolute;
-            right: 0;
-            top: 10px;
-        }
-        @include breakpoint($mobile-only) {
-            position: static;
-        }
+  position: relative;
+  .e-partner-logo {
+    > img {
+      max-width: 400px;
+      padding: 10px 0;
+      // max-height: 60px;
+      opacity: .5;
+      @include transition;
+      &:hover {
+        opacity: 1;
+        @include transition;
+      }
     }
+    @include breakpoint($desktop) {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+    @include breakpoint($mobile-only) {
+      position: static;
+    }
+  }
 }
-
-
 
 // .b-top-nav .e-nav-group.m-right,
 // .e-right-box,
@@ -342,9 +378,7 @@
 //         display: none !important; }
 //     }
 
-
 // .b-top-section {
-
 
 //     h1.m-space-2,
 //     h1.m-space-1 {
@@ -418,13 +452,10 @@
 //     @include breakpoint($mobile-only) { padding: 10px; }
 // }
 
-
-
 // .b-top-section {
 //     // position: relative;
 //     // padding: 0;
 //     height: 75vh;
-
 
 //     // h1 {
 //     //     &.m-space-1 {
@@ -518,8 +549,6 @@
 //         }
 //     }
 
-
-
 //     i.m-lg-faded {
 //         font-size: 50px;
 //         color: $white-40;
@@ -541,107 +570,108 @@
 
 //     &.m-light   { background-color: transparent;  color: $black;  }
 
-
 // }
 
-
-
-
-
-
-
-
-
-
 .b-page-section {
-    aside h3 {
-        text-align: left;
-        @include breakpoint($desktop) { text-align: right; }
-        padding-right: 30px;
+  aside h3 {
+    text-align: left;
+    @include breakpoint($desktop) {
+      text-align: right;
+    }
+    padding-right: 30px;
+  }
+
+  .e-expandable {
+
+    * {
+      font-size: 1.1rem;
+      font-weight: 300;
     }
 
-    .e-expandable {
-
-        * {
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-
-        > *:not(:first-child) {display: none;}
-        > *:only-of-type + .e-read-more { display: none; }
-
-        .m-show { display: block; }
-
-        .e-read-more {
-            display: inline;
-            cursor: pointer;
-            color: $od-blue;
-            font-weight: 600;
-
-            &:hover { text-decoration: underline; }
-        }
-
-        .e-h2 {
-            font-weight: bold;
-            color: $od-blue;
-            &:not(:first-child) { margin-top: 30px; }
-        }
-
-        .e-caption {
-            text-align: center;
-            font-size: 16px;
-            font-style: italic;
-            margin-bottom: 15px;
-            color: $gray-50;
-        }
-
-        b { font-weight: bold; }
-
-        img {
-            box-shadow: 0 0 8px $gray-10;
-            margin: 30px 0;
-        }
-
-        .e-quote {
-            background-color: $od-blue-05;
-            padding: 20px 20px 20px 40px;
-            position: relative;
-
-            &:before {
-                background-image: url("../img/quote.svg");
-                background-repeat: no-repeat;
-                background-size: 50%;
-                background-position: center;
-                @include circle;
-                height: 34px;
-                width: 34px;
-                background-color: $od-blue;
-                content: '';
-                position: absolute;
-                left: -17px;
-            }
-        }
-
-        .e-quote-author {
-            margin-top: -15px;
-            background-color: $od-blue-05;
-            padding: 0 20px 20px 40px;
-            position: relative;
-            text-align: right;
-
-            span {
-                font-weight: bold;
-                font-size: 14px;
-                text-transform: uppercase;
-                color: $od-blue;
-            }
-        }
-
-
-
+    > *:not(:first-child) {
+      display: none;
     }
+    > *:only-of-type + .e-read-more {
+      display: none;
+    }
+
+    .m-show {
+      display: block;
+    }
+
+    .e-read-more {
+      display: inline;
+      cursor: pointer;
+      color: $od-blue;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .e-h2 {
+      font-weight: bold;
+      color: $od-blue;
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+
+    .e-caption {
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 15px;
+      color: $gray-50;
+    }
+
+    b {
+      font-weight: bold;
+    }
+
+    img {
+      box-shadow: 0 0 8px $gray-10;
+      margin: 30px 0;
+    }
+
+    .e-quote {
+      background-color: $od-blue-05;
+      padding: 20px 20px 20px 40px;
+      position: relative;
+
+      &:before {
+        background-image: url("../img/quote.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        @include circle;
+        height: 34px;
+        width: 34px;
+        background-color: $od-blue;
+        content: '';
+        position: absolute;
+        left: -17px;
+      }
+    }
+
+    .e-quote-author {
+      margin-top: -15px;
+      background-color: $od-blue-05;
+      padding: 0 20px 20px 40px;
+      position: relative;
+      text-align: right;
+
+      span {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $od-blue;
+      }
+    }
+
+  }
 }
-
 
 // $mobile-only: max-width 767px;
 // $tablet: min-width 768px;
@@ -650,9 +680,9 @@
 
 // MOBILE
 @media (max-width 767px) {
-    .e-card-inner {
-        width: 90%;
-    }
+  .e-card-inner {
+    width: 90%;
+  }
 }
 
 // TABLET

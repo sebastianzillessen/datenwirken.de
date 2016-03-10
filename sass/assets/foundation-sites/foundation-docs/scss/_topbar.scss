@@ -10,8 +10,12 @@ $topbar-hover-color: darken($topbar-background, 20%);
 
   @include clearfix;
 
-  ul:first-child { float: left; }
-  ul:last-child  { float: right; }
+  ul:first-child {
+    float: left;
+  }
+  ul:last-child {
+    float: right;
+  }
 
   .topbar-title > a {
     font-size: rem-calc(16);

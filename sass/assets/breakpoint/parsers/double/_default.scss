@@ -5,8 +5,7 @@
   @if type-of($first) == 'string' {
     $feature: $first;
     $value: $second;
-  }
-  @else {
+  } @else {
     $feature: $second;
     $value: $first;
   }

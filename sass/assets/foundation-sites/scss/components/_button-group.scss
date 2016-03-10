@@ -96,10 +96,18 @@ $buttongroup-expand-max: 6 !default;
     @include button-group;
 
     // Sizes
-    &.tiny     { font-size: map-get($button-sizes, tiny); }
-    &.small    { font-size: map-get($button-sizes, small); }
-    &.large    { font-size: map-get($button-sizes, large); }
-    &.expanded { @include button-group-expand; }
+    &.tiny {
+      font-size: map-get($button-sizes, tiny);
+    }
+    &.small {
+      font-size: map-get($button-sizes, small);
+    }
+    &.large {
+      font-size: map-get($button-sizes, large);
+    }
+    &.expanded {
+      @include button-group-expand;
+    }
 
     // Colors
     @each $name, $color in $foundation-colors {
@@ -107,8 +115,7 @@ $buttongroup-expand-max: 6 !default;
         &.#{$name} #{$buttongroup-child-selector} {
           @include button-style($color, auto, auto);
         }
-      }
-      @else {
+      } @else {
         &.#{$name} #{$buttongroup-child-selector} {
           @include button-hollow;
           @include button-hollow-style($color);
