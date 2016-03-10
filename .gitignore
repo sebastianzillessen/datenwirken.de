@@ -5,3 +5,4 @@ node_modules
 support/*
 templates/static/styles/styles.css.map
 .idea
+site/
