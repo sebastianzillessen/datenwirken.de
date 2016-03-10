@@ -7,7 +7,6 @@
     <div class="e-nav-group m-left e-social-media hide-for-small-only">
         <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i
                 class="e-social-media-item fa fa-twitter"></i></a>
-        <a href="http://thegovlab.org" class="e-nav-item" target="_blank">thegovlab.org</a>
     </div>
 
     <div class="e-nav-group m-right hide-for-small-only">
@@ -28,10 +27,10 @@
     <div class="b-top-section">
         <div class="e-shade"></div>
         <hgroup class="e-titles">
-            <h1 class="e-main-title">TBD-Title</h1>
-            <h2 class="e-tagline">TBD-Subtitle</h2>
+            <h1 class="e-main-title tbd">TBD-Title</h1>
+            <h2 class="e-tagline tbd">TBD-Subtitle</h2>
         </hgroup>
-        <div id="explore-button"><a id="explore-link" href="#explore-the-data" class="b-button m-dark-blue">Explore Case
+        <div id="explore-button"><a id="explore-link" href="#explore-the-data" class="b-button m-dark-blue tbd">Explore Case
             Studies</a></div>
     </div>
 
@@ -61,7 +60,7 @@
         <div class="row">
             <span id="trigger-4"></span>
             <div class="large-5 large-offset-1 columns">
-                <h2>Solving Public Problems</h2>
+                <h2 class="tbd">Solving Public Problems</h2>
                 <p>
                     {{ cases | selectattr("impact_type", "equalto", "public") | list | count() }}
                     case studies</p>

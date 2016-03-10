@@ -43,6 +43,9 @@
     @include breakpoint($tablet) {
       padding: 20px;
     }
+    &.active {
+      color: white;
+    }
   }
 
   .e-nav-item.m-container {
