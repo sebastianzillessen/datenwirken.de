@@ -10,50 +10,12 @@
 #   download:
 
 # 0
-- title: "Brazil’s Open Budget Transparency Portal"
-  image: 'brazil.jpg'
-  authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
-  description: 'Making Public How Public Money Is Spent'
+- title: "Zur richtigen Zeit am richtigen Ort"
+  image: 'geodata.png'
+  authors: 'Laura Franken'
+  description: 'Geschäftsstrategien mit offenen Geodaten entwickeln'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location: Brazil
+  location: UK
   region: sa
-  read_time: 5 #minutes
-  full_read_time: 20
-  download: case-study-brazil.pdf
-# 1
-- title: 'Open Education Information In Tanzania'
-  image: tanzania.jpg
-  authors: 'Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya'
-  description: 'A Tale of Two Dashboards'
-  impact_type: citizens # citizens | government | economic | public
-  sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location: Tanzania
-  region: af
-  read_time: 5
-  full_read_time: 20
-  download: case-study-tanzania.pdf
-# 2
-- title: "Kenya's Open Duka"
-  image: kenya.jpg
-  authors: 'Andrew Young and Stefaan Verhulst'
-  description: 'Open Data for Transactional Transparency'
-  impact_type: citizens # citizens | government | economic | public
-  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location: Kenya
-  region: af
-  read_time: 5
-  full_read_time: 20
-  download: case-study-kenya.pdf
-# 3
-- title: "TBD"
-  image: tbd.jpg
-  authors: 'TBD'
-  description: 'TBD'
-  impact_type: citizens # citizens | government | economic | public
-  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location: TBD
-  region: af
-  read_time: 5
-  full_read_time: 20
-  download: tbd.pdf
+  download: case-study-geodata.pdf

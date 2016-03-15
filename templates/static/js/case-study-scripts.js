@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     // inline references
     // $('.b-sticky').hide();
     // $('a[data-open]').click(function() {
@@ -8,7 +8,7 @@ $(function() {
     //     $($(this).attr('data-open')).fadeIn('fast');
     // });
 
-    $('a._idFootnoteLink').click(function(event) {
+    $('a._idFootnoteLink').click(function (event) {
         event.preventDefault();
         var footnote = $(this).attr('href').replace(/^[^#]*/, '');
         $('._idFootnote.m-active').removeClass('m-active');
@@ -17,25 +17,26 @@ $(function() {
         $('#overlay').addClass('m-active');
     });
 
-    $('#overlay').click(function(){
+    $('#overlay').click(function () {
         $('.b-footnotes').removeClass('m-active');
         $('._idFootnote.m-active').removeClass('m-active');
         $('#overlay').removeClass('m-active');
     });
 
-    $('.e-close').click(function(){
+    $('.e-close').click(function () {
         $('.b-footnotes').removeClass('m-active');
         $('._idFootnote.m-active').removeClass('m-active');
         $('#overlay').removeClass('m-active');
     });
 
     // more button
-    $('.js-more-toggle').click(function() {
+    $('.js-more-toggle').click(function () {
         $(this).parent().toggleClass('m-active');
         if ($(this).parent().hasClass('m-active')) {
-            $(this).text('Show Less');
+            $(this).data("show-more", $(this).text());
+            $(this).text($(this).data("show-less"));
         } else {
-            $(this).text('Read More');
+            $(this).text($(this).data("show-more"));
         }
     });
 
@@ -43,7 +44,7 @@ $(function() {
     var sidebar = $('.b-sidebar');
     var offset = sidebar.offset().top - 80;
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > offset) {
             if (!sidebar.hasClass('js-scroll-fixed')) {

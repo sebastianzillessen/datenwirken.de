@@ -550,18 +550,47 @@
     }
     padding-right: 30px;
   }
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: justify;
+
+  .side-info {
+    &.light {
+      background-color: $gray-20;
+    }
+    border: 1px solid $medium-gray;
+    display: block;
+    @include breakpoint($desktop) {
+      width: 350px;
+      margin: 0 0 0 15px;
+      float: right;
+    }
+    @include breakpoint($mobile-only) {
+      width: 90%;
+      margin: 30px auto;
+    }
+
+    text-align: left;
+    > table {
+      border: 0;
+      margin: 0;
+      th, td {
+        font-size: 100%;
+        padding: 5px 10px;
+      }
+      th {
+        text-transform: none;
+        font-weight: normal;
+      }
+    }
+    > *:not(table) {
+      margin: 10px;
+    }
+  }
 
   .e-expandable {
 
-    * {
-      font-size: 1.1rem;
-      font-weight: 300;
-    }
-
     > *:not(:first-child) {
-      display: none;
-    }
-    > *:only-of-type + .e-read-more {
       display: none;
     }
 
@@ -583,17 +612,30 @@
     .e-h2 {
       font-weight: bold;
       color: $od-blue;
+      clear: both;
       &:not(:first-child) {
         margin-top: 30px;
       }
     }
 
-    .e-caption {
+    .e-img {
+      > img {
+        @include breakpoint($desktop) {
+          max-width: 80%;
+        }
+        @include breakpoint($mobile-only) {
+          max-width: 100%;
+        }
+
+      }
+    }
+    .e-caption, .e-img {
+      clear: both;
       text-align: center;
-      font-size: 16px;
-      font-style: italic;
-      margin-bottom: 15px;
-      color: $gray-50;
+      margin: 0;
+    }
+    .e-caption {
+      padding-top: 15px;
     }
 
     b {
