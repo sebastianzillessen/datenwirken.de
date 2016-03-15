@@ -4,7 +4,8 @@
   "description": "[![Build Status](https://travis-ci.org/GovLab/open-data-impact-case-studies.svg?branch=master)](https://travis-ci.org/GovLab/open-data-impact-case-studies)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp; python build.py runserver "
   },
   "repository": {
     "type": "git",
