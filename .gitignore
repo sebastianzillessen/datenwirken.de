@@ -6,3 +6,4 @@ support/*
 templates/static/styles/styles.css.map
 .idea
 site/
+site/static/styles/styles.css.map
