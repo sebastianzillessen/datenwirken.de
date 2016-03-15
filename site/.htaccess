@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /customers/c/5/1/zillessen.info/httpd.www/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
