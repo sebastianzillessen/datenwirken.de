@@ -1,0 +1,128 @@
+{% extends "_case-studies.html" %}
+{% set case_id = 1 %}
+
+
+{% block challenge %}
+<p>
+<div class="float-img"><img src="static/img/studies/ally-1.png" alt="Ally Logo"/></div>
+Um zu erfahren, welche öffentlichen Verkehrsmittel einem Reisenden zur Verfügung stehen, müssen oft viele
+verschiedene Apps benutzt werden, insbesondere dann, wenn man Transportmittel des ÖPNV mit z.B. CarSharing-Angeboten
+vergleichen will. Und in fremden Städten weiß man oft gar nicht, wer die lokalen ÖPNV-Anbieter sind und wo man
+Abfahrtzeiten nachsehen kann.
+</p>
+
+{% endblock %}
+
+{% block solution %}
+<p>
+<div class="float-img"><img src="static/img/studies/ally-2.png" alt="Ally Erklärung"/></div>
+Die kostenlose <a href="http://www.allyapp.com/" target="_blank">App</a> ally bietet eine Übersicht über
+Transportmittel des Öffentlichen Nahverkehrs (inklusive
+Live-Daten zu Verspätungen), CarSharing- und BikeSharing-Anbietern, Fußwegen und Taxis. Ally ist in 76 Städten in
+Deutschland und in mehreren Städten im Ausland verfügbar.
+</p>
+
+{% endblock %}
+
+{% block datasets %}
+
+<p>Ally nutzt insbesondere die folgenden Datensätze:</p>
+
+<ul>
+    <li>Daten von lokalen Unternehmen des Öffentlichen Nahverkehrs</li>
+    <li>Deutsche Bahn</li>
+    <li>API des VBB (Echtzeit-Daten)</li>
+    <li>offenes Kartenmaterial</li>
+</ul>
+{% endblock %}
+
+
+{% block outcome %}
+<p>Jan ist spätabends auf dem Nachhauseweg von einem Konzert. Die S-Bahn ist ihm gerade vor der Nase weg gefahren und
+    der Bus scheint nicht zu kommen - oder hat der nur Verspätung? Jan schaut auf seinem Smartphone nach. Der Bus
+    scheint pünktlich gewesen zu sein, also ist auch der weg. Was nun? Wann kommt der nächste Bus, die nächste Bahn -
+    oder muss in diesem Fall ein anderer Dienst her, weil die Wartezeit zu lang wäre? Mit der App “ally” kann Jan
+    verschiedene Angebote vergleichen, inklusive Zeit und Kosten für die jeweilige Strecke:
+<ul>
+    <li>Öffentliche Verkehrsmittel (mit Live-Daten über Verspätungen),</li>
+    <li>CarSharing Angebote,</li>
+    <li>BikeSharing Angebote,</li>
+    <li>Taxis (inklusive Uber),</li>
+    <li>Fußwege.</li>
+</ul>
+
+</p>
+<p>Dazu nutzt ally offene Verkehrsdaten, wie beispielsweise Fahrplandaten und Linienpläne sowie Echtzeitdaten von
+    lokalen Verkehrsanbietern. Die kürzesten Routen aller zur Verfügung stehenden Verkehrsmittel können dann verglichen
+    werden. Twitterfeeds von offiziellen Verkehrsanbietern wie beispielsweise der Berliner BVG werden den Nutzern
+    ebenfalls angezeigt, was beispielsweise schnelle Hinweise auf aktuelle Verkehrsstörungen gibt. Die letzten 10
+    Suchanfragen werden automatisch gespeichert, sodass man diese auch dann ansehen kann, wenn man gerade nicht mit dem
+    Internet verbunden ist, beispielsweise bei Durchqueren eines Tunnels oder in der U-Bahn.</p>
+<p class="e-img"><img src="static/img/studies/ally-3.png" alt="Ally Erklärung"/></p>
+<p>Jan entscheidet sich am Ende dafür, ein Rad zu nehmen. Der Standort befindet sich direkt um die Ecke und die frische
+    Nachluft könnte Kopfschmerzen am nächsten Morgen vorbeugen. Seinen Wohnort hat Jan bei seinen Favoriten
+    abgespeichert, sodass er für die Suche nur diesen anklicken muss, während sein aktueller Standort automatisch
+    übermittelt wird. Genauso können andere oft gesuchte Orte, wie beispielsweise der Arbeitsplatz, gespeichert
+    werden.</p>
+
+<p>Nun hat Jan großen Hunger. Seine WG schaut daheim gerade eine Serie. Jan sagt Bescheid, dass er später gerne noch
+    eine Folge mitschauen würde, und fragt, ob sie ihm unterdessen eine Pizza machen könnten. Zu diesem Zweck schickt er
+    ihnen die Daten seiner gewählten Verkehrsroute. Um zu wissen, wann die Pizza in den Ofen muss, können seine
+    Mitbewohner so nämlich Jans Nachhauseweg über ally mitverfolgen und sehen, wo er gerade ist und wie lange er noch
+    braucht, ohne dass er vom Fahrrad aus Bescheid zu sagen bräuchte.</p>
+
+<p>Doch nicht nur im Alltag benutzt Jan ally, um sich über Transportwege zu informieren. Besonders praktisch ist die
+    App, wenn er in einer fremden Stadt unterwegs ist. Ohne dass er lange nach dem Namen und der Seite des lokalen
+    Nahverkehrsanbieters suchen muss, kann Jan einfach bei ally die neue Stadt angeben und die App weiter wie zuvor
+    benutzen. Das funktioniert in 76 deutschen Städten, aber auch in Wien, Zürich, London, Lissabon, Santiago de Chile,
+    Dublin, Cork, Limerick, Sidney, Brisbane und Perth.</p>
+{% endblock %}
+
+{% block shortinfo %}
+<!-- steckbrief -->
+<table>
+    <tr>
+        <th>Gründung:</th>
+        <td>2014</td>
+    </tr>
+    <tr>
+        <th>Sitz:</th>
+        <td>Berlin, DE</td>
+    </tr>
+    <tr>
+        <th>Sonstiges:</th>
+        <td>
+            Ally ist Teil von LAB4City und organisiert in diesem Rahmen Veranstaltungen zu Open Data Innovationen.<br>
+            Siehe: <a href="www.allyapp.com/lab4city/" target="_blank">www.allyapp.com/lab4city/</a>
+        </td>
+    </tr>
+</table>
+{% endblock %}
+
+
+{% block sources %}
+<p>Offizielle Seite:<br>
+    <a href="http://www.allyapp.com/" target="_blank">http://www.allyapp.com/</a></p>
+
+<p>Technologiestiftung Berlin: “Open Data in der Praxis” - Firmenportrait ally auf Seite 20:
+    <a href="https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/160128_TSB_OpenDataBerlin.pdf"
+       target="_blank">
+        https://www.technologie
+        <wbr>
+        stiftung
+        <wbr>
+        -berlin.de/
+        <wbr>
+        fileadmin/
+        <wbr>
+        daten/media/
+        <wbr>
+        publikationen/
+        <wbr>
+        160128_TSB_
+        <wbr>
+        OpenDataBerlin.pdf
+    </a>
+
+</p>
+{% endblock %}

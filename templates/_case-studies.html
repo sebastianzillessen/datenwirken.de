@@ -1,4 +1,5 @@
 {% extends "_base.html" %}
+{% set case = cases[case_id] %}
 {% block page_id %}case-study-page{% endblock %}
 
 {% block navelements %}
@@ -36,44 +37,10 @@
         <hgroup class="e-titles">
             <h1 class="e-main-title">{{case.title}}</h1>
             <h2 class="e-tagline">{{case.description}}</h2>
-            <h4>von {{case.authors}}{% if case.special_thanks == true or case.special_thanks is not defined %}<a
-                    class="_idFootnoteLink" href="#footnote-999">*</a>{% endif %}</h4>
-            <div class="e-tags hide-for-small-only">
-                <div class="e-left">
-                    <p class="">Einfluss</p>
-                    <p class="">Bereich</p>
-                    <p class="">Ort</p>
-                </div>
-                <div class="e-right">
-                    <p>
-                        {% if case.impact_type is equalto 'citizens' %}EMPOWERING CITIZENS
-                        {% elif case.impact_type is equalto 'government' %}IMPROVING GOVERNMENT
-                        {% elif case.impact_type is equalto 'economic' %}CREATING NEW ECONOMIC OPPORTUNITIES
-                        {% elif case.impact_type is equalto 'public' %}SOLVING PUBLIC PROBLEMS
-                        {% else %}{{case.impact_type | upper}}
-                        {% endif %}
-                    </p>
-                    <p>
-                        {% if case.sector is equalto 'public' %}PUBLIC SECTOR
-                        {% elif case.sector is equalto 'philantrophy' %}PHILANTROPHY &AMP; AID
-                        {% elif case.sector is equalto 'geospatial' %}GEOSPATIAL SERVICES
-                        {% elif case.sector is equalto 'politics' %}POLITICS &AMP; ELECTIONS
-                        {% elif case.sector is equalto 'health' %}HEALTH
-                        {% elif case.sector is equalto 'education' %}EDUCATION
-                        {% elif case.sector is equalto 'emergency' %}EMERGENCY SERVICES / CRISIS RESPONSE
-                        {% elif case.sector is equalto 'law' %}LAW
-                        {% elif case.sector is equalto 'business' %}BUSINESS
-                        {% elif case.sector is equalto 'transportation' %}TRANSPORTATION
-                        {% elif case.sector is equalto 'weather' %}WEATHER
-                        {% else %}{{case.impact | upper}}
-                        {% endif %}
-                    </p>
-                    <p>{{case.location | upper}}</p>
-                </div>
-            </div>
+            <h4>{{case.subtitle}}</h4>
         </hgroup>
         <div id="download-button">
-            <a href="./static/files/{{case.download}}" class="b-button m-{{case.impact_type}}">Report herunterladen<i
+            <a href="./static/files/{{case.download}}" class="b-button m-government">Report herunterladen<i
                     class="material-icons m-space">file_download</i></a>
         </div>
     </div>
@@ -177,61 +144,21 @@
     {% endif %}
 
     <!-- read next section -->
-    {% if case.impact_type is equalto 'citizens' %}
-    <div class="b-divider m-orange m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-        {% elif case.impact_type is equalto 'government' %}
-        <div class="b-divider m-blue m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-            {% elif case.impact_type is equalto 'economic' %}
-            <div class="b-divider m-yellow m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                {% elif case.impact_type is equalto 'public' %}
-                <div class="b-divider m-fuschia m-next js-next" js-impact="{{case.impact_type}}"
-                     js-sector="{{case.sector}}">
-                    {% else %}
-                    <div class="b-divider m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                        {% endif %}
-                        <div>
-                            {% set next = false %}
-                            {% set first = true %}
-                            {% for casestudy in cases %}
-                            {% if next and not casestudy.unreleased %}
-                            {% if first %}
-                            <h1>Weiter lesen:</h1>
-                            {% set first = false %}
-                            {% endif %}
-                            <a href="case-{{casestudy.title|slug}}.html"
-                               class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
-                                <h2>{{casestudy.title}}</h2>
-                            </a>
-                            {% endif %}
-                            {% if casestudy.title is equalto case.title %}
-                            {% set next = true %}
-                            {% endif %}
-                            {% endfor %}
-                        </div>
-                    </div>
+    <div class="b-divider m-blue m-next js-next">
+        <div>
+            {% set next_id = 0 %}
+            {% if cases[case_id+1] %}
+            {% set next_id = case_id+1 %}
+            {% endif %}
 
-                    {% if self.footnotes() %}
-                    <div class="b-footnotes">
-                        <div class="row">
-                            <div class="medium-8 large-offset-3 column">
-                                <h4>Reference</h4>
-                                {% block footnotes %}{% endblock %}
-                                {% if case.special_thanks == true or case.special_thanks is not defined %}
-                                <div id="footnote-999" class="_idFootnote">
-                                    <p class="e-footnote-text">{% block special_thanks %}Special thanks to Akash Kapur
-                                        who provided crucial editorial support for this case study, and to <a
-                                                href="odimpact.org/about">the peer reviewers</a> who provided input on a
-                                        pre-published draft.{% endblock %}</p>
-                                </div>
-                                {% endif %}
-                            </div>
-                            <div class="medium-1 column">
-                                <div class="e-close"><i class="material-icons">close</i></div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-                    <!-- end of read next -->
+            <h1>Weiter lesen:</h1>
+            <a href="case-{{cases[next_id].title|slug}}.html"
+               class="impact-government">
+                <h2>{{cases[next_id].title}}</h2>
+            </a>
+        </div>
+    </div>
+    <!-- end of read next -->
 </main>
 
 <script src="static/js/case-study-scripts.js"></script>

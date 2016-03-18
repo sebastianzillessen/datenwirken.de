@@ -45,7 +45,7 @@
 
   .e-titles {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     width: 100%;
     padding: 20px;
 
@@ -315,14 +315,22 @@
 
 .b-copyright {
   position: relative;
+  .logos {
+    @include breakpoint($desktop) {
+      text-align: right;
+    }
+    @include breakpoint($mobile-only) {
+      text-align: center;
+    }
+  }
   .e-partner-logo {
     text-align: center;
+
     > img {
       max-height: 80px;
-      padding: 10px 0;
-      margin-left: 15px;
-      // max-height: 60px;
+      max-width: 180px;
       opacity: .5;
+      margin: 10px;
       @include transition;
       &:hover {
         opacity: 1;
@@ -339,208 +347,6 @@
     }
   }
 }
-
-// .b-top-nav .e-nav-group.m-right,
-// .e-right-box,
-// ul.b-sidebar,
-// div h2::after {
-//     @include breakpoint($mobile-only) {
-//         display: none !important; }
-//     }
-
-// .b-top-section {
-
-//     h1.m-space-2,
-//     h1.m-space-1 {
-//         @include breakpoint($mobile-only) {
-//             margin-top: 80px;
-//             font-size: 30px;
-//         }
-//     }
-
-//     h2.m-sm {
-//         @include breakpoint($mobile-only) {
-//             font-size: 18px;
-//             margin: 30px 20px 20px;
-//             text-transform: capitalize;
-//         }
-//     }
-
-//     .e-left-box {
-//         @include breakpoint($mobile-only) {
-//             text-align: center;
-//         }
-//     }
-
-// }
-
-// .b-page-section aside h3 {
-//     @include breakpoint($mobile-only) {
-//         text-align: left;
-//         font-size: 30px;
-//     }
-// }
-
-// .b-page-section .e-last {
-//     @include breakpoint($mobile-only) { margin: 0; }
-// }
-
-// .b-divider.m-next {
-//     @include breakpoint($mobile-only) { padding: 20px; }
-
-//     > div {
-//         @include breakpoint($mobile-only) {
-//             width: 100%;
-//             position: static;
-//             text-align: center;
-//         }
-//     }
-
-//     h1, h2 {
-//         @include breakpoint($mobile-only) { text-align: right; }
-//     }
-// }
-
-// .b-page-section.m-impact-section {
-//     @include breakpoint($mobile-only) { text-align: center; }
-// }
-
-// .b-page-section#enabler-icons .columns .b-button,
-// .b-page-section .columns.m-padded {
-//     @include breakpoint($mobile-only) { padding: 30px; }
-// }
-
-// .grid .e-card {
-//     @include breakpoint($mobile-only) {
-//         width: 100% !important;
-//         margin: 0 !important;
-//         text-align: center;
-//     }
-// }
-
-// .tabs-panel .b-button {
-//     @include breakpoint($mobile-only) { padding: 10px; }
-// }
-
-// .b-top-section {
-//     // position: relative;
-//     // padding: 0;
-//     height: 75vh;
-
-//     // h1 {
-//     //     &.m-space-1 {
-//     //         margin-top: 250px;
-//     //         margin-bottom: 40px;
-//     //     }
-//     //     &.m-space-2 {
-//     //         margin-top: 200px;
-//     //         margin-bottom: 0;
-//     //     }
-//     //     &.m-sm {
-//     //         font-size: 28px;
-//     //         font-weight: 600;
-//     //     }
-//     //     &.m-sm-2 {
-//     //         font-size: 48px;
-//     //         font-weight: 300;
-//     //     }
-//     //     & a:focus {
-//     //         color: $white;
-//     //     }
-//     // }
-
-//     // h2 {
-//     //     &.m-space-1 {
-//     //         margin-top: 100px;
-//     //         margin-bottom: 100px;
-//     //     }
-//     //     &.m-lg {
-//     //         max-width: 850px;
-//     //         font-size: 38px;
-//     //         font-weight: 300;
-//     //         margin: 0 auto;
-//     //     }
-//     //     &.m-sm {
-//     //         font-size: 25px;
-//     //         font-weight: 300;
-//     //     }
-//     //     & a:focus {
-//     //         color: $white;
-//     //     }
-//     // }
-
-//     h4 {
-//         font-size: 18px;
-//         font-weight: 600;
-//     }
-
-//     .b-shader {
-//         position: absolute;
-//         top: 0;
-//         padding: 50px 0;
-//         height: 100%;
-//         width: 100%;
-//         // background-color: $gray-50;
-//         background: linear-gradient($gray-10, $gray-90);
-//         z-index: 0;
-//     }
-
-//     .e-left-box {
-//         margin-top: 30px;
-//         text-align: left;
-
-//         div {
-//             display: inline-block;
-
-//             &.e-left {
-//                 width: 80px;
-//                 text-align: right;
-//                 margin-right: 15px;
-//             }
-//             &.e-right {
-//                 width: 200px;
-//                 text-align: left;
-//                 font-weight: 600;
-//             }
-//         }
-//     }
-
-//     .e-right-box {
-//         margin-top: 30px;
-//         text-align: right;
-
-//         p {
-//             margin: 0;
-
-//             &:first-child {
-//                 font-weight: 800;
-//                 text-transform: uppercase;
-//             }
-//         }
-//     }
-
-//     i.m-lg-faded {
-//         font-size: 50px;
-//         color: $white-40;
-//         &:hover {
-//             color: $white;
-//             @include transition;
-//         }
-//     }
-
-//     &.m-hires-1 {
-//         background: url('../img/home.jpg') no-repeat center center;
-//         background-size: cover;
-//     }
-
-//     &.m-hires-2 {
-//         background: url('../img/nairobi.jpg') no-repeat center top;
-//         background-size: cover;
-//     }
-
-//     &.m-light   { background-color: transparent;  color: $black;  }
-
-// }
 
 .b-page-section {
   aside h3 {
@@ -587,6 +393,45 @@
       margin: 10px;
     }
   }
+  .float-img {
+    @include breakpoint(small) {
+      float: none;
+      clear: both;
+      max-width: 80%;
+      text-align: center;
+      margin: 10px auto;
+    }
+    @include breakpoint(medium) {
+      max-width: 40%;
+      margin: 0;
+      padding: 10px 0px 10px 20px;
+      float: right;
+    }
+
+    @include breakpoint(large) {
+      max-width: 50%;
+    }
+
+  }
+  .e-img {
+    text-align: center;
+    > img {
+      @include breakpoint($desktop) {
+        max-width: 80%;
+      }
+      @include breakpoint($mobile-only) {
+        max-width: 100%;
+      }
+
+    }
+  }
+  .e-caption, .e-img {
+    clear: both;
+    margin: 0;
+  }
+  .e-caption {
+    padding-top: 15px;
+  }
 
   .e-expandable {
 
@@ -616,26 +461,6 @@
       &:not(:first-child) {
         margin-top: 30px;
       }
-    }
-
-    .e-img {
-      > img {
-        @include breakpoint($desktop) {
-          max-width: 80%;
-        }
-        @include breakpoint($mobile-only) {
-          max-width: 100%;
-        }
-
-      }
-    }
-    .e-caption, .e-img {
-      clear: both;
-      text-align: center;
-      margin: 0;
-    }
-    .e-caption {
-      padding-top: 15px;
     }
 
     b {

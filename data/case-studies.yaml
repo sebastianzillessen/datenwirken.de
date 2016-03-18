@@ -12,10 +12,15 @@
 # 0
 - title: "Zur richtigen Zeit am richtigen Ort"
   image: 'geodata.png'
-  authors: 'Laura Franken'
+  subtitle: 'Geolytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln'
-  impact_type: government # citizens | government | economic | public
-  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location: UK
-  region: sa
   download: case-study-geodata.pdf
+  id: 0
+
+# 1
+- title: "Problemlos von A nach B!"
+  image: 'ally.png'
+  subtitle: 'ally (DE)'
+  description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
+  download: case-study-geodata.pdf
+  id: 1
