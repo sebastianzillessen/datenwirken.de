@@ -40,7 +40,7 @@
             <h4>{{case.subtitle}}</h4>
         </hgroup>
         <div id="download-button">
-            <a href="./static/files/{{case.download}}" class="b-button m-government">Report herunterladen<i
+            <a href="./static/files/{{case.download}}" class="b-button m-{{case.impact_type}}">Report herunterladen<i
                     class="material-icons m-space">file_download</i></a>
         </div>
     </div>
@@ -153,7 +153,7 @@
 
             <h1>Weiter lesen:</h1>
             <a href="case-{{cases[next_id].title|slug}}.html"
-               class="impact-government">
+               class="impact-{{case.impact_type}}">
                 <h2>{{cases[next_id].title}}</h2>
             </a>
         </div>

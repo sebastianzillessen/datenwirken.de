@@ -15,7 +15,7 @@
   subtitle: 'Geolytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln'
   download: case-study-geodata.pdf
-  id: 0
+  impact_type: government
 
 # 1
 - title: "Problemlos von A nach B!"
@@ -23,4 +23,4 @@
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
   download: case-study-geodata.pdf
-  id: 1
+  impact_type: government
