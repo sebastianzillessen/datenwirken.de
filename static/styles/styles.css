@@ -4904,7 +4904,7 @@ ul.b-sidebar {
 #case-study-page .e-titles,
 #open-data-impact-homepage .e-titles {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   width: 100%;
   padding: 20px; }
   #case-study-page .e-titles h3 span,
@@ -5072,13 +5072,18 @@ ul.b-sidebar {
 
 .b-copyright {
   position: relative; }
+  .b-copyright .logos {
+    text-align: center; }
+    @media screen and (min-width: 64.0625em) {
+      .b-copyright .logos {
+        text-align: right; } }
   .b-copyright .e-partner-logo {
     text-align: center; }
     .b-copyright .e-partner-logo > img {
       max-height: 80px;
-      padding: 10px 0;
-      margin-left: 15px;
+      max-width: 180px;
       opacity: .5;
+      margin: 10px;
       transition: all .4s ease; }
       .b-copyright .e-partner-logo > img:hover {
         opacity: 1;
@@ -5123,6 +5128,33 @@ ul.b-sidebar {
         font-weight: normal; }
     .b-page-section .side-info > *:not(table) {
       margin: 10px; }
+  .b-page-section .float-img {
+    float: none;
+    clear: both;
+    max-width: 80%;
+    text-align: center;
+    margin: 10px auto; }
+    @media screen and (min-width: 40em) {
+      .b-page-section .float-img {
+        max-width: 40%;
+        margin: 0;
+        padding: 10px 0px 10px 20px;
+        float: right; } }
+    @media screen and (min-width: 64em) {
+      .b-page-section .float-img {
+        max-width: 50%; } }
+  .b-page-section .e-img {
+    text-align: center; }
+    .b-page-section .e-img > img {
+      max-width: 100%; }
+      @media screen and (min-width: 64.0625em) {
+        .b-page-section .e-img > img {
+          max-width: 80%; } }
+  .b-page-section .e-caption, .b-page-section .e-img {
+    clear: both;
+    margin: 0; }
+  .b-page-section .e-caption {
+    padding-top: 15px; }
   .b-page-section .e-expandable > *:not(:first-child) {
     display: none; }
   .b-page-section .e-expandable .m-show {
@@ -5140,17 +5172,6 @@ ul.b-sidebar {
     clear: both; }
     .b-page-section .e-expandable .e-h2:not(:first-child) {
       margin-top: 30px; }
-  .b-page-section .e-expandable .e-img > img {
-    max-width: 100%; }
-    @media screen and (min-width: 64.0625em) {
-      .b-page-section .e-expandable .e-img > img {
-        max-width: 80%; } }
-  .b-page-section .e-expandable .e-caption, .b-page-section .e-expandable .e-img {
-    clear: both;
-    text-align: center;
-    margin: 0; }
-  .b-page-section .e-expandable .e-caption {
-    padding-top: 15px; }
   .b-page-section .e-expandable b {
     font-weight: bold; }
   .b-page-section .e-expandable img {
