@@ -1393,7 +1393,7 @@ dl {
 blockquote {
   margin: 0 0 1rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
-  border-left: 1px solid #999; }
+  border-left: none; }
   blockquote, blockquote p {
     line-height: 1.6;
     color: #333; }
@@ -5114,14 +5114,14 @@ p, td, a {
     @media screen and (min-width: 64.0625em) {
       .b-page-section aside h3 {
         text-align: right; } }
+  .b-page-section .light {
+    background-color: rgba(0, 0, 0, 0.2); }
   .b-page-section .side-info {
     border: 1px solid #999;
     display: block;
     width: 90%;
     margin: 30px auto;
     text-align: left; }
-    .b-page-section .side-info.light {
-      background-color: rgba(0, 0, 0, 0.2); }
     @media screen and (min-width: 64.0625em) {
       .b-page-section .side-info {
         width: 350px;
@@ -5148,7 +5148,7 @@ p, td, a {
       .b-page-section .float-img {
         max-width: 40%;
         margin: 0;
-        padding: 10px 0px 10px 20px;
+        padding: 5px 0 10px 20px;
         float: right; } }
     @media screen and (min-width: 64em) {
       .b-page-section .float-img {
@@ -5165,6 +5165,8 @@ p, td, a {
     margin: 0; }
   .b-page-section .e-caption {
     padding-top: 15px; }
+  .b-page-section img {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); }
   .b-page-section .e-expandable > *:not(:first-child) {
     display: none; }
   .b-page-section .e-expandable .m-show {
@@ -5184,8 +5186,7 @@ p, td, a {
       margin-top: 30px; }
   .b-page-section .e-expandable b {
     font-weight: bold; }
-  .b-page-section .e-expandable img {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  .b-page-section .e-expandable .e-img img {
     margin: 30px 0; }
   .b-page-section .e-expandable .e-quote {
     background-color: rgba(22, 74, 122, 0.05);

@@ -14,7 +14,7 @@
   image: 'geodata.jpg'
   subtitle: 'Geolytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
-  download: case-study-geodata.pdf
+  download: tbd.pdf
   impact_type: government
 
 # 1
@@ -22,7 +22,7 @@
   image: 'ally.png'
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
-  download: case-study-geodata.pdf
+  download: tbd.pdf
   impact_type: government
 
 # 2
@@ -30,5 +30,13 @@
   image: 'atu.png'
   subtitle: 'A tu servicio (UY)'
   description: '“A tu servicio” aus Uruguay.'
-  download: case-study-geodata.pdf
+  download: tbd.pdf
+  impact_type: government
+
+# 3
+- title: "Besserer Kundenservice ohne Mehraufwand:"
+  image: 'tfl.jpg'
+  subtitle: 'Transport for London (UK)'
+  description: 'Öffentliche Verkehrsbetriebe & Open Data '
+  download: tbd.pdf
   impact_type: government
