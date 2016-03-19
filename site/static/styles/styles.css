@@ -4886,6 +4886,16 @@ ul.b-sidebar {
 .m-hidden {
   visibility: hidden; }
 
+p, td, a {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 #case-study-page .b-top-section,
 #open-data-impact-homepage .b-top-section {
   height: 60vh;
