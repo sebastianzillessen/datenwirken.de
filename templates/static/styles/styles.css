@@ -4888,7 +4888,7 @@ ul.b-sidebar {
 
 #case-study-page .b-top-section,
 #open-data-impact-homepage .b-top-section {
-  height: 75vh;
+  height: 60vh;
   position: relative;
   background: url("../img/banners/sm/home.jpg") no-repeat center center;
   background-size: cover; }

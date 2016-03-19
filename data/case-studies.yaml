@@ -11,7 +11,7 @@
 
 # 0
 - title: "Zur richtigen Zeit am richtigen Ort"
-  image: 'geodata.png'
+  image: 'geodata.jpg'
   subtitle: 'Geolytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
   download: case-study-geodata.pdf
@@ -22,5 +22,13 @@
   image: 'ally.png'
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
+  download: case-study-geodata.pdf
+  impact_type: government
+
+# 2
+- title: "Open Data für eine bessere Gesundheitsversorgung:"
+  image: 'atu.png'
+  subtitle: 'A tu servicio (UY)'
+  description: '“A tu servicio” aus Uruguay.'
   download: case-study-geodata.pdf
   impact_type: government
