@@ -53,7 +53,7 @@
           display: inline;
           &:last-of-type:not(:only-of-type) {
             display: block;
-            margin: 0 40px;
+            margin-top: 0;
           }
         }
         h2 {

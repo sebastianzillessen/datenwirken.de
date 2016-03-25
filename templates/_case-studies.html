@@ -38,6 +38,39 @@
             <h1 class="e-main-title">{{case.title}}</h1>
             <h2 class="e-tagline">{{case.description}}</h2>
             <h4>{{case.subtitle}}</h4>
+            <!--<div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p class="">Wirkung</p>
+                    <p class="">Bereich</p>
+                    <p class="">Ort</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        {% if case.impact_type is equalto 'citizens' %}EMPOWERING CITIZENS
+                        {% elif case.impact_type is equalto 'government' %}IMPROVING GOVERNMENT
+                        {% elif case.impact_type is equalto 'economic' %}CREATING NEW ECONOMIC OPPORTUNITIES
+                        {% elif case.impact_type is equalto 'public' %}SOLVING PUBLIC PROBLEMS
+                        {% else %}{{case.impact_type | upper}}
+                        {% endif %}
+                    </p>
+                    <p>
+                        {% if case.sector is equalto 'public' %}PUBLIC SECTOR
+                        {% elif case.sector is equalto 'philantrophy' %}PHILANTROPHY &AMP; AID
+                        {% elif case.sector is equalto 'geospatial' %}GEOSPATIAL SERVICES
+                        {% elif case.sector is equalto 'politics' %}POLITICS &AMP; ELECTIONS
+                        {% elif case.sector is equalto 'health' %}HEALTH
+                        {% elif case.sector is equalto 'education' %}EDUCATION
+                        {% elif case.sector is equalto 'emergency' %}EMERGENCY SERVICES / CRISIS RESPONSE
+                        {% elif case.sector is equalto 'law' %}LAW
+                        {% elif case.sector is equalto 'business' %}BUSINESS
+                        {% elif case.sector is equalto 'transportation' %}TRANSPORTATION
+                        {% elif case.sector is equalto 'weather' %}WEATHER
+                        {% else %}{{case.impact | upper}}
+                        {% endif %}
+                    </p>
+                    <p>{{case.location | upper}}</p>
+                </div>
+            </div>-->
         </hgroup>
         <div id="download-button">
             <a href="./static/files/{{case.download}}" class="b-button m-{{case.impact_type}}">Report herunterladen<i

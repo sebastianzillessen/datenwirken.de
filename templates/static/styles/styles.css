@@ -3711,9 +3711,24 @@ table {
     padding: 5px 0 0 0;
     text-align: center;
     display: block; }
-    .b-top-nav .e-logo img {
-      max-width: 100px;
-      max-width: 140px; }
+    .b-top-nav .e-logo > span {
+      display: block;
+      float: left; }
+      .b-top-nav .e-logo > span:not(.logo) {
+        width: 100%; }
+        @media screen and (min-width: 64.0625em) {
+          .b-top-nav .e-logo > span:not(.logo) {
+            width: 60%; } }
+      .b-top-nav .e-logo > span.logo {
+        display: none;
+        width: 20%; }
+        @media screen and (min-width: 64.0625em) {
+          .b-top-nav .e-logo > span.logo {
+            display: block; } }
+        .b-top-nav .e-logo > span.logo > img {
+          max-height: 30px;
+          margin: 0 auto;
+          vertical-align: bottom; }
   .b-top-nav .e-nav-group {
     position: absolute;
     top: 0; }
@@ -4263,7 +4278,7 @@ h2.m-upper {
     text-align: center;
     display: block; }
   .b-top-nav .e-logo {
-    max-width: 300px;
+    max-width: 350px;
     margin: 0 auto; }
   .b-top-nav.m-transparent, .b-top-nav .m-transparent {
     background-color: rgba(0, 0, 0, 0.5);
@@ -4683,7 +4698,7 @@ ul.b-sidebar {
             display: inline; }
             .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type) {
               display: block;
-              margin: 0 40px; }
+              margin-top: 0; }
           .b-sticky#upcoming-section .row h2 {
             display: inline;
             margin: 0; } }
@@ -5085,10 +5100,18 @@ p, td, a {
   .b-copyright .logos {
     text-align: center; }
     @media screen and (min-width: 64.0625em) {
-      .b-copyright .logos {
+      .b-copyright .logos:first-child {
+        text-align: center; }
+      .b-copyright .logos:last-child {
         text-align: right; } }
   .b-copyright .e-partner-logo {
     text-align: center; }
+    .b-copyright .e-partner-logo.small > img {
+      max-height: 56px;
+      max-width: 126px; }
+    .b-copyright .e-partner-logo.big > img {
+      max-height: 104px;
+      max-width: 234px; }
     .b-copyright .e-partner-logo > img {
       max-height: 80px;
       max-width: 180px;

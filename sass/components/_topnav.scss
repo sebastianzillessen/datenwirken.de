@@ -12,12 +12,33 @@
     padding: 5px 0 0 0;
     text-align: center;
     display: block;
-
-    img {
-      max-width: 100px;
-      @include breakpoint($tablet) {
-        max-width: 140px;
+    > span {
+      display: block;
+      float: left;
+      &:not(.logo) {
+        @include breakpoint($desktop) {
+          width: 60%;
+        }
+        @include breakpoint($mobile-only) {
+          width: 100%;
+        }
       }
+
+      &.logo {
+        @include breakpoint($desktop) {
+          display: block;
+        }
+        @include breakpoint($mobile-only) {
+          display: none;
+        }
+        width: 20%;
+        > img {
+          max-height: 30px;
+          margin: 0 auto;
+          vertical-align: bottom;
+        }
+      }
+
     }
   }
 
