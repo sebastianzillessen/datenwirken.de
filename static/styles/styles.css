@@ -4345,8 +4345,6 @@ h2.m-upper {
     margin-bottom: 15px; }
   .b-page-section .e-expandable > p:only-of-type ~ .b-button, .b-page-section .b-form .e-expandable > p:only-of-type ~ input[type="submit"], .b-form .b-page-section .e-expandable > p:only-of-type ~ input[type="submit"] {
     display: none; }
-  .b-page-section .e-expandable.m-active > *:not(.b-button) {
-    display: block; }
   .b-page-section .e-expandable .b-button, .b-page-section .e-expandable .b-form input[type="submit"], .b-form .b-page-section .e-expandable input[type="submit"] {
     color: #523080; }
   .b-page-section .e-expandable a[data-open] {
@@ -4925,7 +4923,7 @@ p, td, a {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)); }
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); }
 #case-study-page .e-titles,
 #open-data-impact-homepage .e-titles {
   position: absolute;
@@ -5164,7 +5162,8 @@ p, td, a {
   .b-page-section .float-img {
     float: none;
     clear: both;
-    max-width: 80%;
+    display: block;
+    max-width: 90%;
     text-align: center;
     margin: 10px auto; }
     @media screen and (min-width: 40em) {
@@ -5263,6 +5262,44 @@ p, td, a {
   text-align: left; }
   .e-nav-group.dropdown.m-left > li {
     padding-right: 40px; }
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  body #img-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    top: 0;
+    z-index: 20;
+    text-align: center; }
+    body #img-overlay > .center {
+      top: 50%;
+      transform: translate(0%, -50%);
+      border: thin solid white;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      position: relative; }
+      body #img-overlay > .center .content {
+        padding: 20px;
+        margin: 0 auto; }
+        body #img-overlay > .center .content img {
+          margin: 0 auto; }
+      body #img-overlay > .center .close {
+        position: absolute;
+        right: 4px;
+        top: 0;
+        color: white;
+        opacity: 0.6;
+        transition: all .4s ease;
+        text-decoration: none; }
+        body #img-overlay > .center .close:hover {
+          opacity: 1; }
 
 .tbd {
   color: red !important;
