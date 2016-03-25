@@ -48,3 +48,11 @@
   description: 'ob als Privatperson oder als Kommune'
   download: tbd.pdf
   impact_type: government
+
+# 5
+- title: "Kunst für alle:"
+  image: 'rijks.jpg'
+  subtitle: 'Rijksstudio (NL)'
+  description: 'Digitale Meisterwerke zum genießen, lernen, experimentieren und remixen'
+  download: tbd.pdf
+  impact_type: government
