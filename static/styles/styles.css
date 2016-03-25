@@ -379,7 +379,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "proxima-nova", sans-serif, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.6;
   color: #0a0a0a;
@@ -1290,7 +1290,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "proxima-nova", sans-serif, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -4383,7 +4383,7 @@ h2.m-upper {
   padding-top: 0; }
 .b-page-section.m-impact-section h2 {
   font-size: 60px;
-  font-weight: 200;
+  font-weight: 100;
   text-transform: none;
   line-height: 1.1; }
   .b-page-section.m-impact-section h2 ~ p {
@@ -4670,7 +4670,7 @@ ul.b-sidebar {
       .b-sticky#upcoming-section .row a {
         text-decoration: none;
         font-style: italic;
-        font-weight: 700;
+        font-weight: 200;
         color: rgba(255, 255, 255, 0.7);
         transition: all .4s ease; }
         .b-sticky#upcoming-section .row a:hover {
@@ -4678,7 +4678,7 @@ ul.b-sidebar {
           transition: all .4s ease; }
       .b-sticky#upcoming-section .row h2 {
         font-size: 28px;
-        font-weight: 800; }
+        font-weight: 100; }
       .b-sticky#upcoming-section .row p {
         margin: 35px 50px;
         font-size: 18px;
@@ -4722,7 +4722,7 @@ ul.b-sidebar {
       padding: 20px; }
       .grid .e-card .e-card-inner p.e-case-name {
         font-size: 18px;
-        font-weight: 600;
+        font-weight: 300;
         text-transform: uppercase; }
       .grid .e-card .e-card-inner p.e-case-description {
         position: absolute;
