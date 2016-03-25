@@ -33,10 +33,12 @@ $(function () {
     $('.js-more-toggle').click(function () {
         $(this).parent().toggleClass('m-active');
         if ($(this).parent().hasClass('m-active')) {
+            $(this).parent().find("> :not(:visible)").addClass("slided-down").slideDown();
             $(this).data("show-more", $(this).text());
             $(this).text($(this).data("show-less"));
         } else {
             $(this).text($(this).data("show-more"));
+            $(this).parent().find(".slided-down:visible").removeClass('slided-down').slideUp();
         }
     });
 

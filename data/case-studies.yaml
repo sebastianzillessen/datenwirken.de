@@ -18,7 +18,7 @@
   impact_type: government
 
 # 1
-- title: "Problemlos von A nach B!"
+- title: "Problemlos von A nach B"
   image: 'ally.png'
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
@@ -26,7 +26,7 @@
   impact_type: government
 
 # 2
-- title: "Open Data für eine bessere Gesundheitsversorgung:"
+- title: "Open Data für eine bessere Gesundheitsversorgung"
   image: 'atu.png'
   subtitle: 'A tu servicio (UY)'
   description: '“A tu servicio” aus Uruguay.'
@@ -34,7 +34,7 @@
   impact_type: government
 
 # 3
-- title: "Besserer Kundenservice ohne Mehraufwand:"
+- title: "Besserer Kundenservice ohne Mehraufwand"
   image: 'tfl.jpg'
   subtitle: 'Transport for London (UK)'
   description: 'Öffentliche Verkehrsbetriebe & Open Data'
@@ -43,16 +43,24 @@
 
 # 4
 - title: "Mit offenen Verwaltungsdaten Energie sparen"
-  image: 'husets.png'
+  image: 'husets.jpg'
   subtitle: 'Husetsweb (DK)'
   description: 'ob als Privatperson oder als Kommune'
   download: tbd.pdf
   impact_type: government
 
 # 5
-- title: "Kunst für alle:"
+- title: "Kunst für alle"
   image: 'rijks.jpg'
   subtitle: 'Rijksstudio (NL)'
   description: 'Digitale Meisterwerke zum genießen, lernen, experimentieren und remixen'
+  download: tbd.pdf
+  impact_type: government
+
+# 6
+- title: "Abi oder Ausbildung?"
+  image: 'skills.png'
+  subtitle: 'Skills Route (UK)'
+  description: 'Die richtige Wahl mit offenen Daten treffen'
   download: tbd.pdf
   impact_type: government

@@ -1,0 +1,45 @@
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  #img-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: $gray-40;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    text-align: center;
+    > .center {
+      top: 50%;
+      transform: translate(0%, -50%);
+      border: thin solid white;
+      border-radius: 8px;
+      background-color: $gray-80;
+      display: inline-block;
+      position: relative;
+      .content {
+        padding: 20px;
+        margin: 0 auto;
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      .close {
+        position: absolute;
+        right: 4px;
+        top: 0;
+        color: white;
+        opacity: 0.6;
+        @include transition;
+        text-decoration: none;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
