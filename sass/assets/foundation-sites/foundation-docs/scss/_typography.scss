@@ -1,4 +1,5 @@
-// Specific text uses Proxima Nova instead of the framework's default of Helvetica Neue. We should only apply Proxima Nova to docs-specific elements, like section titles, and never to elements of the framework itself.
+// Specific text uses Montserrat instead of the framework's default of Helvetica Neue. We should only apply Montserrat to docs-specific elements, like section titles, and never to elements of the framework itself.
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 .docs-header,
 .docs-site-title,
@@ -10,7 +11,7 @@
 .docs-big-index strong,
 .docs-small-index h4,
 .twitter-typeahead {
-  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a > code {
