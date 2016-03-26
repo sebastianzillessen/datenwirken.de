@@ -5046,11 +5046,7 @@ p, td, a {
     margin: 0; }
 
 #about-page .b-top-section {
-  padding-top: 130px;
-  height: 65vh; }
-  @media screen and (min-width: 64.0625em) {
-    #about-page .b-top-section {
-      height: 300px; } }
+  padding-top: 130px; }
 #about-page .b-page-section {
   padding-top: 50px; }
   #about-page .b-page-section a {
@@ -5243,6 +5239,27 @@ p, td, a {
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }
+.h6-top-padding {
+  padding-top: 1.9rem; }
+
+#logos h6 {
+  text-align: center; }
+  @media screen and (min-width: 64.0625em) {
+    #logos h6 {
+      text-align: left; } }
+#logos .logo-container {
+  height: 80px;
+  white-space: nowrap; }
+  #logos .logo-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  #logos .logo-container > img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%; }
+
 @media screen and (min-width: 64.0625em) {
   .e-nav-group.dropdown:hover > ul {
     display: block; } }
