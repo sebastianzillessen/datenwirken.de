@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/GovLab/open-data-impact-case-studies.svg?branch=master)](https://travis-ci.org/GovLab/open-data-impact-case-studies)
 
 This is the Open Data Impact Case Studies website.
 
