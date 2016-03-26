@@ -3703,18 +3703,18 @@ table {
 .b-top-nav {
   background-color: #333;
   color: white;
-  padding: 5px 5px 10px 5px;
   position: relative; }
   .b-top-nav a {
     color: currentColor; }
   .b-top-nav .e-logo {
-    padding: 5px 0 0 0;
+    padding: 5px;
     text-align: center;
     display: block; }
     .b-top-nav .e-logo > span {
       display: block;
       float: left; }
       .b-top-nav .e-logo > span:not(.logo) {
+        padding-bottom: 7px;
         width: 100%; }
         @media screen and (min-width: 64.0625em) {
           .b-top-nav .e-logo > span:not(.logo) {
