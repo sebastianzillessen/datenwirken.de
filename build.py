@@ -141,7 +141,7 @@ def deploy():
     '''
 
     subprocess.check_call(
-        'git subtree push --prefix site origin deploy',
+        'git subtree push --prefix site origin gh-pages',
         shell=True
     )
 
