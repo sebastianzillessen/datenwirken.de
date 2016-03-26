@@ -64,3 +64,11 @@
   description: 'Die richtige Wahl mit offenen Daten treffen'
   download: tbd.pdf
   impact_type: government
+
+# 7
+- title: "Kommunalpolitik entstaubt"
+  image: 'muc.png'
+  subtitle: 'München Transparent (DE)'
+  description: 'Besser verstehen, was in deiner Stadt passiert'
+  download: tbd.pdf
+  impact_type: government

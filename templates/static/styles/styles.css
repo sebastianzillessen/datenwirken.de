@@ -5090,6 +5090,9 @@ p, td, a {
       width: 30%;
       display: inline-block; } }
 
+.padding-top-10 {
+  padding-top: 10px; }
+
 .b-copyright {
   position: relative; }
   .b-copyright .logos {
@@ -5102,14 +5105,14 @@ p, td, a {
   .b-copyright .e-partner-logo {
     text-align: center; }
     .b-copyright .e-partner-logo.small > img {
-      max-height: 56px;
-      max-width: 126px; }
+      max-height: 49px;
+      max-width: 98px; }
     .b-copyright .e-partner-logo.big > img {
-      max-height: 104px;
-      max-width: 234px; }
+      max-height: 91px;
+      max-width: 182px; }
     .b-copyright .e-partner-logo > img {
-      max-height: 80px;
-      max-width: 180px;
+      max-height: 70px;
+      max-width: 140px;
       opacity: .5;
       margin: 10px;
       transition: all .4s ease; }
