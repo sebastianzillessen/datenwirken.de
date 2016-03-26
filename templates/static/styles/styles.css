@@ -5261,7 +5261,8 @@ p, td, a {
   #logos .logo-container > img {
     vertical-align: middle;
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    box-shadow: none; }
 
 @media screen and (min-width: 64.0625em) {
   .e-nav-group.dropdown:hover > ul {
