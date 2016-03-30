@@ -42,6 +42,23 @@
     &.impact-citizens .e-card-inner {
       background-color: $orange;
     }
+    &.impact-comming-soon {
+      .e-case-image {
+        background-color: $orange;
+        text-align: center;
+        i {
+          $height: 80px;
+          top: 50%;
+          margin-top: -$height/2;
+          font-size: $height;
+          line-height: $height;
+          position: relative;
+        }
+      }
+      .e-card-inner {
+        background-color: $orange-20k;
+      }
+    }
     &.impact-government .e-card-inner {
       background-color: $blue;
     }

@@ -184,9 +184,11 @@ p, td, a {
       .e-tagline {
         @include breakpoint($desktop) {
           font-size: 30px;
+          font-weight: 100;
         }
         @include breakpoint($mobile-only) {
           font-size: 1.1rem;
+          font-weight: 200;
         }
       }
 
