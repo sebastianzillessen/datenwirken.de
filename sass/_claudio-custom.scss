@@ -334,10 +334,16 @@ p, td, a {
       }
       &:last-child {
         text-align: right;
+        > div{
+          text-align: left;
+        }
       }
     }
     @include breakpoint($mobile-only) {
       text-align: center;
+      > div{
+        text-align: center;
+      }
     }
   }
   .e-partner-logo {
