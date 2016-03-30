@@ -42,9 +42,19 @@
     &.impact-citizens .e-card-inner {
       background-color: $orange;
     }
-    &.impact-comming-soon {
+    &.impact-government .e-card-inner {
+      background-color: $blue;
+    }
+    &.impact-economic .e-card-inner {
+      background-color: $yellow;
+    }
+    &.impact-public .e-card-inner {
+      background-color: $fuschia;
+    }
+
+    &.impact-comming-soon, &.m-unreleased {
       .e-case-image {
-        background-color: $orange;
+        background-color: $gray-30;
         text-align: center;
         i {
           $height: 80px;
@@ -56,21 +66,8 @@
         }
       }
       .e-card-inner {
-        background-color: $orange-20k;
+        background-color: $gray-40;
       }
-    }
-    &.impact-government .e-card-inner {
-      background-color: $blue;
-    }
-    &.impact-economic .e-card-inner {
-      background-color: $yellow;
-    }
-    &.impact-public .e-card-inner {
-      background-color: $fuschia;
-    }
-
-    &.m-unreleased .e-card-inner {
-      background-color: $gray-30;
       &:hover {
         box-shadow: none;
       }

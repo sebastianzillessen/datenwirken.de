@@ -38,39 +38,35 @@
             <h1 class="e-main-title">{{case.title}}</h1>
             <h2 class="e-tagline">{{case.description}}</h2>
             <h4>{{case.subtitle}}</h4>
-            <!--<div class="e-tags hide-for-small-only">
+            <div class="e-tags hide-for-small-only">
                 <div class="e-left">
                     <p class="">Wirkung</p>
                     <p class="">Bereich</p>
-                    <p class="">Ort</p>
+                    <!--<p class="">Ort</p>-->
                 </div>
                 <div class="e-right">
                     <p>
-                        {% if case.impact_type is equalto 'citizens' %}EMPOWERING CITIZENS
-                        {% elif case.impact_type is equalto 'government' %}IMPROVING GOVERNMENT
-                        {% elif case.impact_type is equalto 'economic' %}CREATING NEW ECONOMIC OPPORTUNITIES
-                        {% elif case.impact_type is equalto 'public' %}SOLVING PUBLIC PROBLEMS
+                        {% if case.impact_type is equalto 'citizens' %}Menschen befähigen
+                        {% elif case.impact_type is equalto 'government' %}Besser regieren
+                        {% elif case.impact_type is equalto 'economic' %}Chancen schaffen
+                        {% elif case.impact_type is equalto 'public' %}Probleme lösen
                         {% else %}{{case.impact_type | upper}}
                         {% endif %}
                     </p>
                     <p>
-                        {% if case.sector is equalto 'public' %}PUBLIC SECTOR
-                        {% elif case.sector is equalto 'philantrophy' %}PHILANTROPHY &AMP; AID
-                        {% elif case.sector is equalto 'geospatial' %}GEOSPATIAL SERVICES
-                        {% elif case.sector is equalto 'politics' %}POLITICS &AMP; ELECTIONS
-                        {% elif case.sector is equalto 'health' %}HEALTH
-                        {% elif case.sector is equalto 'education' %}EDUCATION
-                        {% elif case.sector is equalto 'emergency' %}EMERGENCY SERVICES / CRISIS RESPONSE
-                        {% elif case.sector is equalto 'law' %}LAW
-                        {% elif case.sector is equalto 'business' %}BUSINESS
-                        {% elif case.sector is equalto 'transportation' %}TRANSPORTATION
-                        {% elif case.sector is equalto 'weather' %}WEATHER
+                        {% if case.sector is equalto 'health' %}Gesundheit
+                        {% elif case.sector is equalto 'politics' %}Politik
+                        {% elif case.sector is equalto 'education' %}Bildung
+                        {% elif case.sector is equalto 'energy' %}Energie
+                        {% elif case.sector is equalto 'arts' %}Kunst & Kultur
+                        {% elif case.sector is equalto 'business' %}Wirtschaft
+                        {% elif case.sector is equalto 'transportation' %}Transport
                         {% else %}{{case.impact | upper}}
                         {% endif %}
                     </p>
-                    <p>{{case.location | upper}}</p>
+                    <!--<p>{{case.location | upper}}</p>-->
                 </div>
-            </div>-->
+            </div>
         </hgroup>
         <div id="download-button">
             <a href="./static/files/{{case.download}}" class="b-button m-{{case.impact_type}}">Report herunterladen<i
@@ -176,18 +172,20 @@
     {% endif %}
 
     <!-- read next section -->
-    <div class="b-divider m-blue m-next js-next">
-        <div>
-            {% set next_id = 0 %}
-            {% if cases[case_id+1] %}
-            {% set next_id = case_id+1 %}
-            {% endif %}
+    {% set next_id = 0 %}
+    {% if cases[case_id+1] %}
+    {% set next_id = case_id+1 %}
+    {% endif %}
 
-            <h1>Weiter lesen:</h1>
-            <a href="case-{{cases[next_id].title|slug}}.html"
-               class="impact-{{case.impact_type}}">
-                <h2>{{cases[next_id].title}}</h2>
-            </a>
+    <div class="b-divider m-next small-padding impact-{{cases[next_id].impact_type}}">
+        <div class="row">
+            <div class="medium-6 medium-offset-6 columns end text-right">
+                <h4>Weiter lesen:</h4>
+                <a href="case-{{cases[next_id].title|slug}}.html"
+                   class="impact-{{case.impact_type}}">
+                    <h5>{{cases[next_id].title}}</h5>
+                </a>
+            </div>
         </div>
     </div>
     <!-- end of read next -->

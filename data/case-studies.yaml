@@ -2,12 +2,25 @@
 #   image:
 #   authors:
 #   description:
-#   impact_type: government # citizens | government | economic | public
-#   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-#   location:
-#   read_time:
-#   full_read_time:
-#   download:
+
+# impact types: (citizens | government | economic | public)
+#   economic: Chancen schaffen
+#   public: Probleme lösen
+#   government: Besser regieren
+#   citizens: Menschen befähigen
+
+# sector:
+#   health: Gesundheit
+#   business: Wirtschaft
+#   transportation: Transport
+#   energy: Energie
+#   arts: Kunst & Kultur
+#   education: Bildung
+#   politics: Politik
+# location:
+# read_time:
+# full_read_time:
+# download:
 
 # 0
 - title: "Zur richtigen Zeit am richtigen Ort"
@@ -15,7 +28,8 @@
   subtitle: 'Geolytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
   download: tbd.pdf
-  impact_type: government
+  impact_type: economic
+  sector: business
 
 # 1
 - title: "Problemlos von A nach B"
@@ -23,7 +37,8 @@
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
   download: tbd.pdf
-  impact_type: government
+  impact_type: economic
+  sector: business
 
 # 2
 - title: "Open Data für eine bessere Gesundheitsversorgung"
@@ -31,7 +46,8 @@
   subtitle: 'A tu servicio (UY)'
   description: '“A tu servicio” aus Uruguay.'
   download: tbd.pdf
-  impact_type: government
+  impact_type: citizens
+  sector: health
 
 # 3
 - title: "Besserer Kundenservice ohne Mehraufwand"
@@ -39,7 +55,8 @@
   subtitle: 'Transport for London (UK)'
   description: 'Öffentliche Verkehrsbetriebe & Open Data'
   download: tbd.pdf
-  impact_type: government
+  impact_type: public
+  sector: transportation
 
 # 4
 - title: "Mit offenen Verwaltungsdaten Energie sparen"
@@ -47,7 +64,8 @@
   subtitle: 'Husetsweb (DK)'
   description: 'ob als Privatperson oder als Kommune'
   download: tbd.pdf
-  impact_type: government
+  impact_type: public
+  sector: energy
 
 # 5
 - title: "Kunst für alle"
@@ -56,6 +74,7 @@
   description: 'Digitale Meisterwerke zum genießen, lernen, experimentieren und remixen'
   download: tbd.pdf
   impact_type: government
+  sector: arts
 
 # 6
 - title: "Abi oder Ausbildung?"
@@ -63,7 +82,8 @@
   subtitle: 'Skills Route (UK)'
   description: 'Die richtige Wahl mit offenen Daten treffen'
   download: tbd.pdf
-  impact_type: government
+  impact_type: citizens
+  sector: education
 
 # 7
 - title: "Kommunalpolitik entstaubt"
@@ -72,3 +92,4 @@
   description: 'Besser verstehen, was in deiner Stadt passiert'
   download: tbd.pdf
   impact_type: government
+  sector: politics

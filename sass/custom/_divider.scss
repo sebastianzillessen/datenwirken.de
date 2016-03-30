@@ -1,58 +1,71 @@
 .b-divider {
-  div {
-    max-width: 95%;
+  &.no-padding {
+    padding: 0;
   }
+  &.small-padding {
+    padding: 10px 0;
+  }
+
   &.m-next {
-    position: relative;
-    div {
-      max-width: 500px;
-      position: absolute;
-      right: 100px;
-      top: 30px;
-      * {
-        vertical-align: middle;
-        @include breakpoint($mobile-only) {
-          text-align: left;
-        }
-      }
-      h1, h2 {
-        margin-left: 10px;
-      }
-      h1 {
-        text-transform: uppercase;
-        font-size: 17px;
-        font-weight: 600;
-        color: $white-30;
-      }
-      h2 {
-        text-transform: none;
-        font-size: 20px;
-        font-weight: 400;
-        color: $white-70;
-        text-transform: uppercase;
-        @include transition;
-      }
-      h2::after {
+    background-color: $blue; // fallback
+    $arrow-width: 35px;
+    h4, h5 {
+      text-transform: uppercase;
+      margin-right: $arrow-width;
+    }
+    h4 {
+      color: $white-30;
+      font-size: 17px;
+      font-weight: 400;
+
+    }
+    h5 {
+      font-size: 20px;
+      color: $white-70;
+      @include transition;
+      position: relative;
+      &:after {
         @include material-icons;
         content: 'chevron_right';
-        font-size: 35px;
-        padding-bottom: 4px;
-        color: $white-30;
-        vertical-align: middle;
+        font-size: $arrow-width;
+        position: absolute;
+        right: -$arrow-width;
+        top: 50%;
+        margin-top: -$arrow-width/2;
       }
-      a:hover {
-        text-decoration: none;
-        h2 {
-          color: $white;
-          @include transition;
-        }
+
+    }
+    a {
+      text-decoration: none;
+      &:hover h5 {
+        color: $white;
+        @include transition;
       }
     }
   }
+
   &.m-yellow {
     background-color: $yellow;
   }
+
   &.m-fuschia {
     background-color: $fuschia;
   }
+
+  &.impact-citizens {
+    background-color: $orange;
+  }
+
+  &.impact-government {
+    background-color: $blue;
+  }
+
+  &.impact-economic {
+    background-color: $yellow;
+  }
+
+  &.impact-public {
+    background-color: $fuschia;
+  }
+
 }
