@@ -33,7 +33,7 @@
 
 # 1
 - title: "Problemlos von A nach B"
-  image: 'ally.png'
+  image: 'ally.jpg'
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
   download: tbd.pdf
@@ -42,7 +42,7 @@
 
 # 2
 - title: "Open Data für eine bessere Gesundheitsversorgung"
-  image: 'atu.png'
+  image: 'atu.jpg'
   subtitle: 'A tu servicio (UY)'
   description: '“A tu servicio” aus Uruguay.'
   download: tbd.pdf

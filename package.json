@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp; python build.py runserver",
-    "deploy": "python build.py deploy"
+    "deploy": "git push origin;python build.py deploy origin",
+    "production": "git push okfn; python build.py deploy okfn"
   },
   "repository": {
     "type": "git",
