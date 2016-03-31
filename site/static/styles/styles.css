@@ -4911,7 +4911,7 @@ ul.b-sidebar {
 .m-hidden {
   visibility: hidden; }
 
-p, td, a {
+p, td, a, h1, h2, h3, h4, h5, h6 {
   -ms-word-break: break-all;
   word-break: break-all;
   /* Non standard for webkit */
@@ -4923,10 +4923,25 @@ p, td, a {
 
 #case-study-page .b-top-section,
 #open-data-impact-homepage .b-top-section {
-  height: 60vh;
+  min-height: 40vh;
+  min-height: 30vh;
   position: relative;
-  background: url("../img/banners/sm/home.jpg") no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover; }
+  @media screen and (min-width: 64.0625em) {
+    #case-study-page .b-top-section,
+    #open-data-impact-homepage .b-top-section {
+      height: 50vh; } }
+  #case-study-page .b-top-section .e-tags,
+  #open-data-impact-homepage .b-top-section .e-tags {
+    display: none; }
+  #case-study-page .b-top-section.home,
+  #open-data-impact-homepage .b-top-section.home {
+    background-image: url("../img/banners/sm/home.jpg"); }
+  #case-study-page .b-top-section.second-home,
+  #open-data-impact-homepage .b-top-section.second-home {
+    background-image: url("../img/banners/sm/home-1.jpg"); }
   #case-study-page .b-top-section .e-shade,
   #open-data-impact-homepage .b-top-section .e-shade {
     pointer-events: none;
@@ -4936,20 +4951,25 @@ p, td, a {
     left: 0;
     right: 0;
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); }
-#case-study-page .e-titles,
-#open-data-impact-homepage .e-titles {
-  position: absolute;
-  width: 100%;
-  padding: 20px; }
-  #case-study-page .e-titles h3 span,
-  #open-data-impact-homepage .e-titles h3 span {
-    text-transform: uppercase;
-    font-size: 16px;
-    margin: 0;
-    width: auto;
-    padding: 5px 8px;
-    background-color: #523080;
-    font-weight: 400; }
+  #case-study-page .b-top-section .e-titles,
+  #open-data-impact-homepage .b-top-section .e-titles {
+    position: relative;
+    width: 100%;
+    padding: 20px; }
+    @media screen and (min-width: 64.0625em) {
+      #case-study-page .b-top-section .e-titles,
+      #open-data-impact-homepage .b-top-section .e-titles {
+        position: absolute;
+        bottom: 50px; } }
+    #case-study-page .b-top-section .e-titles h3 span,
+    #open-data-impact-homepage .b-top-section .e-titles h3 span {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin: 0;
+      width: auto;
+      padding: 5px 8px;
+      background-color: #523080;
+      font-weight: 400; }
 #case-study-page .b-page-section .e-bold,
 #open-data-impact-homepage .b-page-section .e-bold {
   font-weight: 600; }

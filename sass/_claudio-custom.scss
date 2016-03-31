@@ -24,7 +24,7 @@
   visibility: hidden;
 }
 
-p, td, a {
+p, td, a, h1, h2, h3, h4, h5, h6 {
   -ms-word-break: break-all;
   word-break: break-all;
 
@@ -40,10 +40,31 @@ p, td, a {
 #case-study-page,
 #open-data-impact-homepage {
   .b-top-section {
-    height: 60vh;
+    @include breakpoint($desktop) {
+      height: 50vh;
+    }
+    @include breakpoint($tablet) {
+      min-height: 40vh;
+    }
+    @include breakpoint($mobile-only) {
+      min-height: 30vh;
+      .e-tags {
+        display: none;
+      }
+
+    }
+
     position: relative;
-    background: url('../img/banners/sm/home.jpg') no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+
+    &.home {
+      background-image: url('../img/banners/sm/home.jpg');
+    }
+    &.second-home {
+      background-image: url('../img/banners/sm/home-1.jpg');
+    }
 
     .e-shade {
       pointer-events: none;
@@ -54,21 +75,28 @@ p, td, a {
       right: 0;
       background-image: linear-gradient($gray-00, $gray-80);
     }
-  }
 
-  .e-titles {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
+    .e-titles {
+      @include breakpoint($desktop) {
+        position: absolute;
+        bottom: 50px;
+      }
+      @include breakpoint($mobile-only) {
+        position: relative;
+      }
 
-    h3 span {
-      text-transform: uppercase;
-      font-size: 16px;
-      margin: 0;
-      width: auto;
-      padding: 5px 8px;
-      background-color: $purple;
-      font-weight: 400;
+      width: 100%;
+      padding: 20px;
+
+      h3 span {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 0;
+        width: auto;
+        padding: 5px 8px;
+        background-color: $purple;
+        font-weight: 400;
+      }
     }
   }
 
@@ -334,14 +362,14 @@ p, td, a {
       }
       &:last-child {
         text-align: right;
-        > div{
+        > div {
           text-align: left;
         }
       }
     }
     @include breakpoint($mobile-only) {
       text-align: center;
-      > div{
+      > div {
         text-align: center;
       }
     }
