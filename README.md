@@ -27,4 +27,5 @@ The `site` directory will contain the generated website files.
 
 ## Deployment
 
-To deploy the site, run `python build.py deploy`.
+To deploy the site, run `python build.py deploy #{origin}`.
+Replace `#{origin}` with your git origin you want to push to.
