@@ -39,12 +39,14 @@
 //  34. Tooltip
 //  35. Top Bar
 @import 'assets/foundation-sites/scss/util/util';
+// Specific text uses Montserrat instead of the framework's default of Helvetica Neue. We should only apply Montserrat to docs-specific elements, like section titles, and never to elements of the framework itself.
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700);
 
 // 1. Global
 // ---------
 
 $global-width: rem-calc(1200);
-$global-font-size: 100%;
+$global-font-size: 14px;
 $global-lineheight: 1.6;
 $primary-color: rgba(82, 48, 128, 1);
 $secondary-color: #777;
@@ -58,7 +60,7 @@ $black: #0a0a0a;
 $white: #fff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -98,7 +100,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
         small: (
-                'h1': 24,
+                'h1': 22,
                 'h2': 20,
                 'h3': 19,
                 'h4': 18,

@@ -22,19 +22,19 @@ h1 {
   font-size: 30px;
 
   @include breakpoint($tablet) {
-    font-size: 50px;
+    font-size: 40px;
   }
   @include breakpoint($desktop) {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   &.m-sm {
     font-size: 20px;
     @include breakpoint($tablet) {
-      font-size: 40px;
+      font-size: 30px;
     }
     @include breakpoint($desktop) {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 }
@@ -47,7 +47,7 @@ h2 {
     font-size: 28px;
   }
   @include breakpoint($desktop) {
-    font-size: 32px;
+    font-size: 38px;
   }
 }
 

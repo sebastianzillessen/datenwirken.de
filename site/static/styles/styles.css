@@ -3,6 +3,7 @@
 /* Breakpoint */
 /* Importing our custom foundation imports list */
 /* importing directly from foundation folder */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700);
 /**
  * Foundation for Sites by ZURB
  * Version 6.1.1
@@ -368,7 +369,7 @@ th {
   font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
 
 html {
-  font-size: 100%;
+  font-size: 14px;
   box-sizing: border-box; }
 
 *,
@@ -379,7 +380,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
   font-weight: normal;
   line-height: 1.6;
   color: #0a0a0a;
@@ -436,8 +437,8 @@ button {
     padding-left: 0;
     padding-right: 0; }
   .row .row {
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem; }
+    margin-left: -1.07143rem;
+    margin-right: -1.07143rem; }
     .row .row.collapse {
       margin-left: 0;
       margin-right: 0; }
@@ -447,8 +448,8 @@ button {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
+  padding-left: 1.07143rem;
+  padding-right: 1.07143rem; }
   .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
     float: right; }
   .column.end:last-child:last-child, .end.columns:last-child:last-child {
@@ -707,8 +708,8 @@ button {
   padding-right: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
+  padding-left: 1.07143rem;
+  padding-right: 1.07143rem; }
 
 .small-centered {
   float: none;
@@ -968,8 +969,8 @@ button {
     padding-right: 0; }
 
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.07143rem;
+    padding-right: 1.07143rem; }
 
   .medium-centered {
     float: none;
@@ -1228,8 +1229,8 @@ button {
     padding-right: 0; }
 
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; }
+    padding-left: 1.07143rem;
+    padding-right: 1.07143rem; }
 
   .large-centered {
     float: none;
@@ -1290,7 +1291,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1308,41 +1309,41 @@ h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 1.5rem; }
+  font-size: 1.57143rem; }
 
 h2 {
-  font-size: 1.25rem; }
+  font-size: 1.42857rem; }
 
 h3 {
-  font-size: 1.1875rem; }
+  font-size: 1.35714rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1.28571rem; }
 
 h5 {
-  font-size: 1.0625rem; }
+  font-size: 1.21429rem; }
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1.14286rem; }
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem; }
+    font-size: 3.42857rem; }
 
   h2 {
-    font-size: 2.5rem; }
+    font-size: 2.85714rem; }
 
   h3 {
-    font-size: 1.9375rem; }
+    font-size: 2.21429rem; }
 
   h4 {
-    font-size: 1.5625rem; }
+    font-size: 1.78571rem; }
 
   h5 {
-    font-size: 1.25rem; }
+    font-size: 1.42857rem; }
 
   h6 {
-    font-size: 1rem; } }
+    font-size: 1.14286rem; } }
 a {
   color: #523080;
   text-decoration: none;
@@ -1360,7 +1361,7 @@ hr {
   border-top: 0;
   border-bottom: 1px solid #999;
   border-left: 0;
-  margin: 1.25rem auto;
+  margin: 1.42857rem auto;
   clear: both; }
 
 ul,
@@ -1392,7 +1393,7 @@ dl {
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  padding: 0.64286rem 1.42857rem 0 1.35714rem;
   border-left: none; }
   blockquote, blockquote p {
     line-height: 1.6;
@@ -1400,7 +1401,7 @@ blockquote {
 
 cite {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.92857rem;
   color: #333; }
   cite:before {
     content: '\2014 \0020'; }
@@ -1416,10 +1417,10 @@ code {
   color: #0a0a0a;
   background-color: transparent;
   border: 0;
-  padding: 0.125rem 0.3125rem 0.0625rem; }
+  padding: 0.14286rem 0.35714rem 0.07143rem; }
 
 kbd {
-  padding: 0.125rem 0.25rem 0;
+  padding: 0.14286rem 0.28571rem 0;
   margin: 0;
   background-color: #ccc;
   color: #0a0a0a;
@@ -1433,7 +1434,7 @@ kbd {
   color: #333; }
 
 .lead {
-  font-size: 125%;
+  font-size: 17.5px;
   line-height: 1.6; }
 
 .stat {
@@ -1683,12 +1684,12 @@ textarea {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 2.4375rem;
-  padding: 0.5rem;
+  height: 2.78571rem;
+  padding: 0.57143rem;
   border: 0;
-  margin: 0 0 1rem;
+  margin: 0 0 1.14286rem;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.14286rem;
   color: #0a0a0a;
   background-color: #fff;
   box-shadow: none;
@@ -1727,19 +1728,19 @@ input[type='search'] {
 [type='file'],
 [type='checkbox'],
 [type='radio'] {
-  margin: 0 0 1rem; }
+  margin: 0 0 1.14286rem; }
 
 [type='checkbox'] + label,
 [type='radio'] + label {
   display: inline-block;
-  margin-left: 0.5rem;
-  margin-right: 1rem;
+  margin-left: 0.57143rem;
+  margin-right: 1.14286rem;
   margin-bottom: 0;
   vertical-align: baseline; }
 
 label > [type='checkbox'],
 label > [type='label'] {
-  margin-right: 0.5rem; }
+  margin-right: 0.57143rem; }
 
 [type='file'] {
   width: 100%; }
@@ -1747,24 +1748,24 @@ label > [type='label'] {
 label {
   display: block;
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.8;
   color: #0a0a0a; }
   label.middle {
-    margin: 0 0 1rem;
-    padding: 0.5rem 0; }
+    margin: 0 0 1.14286rem;
+    padding: 0.57143rem 0; }
 
 .help-text {
-  margin-top: -0.5rem;
-  font-size: 0.8125rem;
+  margin-top: -0.57143rem;
+  font-size: 0.92857rem;
   font-style: italic;
   color: #333; }
 
 .input-group {
   display: table;
   width: 100%;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.14286rem; }
   .input-group > :first-child {
     border-radius: 0 0 0 0; }
   .input-group > :last-child > * {
@@ -1790,7 +1791,7 @@ label {
 
 .input-group-field {
   border-radius: 0;
-  height: 2.5rem; }
+  height: 2.85714rem; }
 
 .input-group-button {
   height: 100%;
@@ -1809,24 +1810,24 @@ fieldset {
   margin: 0; }
 
 legend {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.57143rem; }
 
 .fieldset {
   border: 1px solid #999;
-  padding: 1.25rem;
-  margin: 1.125rem 0; }
+  padding: 1.42857rem;
+  margin: 1.28571rem 0; }
   .fieldset legend {
     background: #fff;
-    padding: 0 0.1875rem;
+    padding: 0 0.21429rem;
     margin: 0;
-    margin-left: -0.1875rem; }
+    margin-left: -0.21429rem; }
 
 select {
-  height: 2.4375rem;
-  padding: 0.5rem;
+  height: 2.78571rem;
+  padding: 0.57143rem;
   border: 0;
-  margin: 0 0 1rem;
-  font-size: 1rem;
+  margin: 0 0 1.14286rem;
+  font-size: 1.14286rem;
   font-family: inherit;
   line-height: normal;
   color: #0a0a0a;
@@ -1836,7 +1837,7 @@ select {
   -moz-appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24" style="fill: rgb%2851, 51, 51%29"></polygon></svg>');
   background-size: 9px 6px;
-  background-position: right 0.5rem center;
+  background-position: right 0.57143rem center;
   background-repeat: no-repeat; }
   @media screen and (min-width: 0 \0 ) {
     select {
@@ -1858,9 +1859,9 @@ select {
 
 .form-error {
   display: none;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
-  font-size: 0.75rem;
+  margin-top: -0.57143rem;
+  margin-bottom: 1.14286rem;
+  font-size: 0.85714rem;
   font-weight: bold;
   color: #c30014; }
   .form-error.is-visible {
@@ -1979,7 +1980,7 @@ select {
   display: block;
   padding: 1.25rem 1rem;
   line-height: 1;
-  font-size: 0.75rem;
+  font-size: 0.85714rem;
   color: #523080;
   position: relative;
   border-bottom: 1px solid #ccc; }
@@ -2054,7 +2055,7 @@ select {
   .breadcrumbs li {
     float: left;
     color: #0a0a0a;
-    font-size: 0.6875rem;
+    font-size: 0.78571rem;
     cursor: default;
     text-transform: uppercase; }
     .breadcrumbs li:not(:last-child)::after {
@@ -2276,7 +2277,7 @@ select {
     border-color: #523080 transparent transparent;
     border-top-style: solid;
     position: absolute;
-    top: 0.825rem;
+    top: 0.84286rem;
     right: 5px; }
   .dropdown.menu .is-dropdown-submenu-parent.is-left-arrow > a::after {
     content: '';
@@ -2345,7 +2346,7 @@ select {
   position: relative;
   height: 0;
   padding-bottom: 75%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.14286rem;
   overflow: hidden; }
   .flex-video iframe,
   .flex-video object,
@@ -2651,8 +2652,8 @@ body {
   .pagination::after {
     clear: both; }
   .pagination li {
-    font-size: 0.875rem;
-    margin-right: 0.0625rem;
+    font-size: 1rem;
+    margin-right: 0.07143rem;
     display: none;
     border-radius: 0; }
     .pagination li:last-child, .pagination li:first-child {
@@ -2664,25 +2665,25 @@ body {
   .pagination button {
     color: #0a0a0a;
     display: block;
-    padding: 0.1875rem 0.625rem;
+    padding: 0.21429rem 0.71429rem;
     border-radius: 0; }
     .pagination a:hover,
     .pagination button:hover {
       background: #ccc; }
   .pagination .current {
-    padding: 0.1875rem 0.625rem;
+    padding: 0.21429rem 0.71429rem;
     background: #523080;
     color: #fff;
     cursor: default; }
   .pagination .disabled {
-    padding: 0.1875rem 0.625rem;
+    padding: 0.21429rem 0.71429rem;
     color: #999;
     cursor: default; }
     .pagination .disabled:hover {
       background: transparent; }
   .pagination .ellipsis::after {
     content: '…';
-    padding: 0.1875rem 0.625rem;
+    padding: 0.21429rem 0.71429rem;
     color: #0a0a0a; }
 
 .pagination-previous a::before,
@@ -2895,7 +2896,7 @@ body.is-reveal-open {
   user-select: none;
   color: #fff;
   font-weight: bold;
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 .switch-input {
   opacity: 0;
@@ -2952,7 +2953,7 @@ body.is-reveal-open {
 .switch.tiny .switch-paddle {
   width: 3rem;
   height: 1.5rem;
-  font-size: 0.625rem; }
+  font-size: 0.71429rem; }
 .switch.tiny .switch-paddle::after {
   width: 1rem;
   height: 1rem; }
@@ -2962,7 +2963,7 @@ body.is-reveal-open {
 .switch.small .switch-paddle {
   width: 3.5rem;
   height: 1.75rem;
-  font-size: 0.75rem; }
+  font-size: 0.85714rem; }
 .switch.small .switch-paddle::after {
   width: 1.25rem;
   height: 1.25rem; }
@@ -2972,7 +2973,7 @@ body.is-reveal-open {
 .switch.large .switch-paddle {
   width: 5rem;
   height: 2.5rem;
-  font-size: 1rem; }
+  font-size: 1.14286rem; }
 .switch.large .switch-paddle::after {
   width: 2rem;
   height: 2rem; }
@@ -2990,7 +2991,7 @@ table {
 
   caption {
     font-weight: bold;
-    padding: 0.5rem 0.625rem 0.625rem; }
+    padding: 0.57143rem 0.71429rem 0.71429rem; }
 
   thead,
   tfoot {
@@ -3003,7 +3004,7 @@ table {
     thead td,
     tfoot th,
     tfoot td {
-      padding: 0.5rem 0.625rem 0.625rem;
+      padding: 0.57143rem 0.71429rem 0.71429rem;
       font-weight: bold;
       text-align: left; }
 
@@ -3011,7 +3012,7 @@ table {
     background-color: #f2f2f2; }
   tbody th,
   tbody td {
-    padding: 0.5rem 0.625rem 0.625rem; }
+    padding: 0.57143rem 0.71429rem 0.71429rem; }
 
 @media screen and (max-width: 63.9375em) {
   table.stack thead {
@@ -3326,16 +3327,16 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
-  font-size: 50px; }
+  font-size: 40px; }
   @media screen and (min-width: 64.0625em) {
     h1 {
-      font-size: 60px; } }
+      font-size: 50px; } }
   h1.m-sm {
     font-size: 20px;
-    font-size: 40px; }
+    font-size: 30px; }
     @media screen and (min-width: 64.0625em) {
       h1.m-sm {
-        font-size: 50px; } }
+        font-size: 40px; } }
 
 h2 {
   font-size: 20px;
@@ -3343,7 +3344,7 @@ h2 {
   font-size: 28px; }
   @media screen and (min-width: 64.0625em) {
     h2 {
-      font-size: 32px; } }
+      font-size: 38px; } }
 
 h3 {
   font-size: 18px;
@@ -4381,20 +4382,19 @@ h2.m-upper {
 .b-page-section.m-no-top-padding {
   padding-top: 0; }
 .b-page-section.m-impact-section h2 {
-  font-size: 60px;
   font-weight: 100;
   text-transform: none;
   line-height: 1.1; }
   .b-page-section.m-impact-section h2 ~ p {
     text-transform: uppercase;
-    font-size: 18px;
     font-style: italic;
     color: rgba(255, 255, 255, 0.6);
     margin: 30px 0 0 0; }
 .b-page-section.m-impact-section p.b-description {
   font-weight: 300;
-  font-size: 24px;
-  margin-top: 5px; }
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: left; }
 .b-page-section.m-margin-lead {
   margin-top: 60px; }
 .b-page-section.m-hidden {
@@ -4688,24 +4688,22 @@ ul.b-sidebar {
           font-size: 18px;
           margin-bottom: 0; }
       .b-sticky#upcoming-section .row p, .b-sticky#upcoming-section .row h2 {
-        margin: 20px;
+        margin: 0;
         display: block; }
         .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type), .b-sticky#upcoming-section .row h2:last-of-type:not(:only-of-type) {
           display: none; }
       @media screen and (min-width: 64.0625em) {
         .b-sticky#upcoming-section .row {
           text-align: right; }
-          .b-sticky#upcoming-section .row p {
-            display: inline; }
-            .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type) {
-              display: block;
-              margin-top: 0; }
+          .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type) {
+            display: block;
+            margin-top: 0; }
           .b-sticky#upcoming-section .row h2 {
-            display: inline;
-            margin: 0; } }
+            margin: 0;
+            text-align: left; } }
   .b-sticky i.e-close {
     position: absolute;
-    right: 50px;
+    right: 10px;
     cursor: pointer; }
 
 .grid {
@@ -4995,25 +4993,6 @@ p, td, a, h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     line-height: 24px; }
 
-#open-data-impact-homepage .b-top-section .e-main-title {
-  font-size: 2.6rem;
-  font-weight: 400; }
-  @media screen and (min-width: 64.0625em) {
-    #open-data-impact-homepage .b-top-section .e-main-title {
-      font-size: 60px;
-      font-weight: 100; } }
-#open-data-impact-homepage .b-top-section .e-tagline {
-  font-size: 1.25rem;
-  font-weight: 400; }
-  @media screen and (min-width: 64.0625em) {
-    #open-data-impact-homepage .b-top-section .e-tagline {
-      font-size: 30px;
-      font-weight: 100; } }
-#open-data-impact-homepage .b-page-section.m-impact-section h2 {
-  font-size: 45px; }
-  @media screen and (min-width: 64.0625em) {
-    #open-data-impact-homepage .b-page-section.m-impact-section h2 {
-      font-size: 60px; } }
 #open-data-impact-homepage .grid .e-card {
   width: 100%;
   text-align: center; }
@@ -5033,20 +5012,6 @@ p, td, a, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 60px; }
   #case-study-page .b-top-section .e-titles {
     padding: 30px; }
-    #case-study-page .b-top-section .e-titles .e-main-title {
-      font-size: 5vh;
-      font-weight: 300; }
-      @media screen and (min-width: 64.0625em) {
-        #case-study-page .b-top-section .e-titles .e-main-title {
-          font-size: 60px;
-          font-weight: 100; } }
-    #case-study-page .b-top-section .e-titles .e-tagline {
-      font-size: 1.1rem;
-      font-weight: 200; }
-      @media screen and (min-width: 64.0625em) {
-        #case-study-page .b-top-section .e-titles .e-tagline {
-          font-size: 30px;
-          font-weight: 100; } }
     #case-study-page .b-top-section .e-titles h4 {
       font-size: 0.85rem; }
       @media screen and (min-width: 64.0625em) {
@@ -5182,7 +5147,7 @@ p, td, a, h1, h2, h3, h4, h5, h6 {
     @media screen and (min-width: 64.0625em) {
       .b-page-section .side-info {
         width: 350px;
-        margin: 0 0 0 15px;
+        margin: 0 0 5px 15px;
         float: right; } }
     .b-page-section .side-info > table {
       border: 0;

@@ -39,7 +39,7 @@
       @include breakpoint($mobile-only) {
         text-align: left;
         p, h2 {
-          margin: 20px;
+          margin: 0;
           display: block;
           &:last-of-type:not(:only-of-type) {
             display: none;
@@ -50,15 +50,14 @@
       @include breakpoint($desktop) {
         text-align: right;
         p {
-          display: inline;
           &:last-of-type:not(:only-of-type) {
             display: block;
             margin-top: 0;
           }
         }
         h2 {
-          display: inline;
           margin: 0;
+          text-align: left;
         }
       }
     }
@@ -66,7 +65,7 @@
 
   i.e-close {
     position: absolute;
-    right: 50px;
+    right: 10px;
     cursor: pointer;
   }
 

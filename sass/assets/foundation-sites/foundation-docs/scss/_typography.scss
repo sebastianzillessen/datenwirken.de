@@ -1,18 +1,4 @@
-// Specific text uses Montserrat instead of the framework's default of Helvetica Neue. We should only apply Montserrat to docs-specific elements, like section titles, and never to elements of the framework itself.
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-.docs-header,
-.docs-site-title,
-.docs-page-title,
-.docs-page-lead,
-.docs-heading,
-.docs-menu,
-.docs-sub-menu,
-.docs-big-index strong,
-.docs-small-index h4,
-.twitter-typeahead {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
 
 a > code {
   background: transparent;
