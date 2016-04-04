@@ -2,6 +2,7 @@
 {% set case = cases[case_id] %}
 {% block page_id %}case-study-page{% endblock %}
 
+
 {% block navelements %}
 <div class="e-nav-group m-right hide-for-small-only">
     <a href="./index.html" class="e-nav-item" id="nav-about">Home</a>
@@ -10,7 +11,7 @@
     </a>
 </div>
 <div class="e-nav-group m-right show-for-small-only dropdown">
-    <a class="e-nav-item activate-dropdown">...</a>
+    <a class="e-nav-item activate-dropdown"><i class="fa fa-ellipsis-h"></i></a>
     <ul class="m-transparent">
         <li>
             <a href="./index.html" class="e-nav-item">
@@ -131,6 +132,19 @@
     </section>
     {% endif %}
 
+    {% if self.benefitters() %}
+    <section class="b-page-section">
+        <div class="row">
+            <aside class="large-4 columns">
+                <h3>Wer profitiert?</h3>
+            </aside>
+            <div class="large-7 columns end">
+                {% block benefitters %}{% endblock %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
     {% if self.outcome() %}
     <section class="b-page-section">
         <div class="row">
@@ -145,11 +159,6 @@
                 {% endif %}
                 <div class="e-expandable">
                     {% block outcome %}{% endblock %}
-                    {% if self.useddata() %}
-                    <div class="side-info">
-                        {% block useddata %}{% endblock %}
-                    </div>
-                    {% endif %}
                     <span class="e-read-more js-more-toggle" data-show-less="Weniger anzeigen">Weiter lesen</span>
                 </div>
             </div>

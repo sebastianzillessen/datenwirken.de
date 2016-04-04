@@ -25,7 +25,7 @@
 # 0
 - title: "Zur richtigen Zeit am richtigen Ort"
   image: 'geodata.jpg'
-  subtitle: 'Geolytix (UK)'
+  subtitle: 'GeoLytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
   download: tbd.pdf
   impact_type: economic
@@ -61,7 +61,7 @@
 # 4
 - title: "Mit offenen Verwaltungsdaten Energie sparen"
   image: 'husets.jpg'
-  subtitle: 'Husetsweb (DK)'
+  subtitle: 'HusetsWeb (DK)'
   description: 'ob als Privatperson oder als Kommune'
   download: tbd.pdf
   impact_type: public

@@ -24,14 +24,16 @@
   visibility: hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
+
+
 p, td, a {
-  -ms-word-break: break-all;
-  word-break: break-all;
-  /* Non standard for webkit */
-  word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
+  -o-hyphens: auto;
   hyphens: auto;
 }
 
@@ -211,7 +213,7 @@ p, td, a {
 // Note that it is properly scoped inside the #about-page ID, so these styles won't leak anywhere else,
 // and will also be applied with a high specificity, over the component base styles.
 
-#about-page {
+#about-page, #supporters-page {
   .b-top-section {
     padding-top: 130px;
   }

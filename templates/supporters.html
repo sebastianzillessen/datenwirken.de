@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+{% block page_id %}supporters-page{% endblock %}
+
+{% block navelements %}
+<div class="e-nav-group m-right hide-for-small-only">
+    <a href="./index.html" class="e-nav-item" id="nav-about">Home</a>
+    <a href="./about.html" class="e-nav-item" id="nav-support">Hintergrund</a>
+</div>
+<div class="e-nav-group m-right show-for-small-only dropdown">
+    <a class="e-nav-item activate-dropdown"><i class="fa fa-ellipsis-h"></i></a>
+    <ul class="m-transparent">
+        <li>
+            <a href="./index.html" class="e-nav-item">Home</a>
+        </li>
+        <li>
+            <a href="./about.html" class="e-nav-item">Hintergrund</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block content %}
+<main role="main">
+    <header class="b-top-section">
+        <div class="b-wrap">
+            <h2>Wir befürworten mehr offene Verwaltungsdaten in Deutschland:</h2>
+        </div>
+    </header>
+
+    <section id="who-supports-open-data" class="b-page-section">
+        <div class="row">
+            <div class="column medium-4 large-3 text-center">
+                <a target="_blank" href="https://deutschestartups.org"><img src="static/img/partners/BVDS_Logo.svg" alt="Bundesverband Deutsche Startups e.V."/></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

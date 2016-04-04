@@ -11,36 +11,6 @@
     padding: 5px;
     text-align: center;
     display: block;
-    > span {
-      display: block;
-      float: left;
-      &:not(.logo) {
-        padding-bottom: 7px;
-        @include breakpoint($desktop) {
-          width: 60%;
-        }
-        @include breakpoint($mobile-only) {
-          width: 100%;
-        }
-      }
-
-      &.logo {
-        @include breakpoint($desktop) {
-          display: block;
-        }
-        @include breakpoint($mobile-only) {
-          display: none;
-        }
-        width: 20%;
-        padding-top: 5px;
-        > img {
-          max-height: 30px;
-          margin: 0 auto;
-          vertical-align: bottom;
-        }
-      }
-
-    }
   }
 
   .e-nav-group {
@@ -56,7 +26,7 @@
   }
 
   .e-nav-item {
-    padding: 18px;
+    padding: 16px;
     display: inline-block;
     &.active {
       color: white;
@@ -69,22 +39,6 @@
 
 }
 
-.b-top-nav {
-  .e-social-media {
-    display: none;
-  }
-  .e-search-container {
-    @include breakpoint($mobile-only) {
-      display: none;
-    }
-  }
-
-  @include breakpoint($tablet) {
-    .e-social-media {
-      display: block;
-    }
-  }
-}
 
 
 
