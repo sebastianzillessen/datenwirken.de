@@ -42,34 +42,44 @@
 {% endblock %}
 
 
+{% block benefitters %}
+<p>
+    Alle, die die öffentlichen Verkehrsmittel in London nutzen sowie die Londoner Verkehrsbetriebe selbst, die nun
+    zufriedenere und besser informierte Kundinnen und Kunden haben.
+</p>
+{% endblock %}
+
+
 {% block outcome %}
 <p>
     John, seit vielen Jahren Mitarbeiter im Bereich des Kundenservice der Londoner Verkehrsbetriebe erreichten über die
     Jahre mehr und mehr Anfragen, warum keine Fahrpläne per App abrufbar seien. Auch mehrten sich Beschwerden, warum es
-    nicht möglich war, sich auf dem Handy unterwegs über Verspätungen zu informieren. Doch so sehr John und seine
-    Kolleginnen und Kollegen diese Forderungen nachvollziehen konnten, wussten sie doch sehr wenig darüber, wie man
-    solche Apps entwickelt. Da sie jedoch von der Sinnhaftigkeit dieser Anwendungen überzeugt waren, überlegten sie
-    sich, wie es möglich sein könnte, diese Ideen trotzdem umzusetzen. Daraus entstand ein Prozess, bei dem Transport
-    for London langsam seine Daten öffnete, damit Entwickler und Entwicklerinnen diese für die Herstellung von Apps für
-    den öffentlichen Nahverkehr nutzen konnten.
+    nicht möglich sei, sich auf dem Handy unterwegs über Verspätungen zu informieren. Doch so sehr John und seine
+    Kolleginnen und Kollegen diese Forderungen nachvollziehen konnten, wussten sie nur wenig darüber, wie man solche
+    Apps entwickelt. Da sie jedoch von der Sinnhaftigkeit dieser Anwendungen überzeugt waren, überlegten sie sich, wie
+    es möglich sein könnte, dem Wunsch der Kunden nachzukommen. Daraus entstand ein Prozess, bei dem Transport for
+    London langsam seine Daten öffnete, damit Entwickler und Entwicklerinnen diese für die Erschaffung von Apps für den
+    öffentlichen Nahverkehr nutzen konnten.
 </p>
 <p>
     <span class="float-img"><img src="static/img/studies/tfl-2.png" alt="Transport for London"/></span>
     Im Jahr 2009 richtete TfL zunächst einen speziellen Bereich für Entwickler auf seiner Webseite ein. Seit 2010 gibt
-    es den “London Datastore”, das Open Data Portal der “Greater London Authority” (GLA), in dem auch TfL seine
+    es den „London Datastore”, das Open Data Portal der „Greater London Authority” (GLA), in dem auch TfL seine
     Datensätze veröffentlicht.
 </p>
 <p>
-    2014 nutzen bereits 362 Smartphone Apps Daten von TfL. Mithilfe von Daten, wie viel Zeit durch
+    2014 nutzen bereits 362 Smartphone Apps Daten von TfL. Daten zeigen, wie viel Zeit durch
     Verkehrsunterbrechungen jährlich verloren geht, welchen Geldwert Verkehrsteilnehmende der verlorenen Zeit beimessen,
-    sowie mittels Schätzungen, wie viele Reisende mithilfe von TfL-basierten Apps diese Unterbrechungen umgehen konnten,
-    schätze Deloitte, dass der Wert der Zeit, die dadurch gespart wurde im Jahr 2012 zwischen £15m-£58m lag. Die
+    sowie mittels Schätzungen, wie viele Reisende mithilfe von TfL-basierten Apps diese Unterbrechungen umgehen konnten.
+    Daraus basiened
+    schätze Deloitte den Wert der Zeit, die dank neuen Anwendungen gespart werden konnte, im Jahr 2012 auf zwischen
+    £15m-£58m ein. Die
     Kostenersparnis für Transport for London (im Vergleich zur Entwicklung der Apps durch TfL selbst) wird wie folgt
     geschätzt:
 
-<blockquote>“It is possible to conclude that TfL have so far saved between £15m-£42m through opening raw data to the app
-    market,
-    rather than developing all its apps in-house.” (Hogge 2015, S. 14).
+<blockquote>
+    „It is possible to conclude that TfL have so far saved between £15m-£42m through opening raw data to the app
+    market, rather than developing all its apps in-house.” (Hogge 2015, S. 14).
 </blockquote>
 </p>
 <p>
@@ -100,8 +110,10 @@
         <li>Statische Datensätze, die sich selten verändern</li>
         <li>Feeds – Datensätze die regelmäßig aktualisiert werden</li>
         <li>APIs (Application Programming Interface)</li>
-
     </ul>
+    <p>
+        Datensätze werden in der Regel im XML-Format veröffentlicht.
+    </p>
 </div>
 
 
@@ -110,11 +122,14 @@
 
 {% block sources %}
 <p>
+    Transport for London (2015): Open Data Users. Siehe: <a href="https://tfl.gov.uk/info-for/open-data-users/"
+                                                            target="_blank">https://tfl.gov.uk/info-for/open-data-users/</a>
+</p>
+<p>
     Deloitte (2013): Market Assessment of Public Sector Information. Appendix 6: Transport Sector Case Study. pp.
     194-204. Verfügbar unter:
     <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/198905/bis-13-743-market-assessment-of-public-sector-information.pdf"
        target="_blank">https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/198905/bis-13-743-market-assessment-of-public-sector-information.pdf</a>
-
 </p>
 
 <p>
@@ -127,11 +142,6 @@
 <p>Reed, Simon (2013). Transport for London – Using Tools, Analytics and
     Data to Inform Passengers. Verfügbar unter:
     <a href="http://www.lta.gov.sg/ltaacademy/doc/13Sep096-Reed_TfL-InformPassengers.pdf" target="_blank">http://www.lta.gov.sg/ltaacademy/doc/13Sep096-Reed_TfL-InformPassengers.pdf</a>
-
-</p>
-<p>
-    Transport for London (2015): Open Data Users. Siehe: <a href="https://tfl.gov.uk/info-for/open-data-users/"
-                                                            target="_blank">https://tfl.gov.uk/info-for/open-data-users/</a>
 
 </p>
 {% endblock %}

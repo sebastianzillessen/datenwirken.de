@@ -5079,20 +5079,17 @@ p, td, a {
   .b-copyright .e-partner-logo {
     text-align: center; }
     .b-copyright .e-partner-logo.small > img {
-      max-height: 49px;
       max-width: 98px; }
     .b-copyright .e-partner-logo.big > img {
-      max-height: 91px;
       max-width: 182px; }
     .b-copyright .e-partner-logo > img {
-      max-height: 70px;
       max-width: 140px;
       opacity: .5;
       margin: 10px;
-      transition: all .4s ease; }
+      transition: opacity .4s ease; }
       .b-copyright .e-partner-logo > img:hover {
         opacity: 1;
-        transition: all .4s ease; }
+        transition: opacity .4s ease; }
   .b-copyright .e-cc-badge {
     margin: 30px 0; }
     @media screen and (min-width: 64.0625em) {

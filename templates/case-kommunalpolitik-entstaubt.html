@@ -6,8 +6,8 @@
 <p>
     Viele Menschen wissen wenig über Kommunalpolitik, selbst wenn sie vielleicht eigentlich gerne mehr erfahren und sich
     einbringen möchten. Denn die Informationssysteme und Internetseiten der Verwaltungen sind oft sehr unübersichtlich
-    gestaltet und wenig benutzerfreundlich. Gerade Menschen, die nicht schon immer dieser Stadt gewohnt haben, finden es
-    meist schwer, einen Zugang zur Lokalpolitik zu finden, der über das Lesen von Zeitungsartikeln hinaus geht.
+    gestaltet und wenig benutzerfreundlich. Selbst für Kommunalpolitiker ist es oft umständlich, aktuelle Informationen
+    über die veraltete Benutzeroberfläche der Ratsinformationssysteme zu finden.
 </p>
 
 {% endblock %}
@@ -15,11 +15,11 @@
 {% block solution %}
 <p>
     <span class="float-img"><img src="static/img/studies/muc-1.png" alt="München Transparent"/></span>
-    München macht vor, wie es anders geht. Dort bietet das Internetportal „München Transparent” Informationen zur Arbeit
-    des Münchener Stadtrats und der Verwaltung sowie Zugang zu Dokumenten wie Beschlüssen oder Vorlagen. Es ist ein
-    „Civic Tech”-Projekt der Open Knowledge Foundation Deutschland e.V. - das bedeutet, dass die Plattform keine
-    offizielle Seite der Stadt München ist, sondern Ehrenamtliche diese Informationen übersichtlich für andere
-    Bürgerinnen und Bürger zur Verfügung stellen.
+    Eine bedienbare und zeitgemäße Nutzeroberfläche für das Ratsinformationssystem der Stadt. München macht vor, wie es
+    anders geht. Dort bietet das Internetportal “München Transparent” Informationen zur Arbeit des Münchener Stadtrats
+    und der Verwaltung sowie Zugang zu Dokumenten wie Beschlüssen oder Vorlagen. Die Plattform ist im Rahmen von Code
+    for Germany, einem Projekt der Open Knowledge Foundation Deutschland e.V., entstanden und nutzt offizielle Daten und
+    Informationen der Stadt.
 </p>
 
 {% endblock %}
@@ -34,14 +34,20 @@
 </p>
 {% endblock %}
 
+{% block benefitters %}
+<p>
+    Alle Bürgerinnen und Bürger der Stadt München, die sich an der Kommunalpolitik beteiligen oder sich darüber
+    informieren möchten.
+</p>
+{% endblock %}
 
 {% block outcome %}
 <p>
-    Lena ist für ihren neuen Job nach München gezogen. So langsam hat sie das Gefühl sich einzuleben und sich in der
-    Stadt immer besser auszukennen. Trotzdem hatte sie bislang das Gefühl, weiter wie eine Fremde in der Stadt zu
-    wohnen, da sie überhaupt nicht mitbekam, was in der kommunalen Politik so vor sich ging - bis auf einige Artikel,
-    die sie in der Süddeutschen Zeitung las. Um sich in dieser neuen Stadt und vor allem in ihrem Viertel besser zurecht
-    zu finden, hatte sie das Bedürfnis, sich mehr mit den aktuellen politischen Debatten in der Stadt zu beschäftigen.
+    Lena ist für ihren neuen Job nach München gezogen. Langsam hat sie sich eingelebt und findet sich in Münchens
+    Straßen zurecht. Doch trotzdem hat sie bislang das Gefühl, wie eine Fremde in der Stadt zu wohnen. Bis auf einige
+    Artikel aus der Süddeutschen Zeitung bekam sie nichts davon mit, was die Bürger um sich treibt oder welche Themen
+    auf der kommunalpolitischen Agenda stehen. Lena hat das starke Bedürfnis, besser über aktuelle politischen Debatten
+    in ihrer neuen Stadt und in ihrem Viertel informiert zu sein.
 </p>
 <p>
     <span class="float-img"><img src="static/img/studies/muc-2.png" alt="München Transparent"/></span>
@@ -69,7 +75,7 @@
 </p>
 <p class="e-img"><img src="static/img/studies/muc-3.png" alt="München Transparent"/></p>
 <p>
-    Lena beschloss, sich per E-mail über bestimmt Themen informieren zu lassen. Durch die Benachrichtigen tauchte Lena
+    Lena beschloss, sich per E-mail über bestimmt Themen informieren zu lassen. Dank der Benachrichtigungen tauchte sie
     schnell in die lokale Stadtdiskussion ein. Anträge zu den für den für sie interessanten Themen guckt Lena inzwischen
     regelmäßig auf München Transparent nach. Bei den Anträgen können Nutzerinnen und Nutzer nicht nur per Link auf das
     Antragsdokument weitergeleitet werden, sondern sie können auch sehen, welche Personen diesen initiiert haben, welche
@@ -77,13 +83,13 @@
 </p>
 
 <p>
-    Dadurch hat Lena neben Informationen zu aktuellen politischen Fragen, insbesondere im Zusammenhang mit der
-    Flüchtlingspolitik, auch so praktische Hinweise erhalten wie den, dass im Münchener Westen ein neuer
-    Abenteuerspielplatz geplant ist. Darüber wird sich ihr Sohn Max sehr freuen. Als Lena begeistert von der Seite auf
-    der Arbeit erzählte, zeigten sich auch einige Kolleginnen und Kollegen sehr daran interessiert, die schon immer oder
-    schon seit vielen Jahren in München leben, sich aber nie intensiv mit Kommunalpolitik beschäftigt hatten, weil sie
-    zu wenig Informationen und Anknüpfungspunkte gefunden hatten. Damit erreicht München Transparent nicht nur die
-    Münchener Neulinge, sondern auch Alt-Eingesessene.
+    Dadurch hat Lena neben aktuellen politischen Fragen, insbesondere im Zusammenhang mit der Flüchtlingspolitik, auch
+    so praktische Informationen erhalten wie etwa, dass im Münchener Westen ein neuer Abenteuerspielplatz geplant ist.
+    Darüber wird sich ihr Sohn Max sehr freuen. Als Lena begeistert von der Seite auf der Arbeit erzählte, zeigten sich
+    auch einige Kolleginnen und Kollegen sehr daran interessiert, die schon immer oder schon seit vielen Jahren in
+    München leben, sich aber nie intensiv mit Kommunalpolitik beschäftigt haben, weil sie zu wenig Informationen und
+    Anknüpfungspunkte gefunden hatten. Damit erreicht München Transparent nicht nur die Münchener Neulinge, sondern auch
+    Alt-Eingesessene.
 </p>
 {% endblock %}
 
@@ -97,7 +103,7 @@
 
 <p>
     Dann unterstützte die Open Knowledge Foundation Deutschland e.V. das Projekt im Rahmen der <a
-        href="http://codefor.de/muenchen/" target="_blank">Code 4 München</a>-Initiative.
+        href="http://codefor.de/muenchen/" target="_blank">Code for Germany-Initiative</a>.
 </p>
 
 {% endblock %}
