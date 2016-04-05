@@ -5216,19 +5216,30 @@ p, td, a {
 .h6-top-padding {
   padding-top: 1.9rem; }
 
+.large-padding-bottom {
+  padding-bottom: 30px; }
+
 #logos h6 {
   text-align: center; }
   @media screen and (min-width: 64.0625em) {
     #logos h6 {
       text-align: left; } }
 #logos .logo-container {
-  height: 80px;
+  height: 200px;
   white-space: nowrap; }
   #logos .logo-container:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
+  #logos .logo-container > a {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%; }
+    #logos .logo-container > a > img {
+      box-shadow: none;
+      max-width: 100%;
+      max-height: 100%; }
   #logos .logo-container > img {
     vertical-align: middle;
     max-width: 100%;

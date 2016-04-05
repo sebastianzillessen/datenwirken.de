@@ -537,6 +537,9 @@ p, td, a {
 .h6-top-padding {
   padding-top: 1.9rem;
 }
+.large-padding-bottom{
+  padding-bottom: 30px;
+}
 
 #logos {
 
@@ -550,7 +553,7 @@ p, td, a {
   }
 
   .logo-container {
-    height: 80px;
+    height: 200px;
     white-space: nowrap;
     &:before {
       content: '';
@@ -558,7 +561,16 @@ p, td, a {
       height: 100%;
       vertical-align: middle;
     }
-
+    > a {
+      vertical-align: middle;
+      max-width: 100%;
+      max-height: 100%;
+      > img {
+        box-shadow: none;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
     > img {
       vertical-align: middle;
       max-width: 100%;
@@ -566,12 +578,4 @@ p, td, a {
       box-shadow: none;
     }
   }
-
-  .snv-logo {
-
-  }
-
-  .okfn-logo {
-  }
-
 }
