@@ -27,7 +27,7 @@
   image: 'geodata.jpg'
   subtitle: 'GeoLytix (UK)'
   description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
-  download: tbd.pdf
+  download: GeoLytix.pdf
   impact_type: economic
   sector: business
 
@@ -36,7 +36,7 @@
   image: 'ally.jpg'
   subtitle: 'ally (DE)'
   description: 'Auch in einer fremden Stadt. Auch wenn die Bahn gerade nicht fährt.'
-  download: tbd.pdf
+  download: ally.pdf
   impact_type: economic
   sector: business
 
@@ -44,8 +44,8 @@
 - title: "Open Data für eine bessere Gesundheitsversorgung"
   image: 'atu.jpg'
   subtitle: 'A tu servicio (UY)'
-  description: '“A tu servicio” aus Uruguay.'
-  download: tbd.pdf
+  description: '„A tu servicio” aus Uruguay.'
+  download: Atuservicio.pdf
   impact_type: citizens
   sector: health
 
@@ -54,7 +54,7 @@
   image: 'tfl.jpg'
   subtitle: 'Transport for London (UK)'
   description: 'Öffentliche Verkehrsbetriebe & Open Data'
-  download: tbd.pdf
+  download: TransportforLondonTfL.pdf
   impact_type: public
   sector: transportation
 
@@ -63,7 +63,7 @@
   image: 'husets.jpg'
   subtitle: 'HusetsWeb (DK)'
   description: 'ob als Privatperson oder als Kommune'
-  download: tbd.pdf
+  download: HusetsWeb.pdf
   impact_type: public
   sector: energy
 
@@ -72,7 +72,7 @@
   image: 'rijks.jpg'
   subtitle: 'Rijksstudio (NL)'
   description: 'Digitale Meisterwerke zum genießen, lernen, experimentieren und remixen'
-  download: tbd.pdf
+  download: Rijsksstudio.pdf
   impact_type: government
   sector: arts
 
@@ -81,7 +81,7 @@
   image: 'skills.jpg'
   subtitle: 'Skills Route (UK)'
   description: 'Die richtige Wahl mit offenen Daten treffen'
-  download: tbd.pdf
+  download: SkillsRoute.pdf
   impact_type: citizens
   sector: education
 
@@ -90,6 +90,6 @@
   image: 'muc.jpg'
   subtitle: 'München Transparent (DE)'
   description: 'Besser verstehen, was in deiner Stadt passiert'
-  download: tbd.pdf
+  download: Muenchen_Transparent.pdf
   impact_type: government
   sector: politics
