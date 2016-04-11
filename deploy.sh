@@ -1,9 +1,5 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
-pip install virtualenv
-virtualenv venv
-pip install -r requirements.txt
-
 # run our compile script, discussed above
 python build.py build
 
