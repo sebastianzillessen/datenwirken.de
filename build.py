@@ -145,6 +145,15 @@ def deploy(origin):
         shell=True
     )
 
+def deploy_now():
+    '''
+    Deploy the site to production.
+    '''
+
+    subprocess.check_call(
+        'git push origin `git subtree split --prefix site master`:gh-pages --force',
+        shell=True
+    )
 if __name__ == '__main__':
     context = ReloadingContext()
 

@@ -1,9 +1,8 @@
-script: bash ./deploy.sh
-language: python
 python:
   - "2.7"
-install: "pip install -r requirements.txt"
-env:
-  global:
-    GH_REF: github.com/sebastianzillessen/datenwirken.de.git
-    secure: zfMH7SHxiUQm1l1csA0V+3SZBMdoVK1jyt2eAWXM858GPzuOo7KhOse+ilg6mbpWJRtXHFmKsTWCGn/WWk1113FqeL4cZHn1AZLLx3ur0Tg41rdiq9K9snKfuBjPHhZ9RZ7YUZawTM+X+xax+EkSqpZNTT7AJdFg1nQGBt5MdQMBL4rGTbGmVgQYICKpOD+h1odLNNNr44ZXJBI3m/O92e9MVWIjWdHWIRWzmGSxpgrX8DF3cW0ekmeUZSrhzqYi1cbcUc7IdSrGDapSXGBKQ0qY7TFsOa/pRmcs/6vTK+z4Zp+MgT9HtHsiLmL3+BGOvCn5I9R6cMwDUI1DC/9FrRN1dw6Dcib8cIStkXGeFUq6xKiw6sHU28bDA+7wETPBO85auzeg/q6EPRZII5i+PGgb7HOoaSyeF1XMwyxgHvqJon3dTE+LD22DJy4MuqJv4uoajOXmoGyyBTbHq5jZuFnjeMgHmIdl3JiG8TqvteXfRwrUNNE1JFmQkdazvegrOG3YCYWpYb+0ewuYqmDefx4IXyDvrNlWU58OryaaYdIZVE3M2OwIF0f5/V75EF24lqLW1007jR3e8SsIV93SjQ7pstjskNetPJXZR17X7lA+jx7iBjQgmBHmt5T0r2wHLU0GMuc2LiLjqzGkFesRRJGqNgYxOdqVSZ/vcQPVfsw=
+before_install:
+  - gem install sass
+install:
+  - pip install -r requirements.txt
+script:
+  - python build.py test
