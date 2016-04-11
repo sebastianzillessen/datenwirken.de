@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
-virtualenv venv
 pip install -r requirements.txt
 
 # run our compile script, discussed above
