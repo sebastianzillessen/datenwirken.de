@@ -5,4 +5,5 @@ before_install:
 install:
   - pip install --user -r requirements.txt
 script:
-  - python build.py test
+  - python build.py build
+  - python build.py deploy_now
