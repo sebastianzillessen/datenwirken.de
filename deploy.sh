@@ -9,5 +9,4 @@ python build.py build
 git add .
 git commit -am "Automatically Deploy to GitHub Pages"
 git status
-git push "https://${GH_TOKEN}@${GH_REF}" master:master
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" `git subtree split --prefix site master`:gh-pages > /dev/null 2>&1
