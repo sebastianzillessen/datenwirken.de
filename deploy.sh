@@ -13,4 +13,5 @@ git config user.email "sebastian@zillessen.info"
 # files present with the commit message "Deploy to GitHub Pages".
 git add .
 git commit -m "Automatically Deploy to GitHub Pages"
+git push "https://${GH_TOKEN}@${GH_REF}" master:master
 git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" `git subtree split --prefix site master`:gh-pages > /dev/null 2>&1
