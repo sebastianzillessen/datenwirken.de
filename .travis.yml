@@ -1,3 +1,4 @@
+script: bash ./deploy.sh
 env:
   global:
     GH_REF: github.com/sebastianzillessen/datenwirken.de.git
