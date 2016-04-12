@@ -6,18 +6,10 @@ install:
 - pip install --user -r requirements.txt
 script:
 - python build.py build
+- deploy.sh
 after_success: |
-  echo "$GITHUB_API_KEY"
-  GH_REPO="@github.com/sebastianzillessen/datenwirken.de.git"
-  if [ -n "$GITHUB_API_KEY" ]; then
-    FULL_REPO="https://$GITHUB_API_KEY$GH_REPO"
-    echo "Running deployment"
-    git -c user.name='travis' -c user.email='travis' commit -am 'Travis Commit'
-    # Make sure to make the output quiet, or else the API token will leak!
-    # This works because the API key can replace your password.
-    git push $FULL_REPO `git subtree split --prefix site master`:gh-pages --force
-    # git push FU -f -q  gh-pages &2>/dev/null
-  fi
+
 env:
   global:
-    secure: ucONvA2L5/0jm+lyifaNZXM6IFk+lSl/cANoboAP41ejMoJGe8HQ3Irs1K79ZxTOUYxzTM1QZjUQspq66w4xl/i/9/M0eRy9lVDCgKQ8W6O6jYJ8KK/xQYlLrEXHcXioBrSDZ9N9KQxjzOYopBP4BPDtQSsJLQc01Qy37xkxSSzy77Re8+xw1Em2YinlWSHnti2BiTzlvY504KKnpoKzZ7L9dAeC5+AQ+rnP6va86/OQhtiw4vsM+P9yeBCCqGsA26kULu7+kWitwRgQYmQgl094GP3OfKVzWMxuVIgoVYdITPmfXxyr3KYJyos48MaDQnA/VDL/twYwDQCaPzSRi24q5kn4FzC0ejh6ZiHz7c+eRXUfIKT5Ncyj0s5tcPdy6sxUSEGzltS4f7cX038NCDlb3CyirNtm929PXW3TXMhaOKmKu0gBdLJ2CEXm8PoUlOJkjA4qJGH9aJMKm0ifKRD0dQC8G2IE4xT9UGSrZUO5Vm6TsvO1ZrVZ12q5uZx1cUaJDuBfGoxGmmiEWUmwox0SjrreHovoWfEA3yg0EEtXWtOYBXgDpQIq6pOg64Xsc2s/JKcSJvQxIeP2mD66qJ6A7JeXmfLQDe4WqmAkXROfniHCeeEymiQOGitN9Ubgy3TIlBRR8CfRLqmt35bdoMgrbDFqCE2ZsJLfQUrroFE=
+    GITHUB_REPO: "sebastianzillessen/datenwirken.de"
+    secure: IBfIl5hrTf81mQHIiE8GeEu1wjqUIsB2Vea0KmKzzLNH5uKrXP4zIbJ88zo9wDdTCWhqYZe6zaPgPOikQ7P/7Pow4IhQyVdPG0YNcKUPukzfte80kwSCX3ieMT3toqaYxWjhsGEwG5O1/GD5GjVpsGsmMWTPFYZ50ORSVTrJLoUPFuoDgtv+cmYjAfNsFLLyDgbNpMyRFkgD467uAHFHZJ6Y71a/Itz0W8RBsx/tJmJmVQ612JLN7rbvMs24CcXZW1SPQuvf6I8UPTgENcgkU3W5QYIxWpJ/efoqN0OB5iKRy5bitIZBB+rg+/sDz1ApEbD/rCG9Qec68GF6KloU1m3vZy2srCMNgrvi7he/2OFPdfPnk7ScIA0H9uP0QqFx+Lfb/0BTPQ1i4+pBtp9Q8gjNRtXk2C23ass4Q1KDFEOO2TUpCpAUAet+XAMjQxyX0ScCHZVeMJ7tGJf8qrlRkrctcv6xIPQXJKa9tGX9LacGghAliJ6tIMfES95kW0/0Ld/hFx9LvKZ7kliPfXxrdxK3iC2Sd4DXltkMuHqb8r9uZB8VbCFkzA2Nv1IKxxMqp7NjFcomVt+TFdgJPSqaMu8O4DkAthNZBJswAP1rQ5S0aiGmVtV32Ojljk6BfdwQ/R5QC7LgF7Lrzm5qWJno7vbOthIIQutu1RYt/5YZRp8=
