@@ -5226,7 +5226,8 @@ p, td, a {
       text-align: left; } }
 #logos .logo-container {
   height: 200px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  padding: 10px 0; }
   #logos .logo-container:before {
     content: '';
     display: inline-block;

@@ -555,6 +555,7 @@ p, td, a {
   .logo-container {
     height: 200px;
     white-space: nowrap;
+    padding: 10px 0;
     &:before {
       content: '';
       display: inline-block;
