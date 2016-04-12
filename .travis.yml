@@ -6,4 +6,11 @@ install:
   - pip install --user -r requirements.txt
 script:
   - python build.py build
-  - python build.py deploy https://sebastianzillessen:$GITHUB_API_KEY@github.com/sebastianzillessen/datenwirken.de.git
+after_success: |
+  if [ -n "$GITHUB_API_KEY" ]; then
+    git -c user.name='travis' -c user.email='travis' commit -am 'Travis Commit'
+    # Make sure to make the output quiet, or else the API token will leak!
+    # This works because the API key can replace your password.
+    git push https://sebastianzillessen:$GITHUB_API_KEY@github.com/sebastianzillessen/datenwirken.de `git subtree split --prefix site master`:gh-pages --force
+    # git push -f -q  gh-pages &2>/dev/null
+  fi
