@@ -1,11 +1,11 @@
 python:
-  - "2.7"
+- '2.7'
 before_install:
-  - gem install sass
+- gem install sass
 install:
-  - pip install --user -r requirements.txt
+- pip install --user -r requirements.txt
 script:
-  - python build.py build
+- python build.py build
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
     git -c user.name='travis' -c user.email='travis' commit -am 'Travis Commit'
@@ -14,3 +14,6 @@ after_success: |
     git push https://sebastianzillessen:$GITHUB_API_KEY@github.com/sebastianzillessen/datenwirken.de `git subtree split --prefix site master`:gh-pages --force
     # git push -f -q  gh-pages &2>/dev/null
   fi
+env:
+  global:
+    secure: q+uI5fl/Ysp+b4wEsPYN4j47y0RpS1/dVA7WYZ88HWNNrhW4ckjsoczQ+masp8gsw6eBXLrXqU9gAasS1qLLsj/cBrFiIk6ymN/QqZZUpzZdCHO5Saxb9Tl7pOUzLJHHaTGvfPbT/Y/y5Cft92wsJlwN7DUAsGdBG5snP9CO6sPgIWnMjOInojeL2ja94H36G2cVBrYuJ1zte0oeny9C27ijOdoDtR/SrXbqJ1IPJ3xnKfWiRMqihGSxpVLSk4wLCk0eP1umQk+6HN0FHgCz0cBdk4jEWQTLQZHHc5oFwgu1+n2tIGvc+TEL0/HRQ7xzqdUgcF2iWfm9Tipi7GagGmTJ3yLil1b2KX7G/sN9qPNE4carl96Pn32AX5Rdkz+qbAP98YkzUXkFzfxbJAcj2DLgXFm2TylMDrBAyU9XCMu0wCSAzEzQv2kgXzzIjbhz/DQ+gNd/r+g4NpA4gHgFG/mefr6qbwbOuKr/ruyLiEeV8Btg4tg3FJfPAbulJ0CKFxVnZvrTEVZgqF96rK4BBfM/l7E5OW5BuFdkLieNQnSLQESjaswy1YfjYgaQika7li94bg5tBAwBcVwnSrpIMhyQx1gU/6vbU7o84X8Ccny14HK+awf3ZU5BlZFqsFjvmYrVX7Qk9ZesO+dL5WaOuqf4r1jG3M40AST+Mabj9EQ=
