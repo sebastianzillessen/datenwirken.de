@@ -5251,9 +5251,11 @@ p, td, a {
     #logos h6 {
       text-align: left; } }
 #logos .logo-container {
-  height: 200px;
+  height: 120px;
   white-space: nowrap;
   padding: 10px 0; }
+  #logos .logo-container.small {
+    height: 80px; }
   #logos .logo-container:before {
     content: '';
     display: inline-block;

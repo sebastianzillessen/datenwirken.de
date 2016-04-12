@@ -590,7 +590,10 @@ p, td, a {
   }
 
   .logo-container {
-    height: 200px;
+    height: 120px;
+    &.small{
+      height: 80px;
+    }
     white-space: nowrap;
     padding: 10px 0;
     &:before {
