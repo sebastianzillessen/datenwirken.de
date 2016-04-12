@@ -2,7 +2,7 @@
 git config --global user.email "nobody@nobody.org"
 git config --global user.name "Travis CI"
 git add .
-git commit -m "Deploy to Github Pages"
+git commit --amend --no-edit
 TOK=""
 echo "We are on $TRAVIS_REPO_SLUG"
 if [ "$TRAVIS_REPO_SLUG" == "sebastianzillessen/datenwirken.de" ]; then
