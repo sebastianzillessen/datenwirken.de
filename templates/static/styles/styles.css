@@ -5096,6 +5096,25 @@ p, td, a {
       .b-copyright .e-cc-badge {
         margin: 5px 25px 0 0; } }
 
+.b-top-section:hover .b-copyright {
+  opacity: 1;
+  transition: opacity 0.4s ease; }
+.b-top-section .b-copyright {
+  padding: 10px;
+  transition: opacity 0.4s ease;
+  max-width: 80%;
+  margin: 10px auto; }
+  @media screen and (min-width: 64.0625em) {
+    .b-top-section .b-copyright {
+      display: inline-block;
+      opacity: 0;
+      right: 10px;
+      max-width: 40%;
+      position: absolute;
+      bottom: 30px; } }
+  .is-touch .b-top-section .b-copyright {
+    opacity: 1; }
+
 .b-page-section {
   font-size: 1.1rem;
   font-weight: 300;
@@ -5146,6 +5165,9 @@ p, td, a {
     @media screen and (min-width: 64em) {
       .b-page-section .float-img {
         max-width: 50%; } }
+    .b-page-section .float-img .caption {
+      display: block;
+      font-size: 80%; }
   .b-page-section .e-img {
     text-align: center; }
     .b-page-section .e-img > img {

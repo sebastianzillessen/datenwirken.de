@@ -26,4 +26,10 @@ $(function () {
             $(this).data('timer', null);
         })
     });
+
+    function isTouchDevice() {
+        return !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+    };
+
+    if (isTouchDevice()) $("body").addClass("is-touch");
 });

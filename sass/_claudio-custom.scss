@@ -347,6 +347,37 @@ p, td, a {
   }
 }
 
+.b-top-section {
+  &:hover {
+    .b-copyright {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+  }
+  .b-copyright {
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    @include breakpoint($desktop) {
+      display: inline-block;
+      opacity: 0;
+      right: 10px;
+      max-width: 40%;
+      position: absolute;
+      bottom: 30px;
+    }
+
+    @include breakpoint($mobile-only) {
+      max-width: 80%;
+      margin: 10px auto;
+    }
+
+    .is-touch & {
+      opacity: 1;
+    }
+
+  }
+}
+
 .b-page-section {
   aside h3 {
     text-align: left;
@@ -411,6 +442,11 @@ p, td, a {
 
     @include breakpoint(large) {
       max-width: 50%;
+    }
+
+    .caption{
+      display: block;
+      font-size: 80%;
     }
 
   }
@@ -537,7 +573,8 @@ p, td, a {
 .h6-top-padding {
   padding-top: 1.9rem;
 }
-.large-padding-bottom{
+
+.large-padding-bottom {
   padding-bottom: 30px;
 }
 

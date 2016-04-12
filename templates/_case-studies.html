@@ -5,7 +5,8 @@
 
 {% block navelements %}
 <div class="e-nav-group m-right hide-for-small-only">
-    <a href="./index.html" class="e-nav-item" id="nav-about">Home</a>
+    <a href="index.html" class="e-nav-item" id="nav-about">Home</a>
+    <a href="supporters.html" class="e-nav-item" id="nav-supporters">Befürworter</a>
     <a href="about.html" class="e-nav-item">
         Hintergrund
     </a>
@@ -16,6 +17,11 @@
         <li>
             <a href="./index.html" class="e-nav-item">
                 Home
+            </a>
+        </li>
+        <li>
+            <a href="supporters.html" class="e-nav-item">
+                Befürworter
             </a>
         </li>
         <li>
@@ -73,6 +79,9 @@
             <a href="./static/files/{{case.download}}" class="b-button m-{{case.impact_type}}" target="_blank">Report herunterladen<i
                     class="material-icons m-space">file_download</i></a>
         </div>
+        {% if self.copyright() %}
+        <div class="b-copyright">{% block copyright %}{% endblock %}</div>
+        {% endif %}
     </div>
 
     <div class="row hide-for-small-only">
