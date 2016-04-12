@@ -6,4 +6,4 @@ install:
   - pip install --user -r requirements.txt
 script:
   - python build.py build
-  - python build.py deploy
+  - python build.py deploy origin
