@@ -11,6 +11,11 @@
     padding: 5px;
     text-align: center;
     display: block;
+    img {
+      padding: 5px;
+      max-height: 33px;
+      margin: 8px 5px;
+    }
   }
 
   .e-nav-group {
@@ -26,7 +31,7 @@
   }
 
   .e-nav-item {
-    padding: 16px;
+    padding: 21px 10px;
     display: inline-block;
     &.active {
       color: white;

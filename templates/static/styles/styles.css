@@ -3711,6 +3711,10 @@ table {
     padding: 5px;
     text-align: center;
     display: block; }
+    .b-top-nav .e-logo img {
+      padding: 5px;
+      max-height: 33px;
+      margin: 8px 5px; }
   .b-top-nav .e-nav-group {
     position: absolute;
     top: 0; }
@@ -3719,7 +3723,7 @@ table {
     .b-top-nav .e-nav-group.m-right {
       right: 0; }
   .b-top-nav .e-nav-item {
-    padding: 16px;
+    padding: 21px 10px;
     display: inline-block; }
     .b-top-nav .e-nav-item.active {
       color: white; }
@@ -4267,7 +4271,7 @@ h2.m-upper {
     .b-top-nav .e-nav-group.m-right {
       font-weight: 700; }
     .b-top-nav .e-nav-group.dropdown > .e-nav-item {
-      padding: 14px 20px 8px;
+      padding: 17px 20px 10px;
       font-size: 20px; }
     .b-top-nav .e-nav-group .e-side-logo {
       position: relative;
