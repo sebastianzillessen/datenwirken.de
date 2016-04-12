@@ -139,9 +139,9 @@ def deploy(origin):
     '''
     Deploy the site to production.
     '''
-
+    ''
     subprocess.check_call(
-        'git push '+origin+' `git subtree split --prefix site master`:gh-pages --force',
+        'git push origin `git subtree split --prefix site master`:gh-pages --force',
         shell=True
     )
 

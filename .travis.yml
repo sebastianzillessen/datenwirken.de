@@ -6,4 +6,4 @@ install:
   - pip install --user -r requirements.txt
 script:
   - python build.py build
-  - python build.py deploy origin
+  - python build.py deploy https://sebastianzillessen:$GITHUB_API_KEY@github.com/sebastianzillessen/datenwirken.de.git
