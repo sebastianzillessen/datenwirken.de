@@ -5,4 +5,4 @@ git add .
 git commit -m "Deploy to Github Pages"
 echo "Token ${GITHUB_TOKEN}"
 echo "Repo ${GITHUB_REPO}"
-git push --force "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" `git subtree split --prefix site master`:gh-pages
+git push --force "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" `git subtree split --prefix site master`:gh-pages
