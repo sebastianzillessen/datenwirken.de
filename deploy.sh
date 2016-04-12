@@ -5,6 +5,7 @@ git add .
 git commit --amend --no-edit
 TOK=""
 echo "We are on $TRAVIS_REPO_SLUG"
+echo "TEST: $TEST"
 if [ "$TRAVIS_REPO_SLUG" == "sebastianzillessen/datenwirken.de" ]; then
     TOK=$GITHUB_TOKEN
 fi
