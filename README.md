@@ -1,5 +1,6 @@
 
-[![Build Status](https://travis-ci.org/sebastianzillessen/datenwirken.de.svg?branch=master)](https://travis-ci.org/sebastianzillessen/datenwirken.de)
+sebastianzillessen/datenwirken.de: [![Build Status](https://travis-ci.org/sebastianzillessen/datenwirken.de.svg?branch=master)](https://travis-ci.org/sebastianzillessen/datenwirken.de)
+okfde/datenwirken.de: [![Build Status](https://travis-ci.org/okfde/datenwirken.de.svg?branch=master)](https://travis-ci.org/okfde/datenwirken.de)
 
 This is the Open Data Impact Case Studies website.
 
