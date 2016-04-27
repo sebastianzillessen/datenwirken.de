@@ -6,3 +6,5 @@ support/*
 .idea
 *.log
 site/
+**/styles.css
+**/styles.css.map

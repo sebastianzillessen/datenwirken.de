@@ -93,3 +93,12 @@
   download: Muenchen_Transparent.pdf
   impact_type: government
   sector: politics
+
+# 8
+- title: "Für ein störungsfreies und schnelles Internet"
+  image: 'mlab.jpg'
+  subtitle: 'Measurement Lab (mLab)'
+  description: 'Das Gemeinschaftsprojekt mLab'
+  download: mLab.pdf
+  impact_type: public
+  sector: business
