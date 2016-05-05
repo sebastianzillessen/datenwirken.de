@@ -26,7 +26,7 @@
 - title: "Zur richtigen Zeit am richtigen Ort"
   image: 'geodata.jpg'
   subtitle: 'GeoLytix (UK)'
-  description: 'Geschäftsstrategien mit offenen Geodaten entwickeln.'
+  description: 'Geschäfts&shy;strategien mit offenen Geodaten entwickeln.'
   download: GeoLytix.pdf
   impact_type: economic
   sector: business
@@ -41,7 +41,7 @@
   sector: business
 
 # 2
-- title: "Open Data für eine bessere Gesundheitsversorgung"
+- title: "Open Data für eine bessere Gesund&shy;heits&shy;versorgung"
   image: 'atu.jpg'
   subtitle: 'A tu servicio (UY)'
   description: '„A tu servicio” aus Uruguay.'
@@ -50,19 +50,19 @@
   sector: health
 
 # 3
-- title: "Besserer Kundenservice ohne Mehraufwand"
+- title: "Besserer Kunden&shy;service ohne Mehr&shy;aufwand"
   image: 'tfl.jpg'
   subtitle: 'Transport for London (UK)'
-  description: 'Öffentliche Verkehrsbetriebe & Open Data'
+  description: 'Öffentliche Verkehrs&shy;betriebe & Open Data'
   download: TransportforLondonTfL.pdf
   impact_type: public
   sector: transportation
 
 # 4
-- title: "Mit offenen Verwaltungsdaten Energie sparen"
+- title: "Mit offenen Ver&shy;waltungs&shy;daten Energie sparen"
   image: 'husets.jpg'
   subtitle: 'HusetsWeb (DK)'
-  description: 'ob als Privatperson oder als Kommune'
+  description: 'ob als Privat&shy;person oder als Kommune'
   download: HusetsWeb.pdf
   impact_type: public
   sector: energy
@@ -71,7 +71,7 @@
 - title: "Kunst für alle"
   image: 'rijks.jpg'
   subtitle: 'Rijksstudio (NL)'
-  description: 'Digitale Meisterwerke zum genießen, lernen, experimentieren und remixen'
+  description: 'Digitale Meister&shy;werke zum genießen, lernen, experimentieren und remixen'
   download: Rijsksstudio.pdf
   impact_type: government
   sector: arts
@@ -86,7 +86,7 @@
   sector: education
 
 # 7
-- title: "Kommunalpolitik entstaubt"
+- title: "Kommunal&shy;politik entstaubt"
   image: 'muc.jpg'
   subtitle: 'München Transparent (DE)'
   description: 'Besser verstehen, was in deiner Stadt passiert'
@@ -95,10 +95,10 @@
   sector: politics
 
 # 8
-- title: "Für ein störungsfreies und schnelles Internet"
+- title: "Für ein störungs&shy;freies und schnelles Internet"
   image: 'mLab.jpg'
   subtitle: 'Measurement Lab (mLab)'
-  description: 'Das Gemeinschaftsprojekt mLab'
+  description: 'Das Gemeinschafts&shy;projekt mLab'
   download: mLab.pdf
   impact_type: public
   sector: business

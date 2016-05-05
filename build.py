@@ -28,7 +28,7 @@ _TEAM = path.join(_DATAPATH, 'team.yaml')
 _FUNDERS = path.join(_DATAPATH, 'funders.yaml')
 _CASE_STUDIES = path.join(_DATAPATH, 'case-studies.yaml')
 
-_SLUG = lambda x: slugify(unicode(unidecode(unicode(x).lower())) if x else u'')
+_SLUG = lambda x: re.sub(r'shy', '', slugify(unicode(unidecode(unicode(x).lower()))) if x else u'')
 
 
 def filters():
