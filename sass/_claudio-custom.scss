@@ -331,7 +331,7 @@ p, td, a {
       opacity: .5;
       margin: 10px;
       transition: opacity .4s ease;
-      &:hover {
+      &:not(.no-hover):hover {
         opacity: 1;
         transition: opacity .4s ease;
       }
