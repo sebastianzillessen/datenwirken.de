@@ -100,13 +100,28 @@
         <div class="column logos">
             <div>
                 <h6>Mit Unterstützung von:</h6>
-                <span class="e-partner-logo" ><img
+                <span class="e-partner-logo"><img
                         src="static/img/partners/govlab-logo-white.png" alt="" class="no-hover"></span>
                 <span class="e-partner-logo"><img
                         src="static/img/partners/omidyar-logo-white.svg" alt="" class="no-hover"></span>
             </div>
         </div>
     </div>
+</div>
+
+<div class="govlab-opensource" style="background-color: #222; padding: 12px 0 15px; text-align:
+center; font-family: 'proxima-nova', sans-serif, 'Helvetica Neue', Helvetica, Roboto, Arial,
+sans-serif;">
+    <a onmouseover="this.style.opacity=1; this.style.transform='scale(1.1)'; this.style.
+transition='all .7s ease';" onmouseout="this.style.opacity=.3; this.style.transform='scale(1)';
+this.style.transition='all 1s ease'" style="color:#fff; opacity:.3; text-decoration:none; font-size:
+1rem; vertical-align: -3px;border-width:0; display: inline-block;"
+       href="http://www.thegovlab.org/project-govlab-open-source.html"
+       target="_blank">
+        Powered by <img style="max-height: 24px; margin-left: 8px;vertical-align: -5px;"
+                        alt="Govlab Open Source" src="https://raw.githubusercontent.com/GovLab/govlab-opensource/master/
+img/govlab-opensource-white.png"/>
+    </a>
 </div>
 
 <div id="overlay"></div>
@@ -131,19 +146,23 @@
 <!-- Piwik -->
 <script type="text/javascript">
     var _paq = _paq || [];
-    _paq.push(["setDomains", ["*.datenwirken.de","*.daten.show","*.daten.show","*.datenwirken.de"]]);
+    _paq.push(["setDomains", ["*.datenwirken.de", "*.daten.show", "*.daten.show", "*.datenwirken.de"]]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//piwik.okfn.de/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
+    (function () {
+        var u = "//piwik.okfn.de/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
         _paq.push(['setSiteId', 17]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
     })();
 </script>
 <noscript>
-    <p><img src="//piwik.okfn.de/piwik.php?idsite=17" style="border:0;" alt="" /></p>
+    <p><img src="//piwik.okfn.de/piwik.php?idsite=17" style="border:0;" alt=""/></p>
 </noscript>
 <!-- End Piwik Code -->
 
