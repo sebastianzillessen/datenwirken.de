@@ -10,3 +10,7 @@ script:
 - gulp
 - python build.py build
 - "./deploy.sh"
+cache:
+  directories:
+  - node_modules
+  - $HOME/.cache/pip
