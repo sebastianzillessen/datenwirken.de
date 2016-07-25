@@ -14,7 +14,7 @@ This is the Open Data Impact Case Studies website.
 
 
 ## Special files:
-- `templates/_case-studies.html`: template for case studies. 
+- `templates/_case-studies.html`: template for case studies.
 - `templates/_base.html`: template for general side. Footers, Header, general structure of the overall webpage.
 - `data/case-studies.yml`: Definition of the case studies. Here we can add new case studies to the system. The case study has to be located under `templates/case-<name in underscored way>.html`
 
@@ -47,3 +47,4 @@ The `site` directory will contain the generated website files.
 
 To deploy the site, run `python build.py deploy #{origin}`.
 Replace `#{origin}` with your git origin you want to push to.
+This will only be done if the current branch is `master`.
