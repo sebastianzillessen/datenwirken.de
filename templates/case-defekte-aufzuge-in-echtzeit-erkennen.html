@@ -1,0 +1,112 @@
+{% extends "_case-studies.html" %}
+{% set case_id = 10 %}
+
+
+{% block challenge %}
+<p>
+    Jeder kennt die Situation am Bahnhof: Man steigt mit einem Kinderwagen oder schweren Koffer am Bahnsteig aus, läuft
+    zum Aufzug und muss feststellen, dass er nicht funktioniert. Da ist Reisefrust vorprogrammiert. Und was zu Beginn
+    der Reise nicht funktioniert hat, funktioniert oft auch bei der Rückkehr noch nicht wieder. Reisende und auch
+    Bahnhofsverantwortliche wissen nicht, ob ein Aufzug funktioniert, bis sie ihn am Bahnsteig rufen. Dabei ist die
+    Information, ob ein Aufzug in oder außer Betrieb ist, für einige Reisende wie z.B. Rollstuhlfahrer essenziell für
+    die Reiseplanung.
+    Auch für Bahnhofsmanager ist es deshalb wichtig sofort mitzubekommen, wenn eine Anlage ausfällt, damit die Reparatur
+    umgehend veranlasst werden kann. Die Bahnhofsmission wiederum weiß, dass jemand ihre Hilfe braucht, wenn ein Aufzug
+    nicht funktioniert. Jede Reisende würde sich außerdem freuen, wenn sie mitbekäme, wenn „ihr“ Aufzug nun wieder in
+    Betrieb ist.
+</p>
+
+{% endblock %}
+
+{% block solution %}
+<p>
+    <span class="float-img"><img src="static/img/studies/aufzugswaechter-1.png" alt="Aufzugswächter"/></span>
+    Eine Lösung für dieses Problem bietet der Aufzugswächter der Deutschen Bahn, der bundesweit den Betriebszustand der
+    Aufzüge beobachtet. Interessenten können die Zustandsänderungen der Aufzüge abonnieren, die für sie relevant sind.
+    So werden alle Abonennten des Aufzugswächters über Ausfälle und Wiederinbetriebnahmen informiert. Die dafür
+    verfügbaren Kanäle sind E-Mail, Twitter und Push-Nachrichten auf dem Smartphone.
+
+</p>
+
+{% endblock %}
+
+{% block datasets %}
+<p>
+    Der Aufzugswächter verwendet die offenen API-Datensätze (Application Programming Interface, siehe
+    Informationskasten) der Aufzüge der DB Station & Service AG.
+</p>
+{% endblock %}
+
+{% block benefitters %}
+<p>
+    Alle Bahnreisenden deutschlandweit, insbesondere aber Personen, die in besonderem Maße auf Aufzüge angewiesen sind,
+    also Rollstuhlfahrer oder Reisende mit Kinderwägen, Fahrrädern und anderem sperrigen Gepäck. Darüber hinaus kann die
+    Bahn ihren Kunden einen besseren Service bieten, indem die Verantwortlichen durch den Aufzugswächter schneller über
+    Ausfälle Bescheid wissen und für Abhilfe sorgen können.
+</p>
+{% endblock %}
+
+{% block outcome %}
+<p>
+    Nils sitzt im Rollstuhl und fährt immer wieder mit der Bahn zwischen Köln und Düsseldorf. Dabei ist es ihm schon
+    häufiger passiert, dass an einem Bahnsteig der beiden Zielbahnhöfe der Aufzug außer Betrieb war. Für Nils sind
+    solche Bahnsteige regelrechte Sackgassen, denn er muss dann zum nächsten Halt weiterfahren, um dort mithilfe eines
+    Fahrstuhls das Gleis wechseln und zum Zielbahnhof zurückfahren zu können. Zwar kann er seine Fahrt als
+    Rollstuhlfahrer bei der Bahn anmelden, die ihm dann beim Ein- und Aussteigen behilflich ist, aber die
+    Aufzug-Situation am Gleis ist immer ein Unsicherheitsfaktor, der sich nicht vorhersagen lässt.
+</p>
+<p>
+    <span class="float-img"><img src="static/img/studies/aufzugswaechter-2.png" alt="Aufzugswächter"/></span>
+
+    In der Boardzeitung im Zug liest Nils von der Einführung des Aufzugwächters, einem digitalen
+    Benachrichtigungsdienst, der auf Open-Data-Basis den Betriebszustand der Auzüge am Gleis überwacht. Sofort sucht er
+    im Internet nach der entsprechenden App und wird fündig. Auch dem Twitter-Bot beginnt Nils zu folgen. Er abonniert
+    Benachrichtigungen für die Aufzüge, die auf seiner Strecke von Köln nach Düsseldorf relevant sind. So bekommt er per
+    Push-Nachricht auf seinem Handy mitgeteilt, wenn ein Aufzug in Köln oder Düsseldorf ausfällt und wenn er repariert
+    und wieder im Einsatz ist. Für Nils bedeutet dies, dass er als Rollstuhlfahrer besser planen kann. Wenn er weiß,
+    dass ein Aufzug in Düsseldorf zum Beispiel gerade nicht genutzt werden kann, steigt er einfach eine Station früher
+    oder später aus oder kann sich um eine alternative Anreise kümmern. Vor allem aber merkt er, dass die Aufzüge seit
+    den Echtzeit-Benachrichtigungen viel schneller als früher wieder im Einsatz sind. Und davon profitieren schließlich
+    alle Bahnreisenden.
+
+</p>
+{% endblock %}
+
+{% block shortinfo %}
+<!-- steckbrief -->
+<h6>Was ist eine API?</h6>
+<p>
+    Ein Application Programming Interface ist eine Programmierschnittstelle, die der strukturierten und vereinheitlichen
+    Datenübertragung dient. Sie übermitteln nur die Daten, die für den weiteren Programmablauf benötigt werden. Im Fall
+    des Aufzugwächters geben die Aufzug-APIs Aufschluss darüber, ob ein Auzug in oder außer Betrieb ist.
+</p>
+{% endblock %}
+
+
+{% block sources %}
+<p>
+    Offizielle Seite:<br>
+    <a href="http://www.aufzugswaechter.org/" target="_blank">http://www.aufzugswaechter.org/</a>
+</p>
+<p>
+    One-Pager zum Aufzugswächter:<br>
+    <a href="http://www1.deutschebahn.com/file/dbs-konzerntreff/11027988/kjEYim6UEvQv8cKKBdBxoqcK4PQ/11439650/data/onepager_aufzugswaechter.pdf"
+       target="_blank">http://www1.deutschebahn.com/file/dbs-konzerntreff/11027988/kjEYim6UEvQv8cKKBdBxoqcK4PQ/11439650/data/onepager_aufzugswaechter.pdf</a>
+</p>
+
+<p>
+    Aufzugswächter bei Twitter:<br> <a href="https://twitter.com/aufzugswaechter" target="_blank">https://twitter.com/aufzugswaechter</a>
+</p>
+
+<p>
+    Open-Data-Portal der Deutschen Bahn:<br>
+    <a href="http://data.deutschebahn.com/" target="_blank">http://data.deutschebahn.com/</a>
+</p>
+
+<p>Power-Point Präsentation zur Open-Data Strategie der Deutschen Bahn: <br>
+    <a href="http://www.geobusiness.org/GEOBUSINESS/Redaktion/DE/Downloads/04192016-referenten-praesentation-db-friedrich.pdf?__blob=publicationFile&v=3"
+       target="_blank">http://www.geobusiness.org/GEOBUSINESS/Redaktion/DE/Downloads/04192016-referenten-praesentation-db-friedrich.pdf?__blob=publicationFile&v=3</a>
+</p>
+
+
+{% endblock %}
