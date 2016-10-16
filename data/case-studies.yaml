@@ -109,7 +109,7 @@
   subtitle: 'naturtrip.org'
   description: 'Mit öffentlichen Verkehrsmitteln und Open-Data '
   download: Vorstellung_Naturtrip.pdf
-  impact_type: public # TODO
+  impact_type: economic # TODO
   sector: transportation # TODO
 
 
@@ -124,7 +124,7 @@
 
 
 # 11
-- title: "Die passende klinische Studie finden mit viomedo"
+- title: "Die passende klinische Studie finden"
   image: 'viomedo.jpg'
   subtitle: 'viomedo.de'
   description: 'Vom medizinischen Fortschritt profitieren'
