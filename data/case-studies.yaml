@@ -102,3 +102,32 @@
   download: mLab.pdf
   impact_type: public
   sector: business
+
+# 9
+- title: "Neue Ausflugsziele entdecken"
+  image: 'naturtrip.jpg'
+  subtitle: 'naturtrip.org'
+  description: 'Mit öffentlichen Verkehrsmitteln und Open-Data '
+  download: Vorstellung_Naturtrip.pdf
+  impact_type: economic # TODO
+  sector: transportation # TODO
+
+
+# 10
+- title: "Defekte Aufzüge in Echtzeit erkennen"
+  image: 'aufzugswaechter.png'
+  subtitle: 'aufzugswaechter.org'
+  description: 'Bundesweit den Betriebszustand von Aufzügen erfassen'
+  download: Vorstellung_Aufzugswaechter.pdf
+  impact_type: public # TODO
+  sector: transportation # TODO
+
+
+# 11
+- title: "Die passende klinische Studie finden"
+  image: 'viomedo.jpg'
+  subtitle: 'viomedo.de'
+  description: 'Vom medizinischen Fortschritt profitieren'
+  download: Vorstellung_Viomedo.pdf
+  impact_type: citizens # TODO
+  sector: health # TODO
