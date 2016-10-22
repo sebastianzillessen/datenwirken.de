@@ -86,6 +86,7 @@ p, td, a {
 
       width: 100%;
       padding: 20px;
+      overflow: hidden;
 
       h3 span {
         text-transform: uppercase;
@@ -436,6 +437,9 @@ p, td, a {
     }
     > *:not(table) {
       margin: 10px;
+    }
+    > ul{
+      margin-left: 2.5rem;
     }
   }
   .float-img {

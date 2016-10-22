@@ -109,8 +109,8 @@
   subtitle: 'naturtrip.org'
   description: 'Mit öffentlichen Verkehrsmitteln und Open-Data '
   download: Vorstellung_Naturtrip.pdf
-  impact_type: economic # TODO
-  sector: transportation # TODO
+  impact_type: economic
+  sector: transportation
 
 
 # 10
@@ -119,8 +119,8 @@
   subtitle: 'aufzugswaechter.org'
   description: 'Bundesweit den Betriebszustand von Aufzügen erfassen'
   download: Vorstellung_Aufzugswaechter.pdf
-  impact_type: public # TODO
-  sector: transportation # TODO
+  impact_type: public
+  sector: transportation
 
 
 # 11
@@ -129,5 +129,14 @@
   subtitle: 'viomedo.de'
   description: 'Vom medizinischen Fortschritt profitieren'
   download: Vorstellung_Viomedo.pdf
-  impact_type: citizens # TODO
-  sector: health # TODO
+  impact_type: citizens
+  sector: health
+
+# 12
+- title: "Selbstständige Fortbewegung"
+  image: 'blindsquare.jpg'
+  subtitle: 'blindsquare.com'
+  description: 'Für Blinde und sehbehinderte Menschen'
+  download: Vorstellung_BlindSquare.pdf
+  impact_type: citizens
+  sector: health
