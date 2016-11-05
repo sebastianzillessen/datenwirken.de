@@ -22,9 +22,9 @@
             <span id="trigger-3"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2 class="">Chancen schaffen</h2>
-                <!--<p>
+                <p>
                     {{ cases | selectattr("impact_type", "equalto", "economic") | list | count() }}
-                    Beispiele</p>-->
+                    Beispiele</p>
                 <i class="material-icons m-xl-badge m-gray" id="badge-3">trending_up</i>
                 </p>
             </div>
@@ -32,9 +32,9 @@
                 <p class="b-description">
                     Offene Daten sind die Basis neuer Geschäftsideen, erzeugen wirtschaftliches Wachstum und fördern
                     Innovationen in Wirtschaft, Verwaltung und Zivilgesellschaft.
-                    <!--<div class="e-action">
-                      <a class="b-button m-naked" href="#" id="economic-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
-                    </div>-->
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="economic-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </p>
             </div>
         </div>
@@ -44,9 +44,9 @@
             <span id="trigger-4"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2 class="">Probleme lösen</h2>
-                <!--<p>
+                <p>
                     {{ cases | selectattr("impact_type", "equalto", "public") | list | count() }}
-                    case studies</p>-->
+                    Beispiele</p>
                 <i class="material-icons m-xl-badge" id="badge-4">public</i>
                 </p>
             </div>
@@ -54,9 +54,9 @@
                 <p class="b-description">
                     Offene Daten ermöglichen die Zusammenarbeit verschiedener Akteure zur Lösung gesellschaftlicher
                     Probleme, ob im Verkehr, bei der Energiewende oder im Gesundheitsbereich.
-                    <!--<div class="e-action">
-                      <a class="b-button m-naked" href="#" id="public-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
-                    </div>-->
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="public-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </p>
             </div>
         </div>
@@ -66,9 +66,9 @@
             <span id="trigger-1"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2 class="">Besser regieren</h2>
-                <!--<p>
+                <p>
                     {{ cases | selectattr("impact_type", "equalto", "government") | list | count() }}
-                    case studies</p>-->
+                    Beispiele</p>
                 <i class="material-icons m-xl-badge" id="badge-1">account_balance</i>
                 </p>
             </div>
@@ -77,9 +77,9 @@
                     Offene Daten sind eine wichtige Quelle faktenbasierter Entscheidungen. Diese führen zu besseren
                     Ergebnissen, lassen sich leichter nachvollziehen und besser vermitteln. Das stärkt die Legitimation
                     politischer Beschlüsse und die Identifikation mit der Demokratie.
-                    <!--<div class="e-action">
-                      <a class="b-button m-naked" href="#" id="government-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
-                    </div>-->
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="government-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </p>
             </div>
         </div>
@@ -89,9 +89,9 @@
             <span id="trigger-2"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2 class="">Menschen befähigen</h2>
-                <!--<p>
+                <p>
                     {{ cases | selectattr("impact_type", "equalto", "citizens") | list | count() }}
-                    case studies</p>-->
+                    Beispiele</p>
                 <i class="material-icons m-xl-badge m-gray" id="badge-2">person_pin</i>
                 </p>
             </div>
@@ -100,24 +100,64 @@
                     Offene Daten informieren. So können Menschen bessere Entscheidungen treffen. Wo wohnen? Welchen Weg
                     zur Arbeit wählen? Welche Ausbildung beginnen? Gute Entscheidungen sind wegweisend für das eigene
                     Leben und sparen der Gesellschaft Ressourcen.
-                    <!--<div class="e-action">
-                      <a class="b-button m-naked" href="#" id="citizens-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
-                    </div>-->
+                    <div class="e-action">
+                      <a class="b-button m-naked" href="#" id="citizens-button">Zu den Beispielen<i class="material-icons">arrow_forward</i></a>
+                    </div>
                 </p>
             </div>
         </div>
     </div>
 
 
-    <a name="explore" id="a-explore"></a>
+    <a name="explore" id="a-explore"><!-- do not remove, this is used as anchor point --></a>
 
     <!-- section selection removed to _section_selection.html -->
+
+    <div class="b-page-section m-no-bottom-padding">
+        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
+            <div class="tabs-panel is-active" id="panel2">
+                <div class="row">
+                    <div class="medium-2 large-offset-1 columns">
+                        <a href="#" class="b-button js-filter selected" data-filter="*" id="see-all-btn-2">
+                            <i class="material-icons m-lg">replay</i>
+                            Alle anzeigen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-yellow js-filter" id="economic-filter" data-filter="impact-economic">
+                            <i class="material-icons m-lg">trending_up</i>
+                            Chancen schaffen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-fuschia js-filter" id="public-filter" data-filter="impact-public">
+                            <i class="material-icons m-lg">public</i>
+                            Probleme lösen
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button m-blue js-filter" id="government-filter" data-filter="impact-government">
+                            <i class="material-icons m-lg">account_balance</i>
+                            Besser regieren
+                        </a>
+                    </div>
+                    <div class="medium-2 columns end">
+                        <a href="#" class="b-button m-orange js-filter" id="citizens-filter" data-filter="impact-citizens">
+                            <i class="material-icons m-lg">person_pin</i>
+                            Menschen befähigen
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="b-page-section m-no-top-padding" id="results">
         <div class="grid">
             {% for case in cases %}
             <div class="e-card impact-{{case.impact_type}}">
-
                 <a href="case-{{case.title | slug}}.html">
                     <div class="e-card-inner">
                         <div class="e-case-image"
