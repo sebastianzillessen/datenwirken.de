@@ -150,6 +150,7 @@
   download: Vorstellung_Einschulungsbereiche.pdf
   impact_type: citizens
   sector: education
+
 # 14
 - title: "Einsparpotenzial erkennen"
   image: 'nhs.jpg'
@@ -158,3 +159,12 @@
   download: Vorstellung_nhs.pdf
   impact_type: citizens
   sector: health
+
+# 15
+- title: "Schulrenovierungen einfordern"
+  image: 'sanierung.png'
+  subtitle: 'www.schulsanierung.tursics.de'
+  description: 'Eine Elterninitiative zur Kategorisierung von Renovierungsbedarf an Schulen'
+  download: Vorstellung_Schulsanierungsbedarf.pdf
+  impact_type: citizens
+  sector: politics
