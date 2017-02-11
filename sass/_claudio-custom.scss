@@ -296,7 +296,6 @@ p, td, a {
   padding-top: 10px;
 }
 
-
 @media screen and (min-width: 40em) {
   .row.vertical-central {
     display: flex;
@@ -409,17 +408,22 @@ p, td, a {
     background-color: $gray-10;
   }
 
-  .side-info {
+  .info {
     border: 1px solid $medium-gray;
     display: block;
-    @include breakpoint($desktop) {
-      width: 350px;
-      margin: 0 0 5px 15px;
-      float: right;
-    }
-    @include breakpoint($mobile-only) {
-      width: 90%;
-      margin: 30px auto;
+    width: 90%;
+    margin: 10px auto;
+
+    &.side-info {
+      @include breakpoint($desktop) {
+        width: 350px;
+        margin: 0 0 5px 15px;
+        float: right;
+      }
+      @include breakpoint($mobile-only) {
+        width: 90%;
+        margin: 30px auto;
+      }
     }
 
     text-align: left;
@@ -438,7 +442,7 @@ p, td, a {
     > *:not(table) {
       margin: 10px;
     }
-    > ul{
+    > ul {
       margin-left: 2.5rem;
     }
   }

@@ -148,7 +148,7 @@
   subtitle: ''
   description: 'Der Einschulungsbereicherechner im Raum Berlin'
   download: Vorstellung_Einschulungsbereiche.pdf
-  impact_type: citizens
+  impact_type: public
   sector: education
 
 # 14
@@ -157,14 +157,23 @@
   subtitle: ''
   description: 'Der National Health Service und offene Daten'
   download: Vorstellung_nhs.pdf
-  impact_type: citizens
+  impact_type: government
   sector: health
 
 # 15
 - title: "Schulrenovierungen einfordern"
   image: 'sanierung.png'
-  subtitle: 'www.schulsanierung.tursics.de'
+  subtitle: 'schulsanierung.tursics.de'
   description: 'Eine Elterninitiative zur Kategorisierung von Renovierungsbedarf an Schulen'
   download: Vorstellung_Schulsanierungsbedarf.pdf
   impact_type: citizens
   sector: politics
+
+# 16
+- title: "Nachwuchsförderung durch Do-it-yourself-Datenerhebung"
+  image: 'sensebox.jpg'
+  subtitle: 'sensebox.de'
+  description: 'Die Kiste mit Sinn'
+  download: Vorstellung_SenseBox.pdf
+  impact_type: public
+  sector: education
