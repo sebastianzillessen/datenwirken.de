@@ -140,3 +140,40 @@
   download: Vorstellung_BlindSquare.pdf
   impact_type: citizens
   sector: health
+
+
+# 13
+- title: "Grundschulplätze besser zuordnen"
+  image: 'einschulungsbereicherechner.jpg'
+  subtitle: ''
+  description: 'Der Einschulungsbereicherechner im Raum Berlin'
+  download: Vorstellung_Einschulungsbereiche.pdf
+  impact_type: public
+  sector: education
+
+# 14
+- title: "Einsparpotenzial erkennen"
+  image: 'nhs.jpg'
+  subtitle: ''
+  description: 'Der National Health Service und offene Daten'
+  download: Vorstellung_nhs.pdf
+  impact_type: government
+  sector: health
+
+# 15
+- title: "Schulrenovierungen einfordern"
+  image: 'sanierung.png'
+  subtitle: 'schulsanierung.tursics.de'
+  description: 'Eine Elterninitiative zur Kategorisierung von Renovierungsbedarf an Schulen'
+  download: Vorstellung_Schulsanierungsbedarf.pdf
+  impact_type: citizens
+  sector: politics
+
+# 16
+- title: "Nachwuchsförderung durch Do-it-yourself-Datenerhebung"
+  image: 'sensebox.jpg'
+  subtitle: 'sensebox.de'
+  description: 'Die Kiste mit Sinn'
+  download: Vorstellung_SenseBox.pdf
+  impact_type: public
+  sector: education
