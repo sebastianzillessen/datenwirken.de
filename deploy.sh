@@ -3,6 +3,12 @@
 branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 echo "$TRAVIS_BRANCH"
+
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
+    echo "We are running on a pull request. We are not deploying."
+    exit 0
+fi
+
 if [[ "$TRAVIS_BRANCH" = "master" ]]; then
     git config --global user.email "nobody@nobody.org"
     git config --global user.name "Travis CI"
