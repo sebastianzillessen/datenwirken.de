@@ -4,13 +4,14 @@ before_install:
 - gem install sass
 install:
 - pip install --user -r requirements.txt
-- npm install
+- yarn install
 script:
 - python build.py clean
 - gulp
 - python build.py build
 - "./deploy.sh"
 cache:
+  yarn: true
   directories:
   - node_modules
   - $HOME/.cache/pip
