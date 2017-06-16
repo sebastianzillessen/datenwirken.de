@@ -23,5 +23,4 @@ if [[ "$TRAVIS_BRANCH" = "master" ]]; then
 else
     echo "No deployment"
     exit 0
-
 fi
