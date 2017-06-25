@@ -2,6 +2,13 @@
 {% set case = cases[case_id] %}
 {% block page_id %}case-study-page{% endblock %}
 
+{% block opengraph %}
+    <meta name="twitter:card" content="{{case.title}}" />
+    <meta name="twitter:creator" content="@snv_berlin" />
+    <meta property="og:title" content="{{case.title}}" />
+    <meta property="og:description" content="{{case.description}}" />
+    <meta property="og:image" content="./static/img/banners/sm/{{case.image}}" />
+{% endblock %}
 
 {% block navelements %}
 <div class="e-nav-group m-right hide-for-small-only">
