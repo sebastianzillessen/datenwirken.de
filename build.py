@@ -12,6 +12,7 @@ from unidecode import unidecode
 import staticjinja
 import argh
 from watchdog.events import FileSystemEventHandler
+import cgi
 
 from govlabstatic.cli import Manager
 
@@ -29,10 +30,14 @@ _FUNDERS = path.join(_DATAPATH, 'funders.yaml')
 _CASE_STUDIES = path.join(_DATAPATH, 'case-studies.yaml')
 
 _SLUG = lambda x: re.sub(r'shy', '', slugify(unicode(unidecode(unicode(x).lower()))) if x else u'')
+_ESCAPE = lambda x: x.encode('ascii', 'xmlcharrefreplace')
 
 
 def filters():
-    return {'slug': _SLUG}
+    return {
+        'slug': _SLUG,
+        'escape': _ESCAPE
+    }
 
 
 def clean():

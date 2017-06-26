@@ -3,12 +3,12 @@
 {% block page_id %}case-study-page{% endblock %}
 
 {% block opengraph %}
-    <meta name="twitter:title" content="{{case.title}}" />
-    <meta name="twitter:description" content="{{case.description}}" />
+    <meta name="twitter:title" content="{{case.title | escape}}" />
+    <meta name="twitter:description" content="{{case.description | escape }}" />
     <meta name="twitter:image" content="http://datenwirken.de/static/img/banners/sm/{{case.image}}" />
 
-    <meta property="og:title" content="{{case.title}}" />
-    <meta property="og:description" content="{{case.description}}" />
+    <meta property="og:title" content="{{case.title | escape }}" />
+    <meta property="og:description" content="{{case.description | escape }}" />
     <meta property="og:image" content="http://datenwirken.de/static/img/banners/sm/{{case.image}}" />
 {% endblock %}
 
