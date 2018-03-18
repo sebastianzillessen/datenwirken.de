@@ -2,8 +2,7 @@ python:
 - '2.7'
 before_install:
 - gem install sass
-- apt-get install graphicsmagick
-- apt-get install imagemagick
+- sudo apt-get install graphicsmagick imagemagick
 install:
 - pip install --user -r requirements.txt
 - npm install
